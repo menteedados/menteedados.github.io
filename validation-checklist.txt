@@ -1,0 +1,24 @@
+✅ T2.1 - Validação da Landing Page
+
+CRITÉRIOS ATENDIDOS:
+- [x] Header com logo e navegação
+- [x] Hero section com proposta de valor
+- [x] Grid de trilhas (Trilha 00 completa + placeholders)
+- [x] Seção depoimentos preparada
+- [x] Footer completo
+- [x] HTML semântico (header, main, footer, section, article)
+- [x] Meta tags para SEO
+- [x] Responsividade básica
+
+PRÓXIMOS PASSOS:
+- T2.2: CSS Global e Design System
+- T2.3: Componentes Reutilizáveis
+- T2.4: Responsividade e Mobile
+
+URL LOCAL PARA TESTE:
+http://localhost:8000
+ou
+http://127.0.0.1:5500 (Live Server)
+
+COMMIT:
+feat(landing): implement landing page HTML structure (T2.1)

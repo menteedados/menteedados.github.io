@@ -1,1 +1,51 @@
+/* ============================================
+   MAIN CSS - Mente & Dados
+   Ponto de entrada central para todos os estilos
+   ============================================ */
+
+/* Reset e Normalize */
+@import url('reset.css');
+
+/* Variáveis do Design System */
+@import url('variables.css');
+
+/* Tipografia */
+@import url('typography.css');
+
+/* Grid System */
+@import url('grid.css');
+
+/* Componentes Reutilizáveis */
+@import url('components.css');
+
+/* Classes Utilitárias */
+@import url('utilities.css');
+
+/* Estilos Específicos por Página */
+@import url('pages.css');
+
+/* ============================================
+   MAIN CSS - Mente & Dados
+   ============================================ */
+
+/* Custom styles adicionais */
+body {
+  scroll-behavior: smooth;
+}
+
+/* Performance improvements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  @page {
+    margin: 2cm;
+  }
+}
 
