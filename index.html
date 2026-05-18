@@ -264,6 +264,160 @@
     </div>
 </section>
 
+<!-- ============================================ -->
+<!-- SEÇÃO FAQ -->
+<!-- ============================================ -->
+<section class="faq-section" aria-label="Perguntas frequentes">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Perguntas Frequentes</h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">
+                Tire suas dúvidas sobre as trilhas e método de ensino
+            </p>
+        </div>
+        
+        <div class="faq-grid" style="max-width: 800px; margin: 0 auto;">
+            <div class="faq-item">
+                <div class="faq-question">
+                    Como funciona o acesso aos materiais?
+                </div>
+                <div class="faq-answer">
+                    <p>Após a compra, você recebe um email com o link de acesso imediato à área do aluno. Todo o conteúdo fica disponível 24/7 por 12 meses, incluindo todos os e-books, exercícios e futuras atualizações.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    Posso parcelar a compra?
+                </div>
+                <div class="faq-answer">
+                    <p>Sim! Aceitamos parcelamento em até 12x no cartão de crédito através da Hotmart. Também aceitamos PIX com 10% de desconto à vista.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    Tem garantia? E se eu não gostar?
+                </div>
+                <div class="faq-answer">
+                    <p>Sim! Você tem 7 dias de garantia incondicional. Se por qualquer motivo não gostar do conteúdo, devolvemos 100% do seu dinheiro, sem perguntas.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    As trilhas têm certificado?
+                </div>
+                <div class="faq-answer">
+                    <p>Sim! Ao final de cada trilha, você recebe um certificado de conclusão com carga horária, válido como horas complementares e para enriquecer seu currículo.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    Como funciona o suporte?
+                </div>
+                <div class="faq-answer">
+                    <p>Você tem acesso a uma comunidade exclusiva no Telegram para tirar dúvidas com outros alunos e com a Franciele. Também oferecemos suporte por email em até 24h úteis.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    Preciso de conhecimento prévio?
+                </div>
+                <div class="faq-answer">
+                    <p>A Trilha 00 foi desenhada para iniciantes absolutos. Você não precisa de conhecimento prévio em programação ou dados. Começamos do zero!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<script>
+    // FAQ Accordion manual para a landing page
+    document.addEventListener('DOMContentLoaded', function() {
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const isActive = question.classList.contains('active');
+                
+                // Fechar todos
+                faqQuestions.forEach(q => {
+                    q.classList.remove('active');
+                    const answer = q.nextElementSibling;
+                    if (answer) answer.style.maxHeight = null;
+                });
+                
+                // Abrir o clicado se não estava ativo
+                if (!isActive) {
+                    question.classList.add('active');
+                    const answer = question.nextElementSibling;
+                    if (answer) answer.style.maxHeight = answer.scrollHeight + 'px';
+                }
+            });
+        });
+    });
+</script>
+
+<!-- Sticky CTA -->
+<div id="sticky-cta" class="sticky-cta">
+    <button class="btn btn-primary" onclick="window.location.href='/trilha-00/'">
+        🚀 Comprar Trilha 00 - R$ 67
+    </button>
+</div>
+
+
+
+<script>
+    // Sticky CTA Script
+    (function() {
+        const stickyCta = document.getElementById('sticky-cta');
+        if (!stickyCta) return;
+        
+        let lastScrollY = window.scrollY;
+        let ticking = false;
+        
+        function checkScroll() {
+            const scrollY = window.scrollY;
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
+            const footer = document.querySelector('.footer');
+            
+            let shouldShow = scrollY > 600;
+            
+            // Esconder se estiver no footer
+            if (footer) {
+                const footerTop = footer.getBoundingClientRect().top;
+                if (footerTop < windowHeight) {
+                    shouldShow = false;
+                }
+            }
+            
+            if (shouldShow && !stickyCta.classList.contains('visible')) {
+                stickyCta.classList.add('visible');
+            } else if (!shouldShow && stickyCta.classList.contains('visible')) {
+                stickyCta.classList.remove('visible');
+            }
+            
+            ticking = false;
+        }
+        
+        window.addEventListener('scroll', function() {
+            if (!ticking) {
+                requestAnimationFrame(checkScroll);
+                ticking = true;
+            }
+        });
+        
+        checkScroll();
+    })();
+</script>
+
 </main>
 
 <!-- ============================================ -->

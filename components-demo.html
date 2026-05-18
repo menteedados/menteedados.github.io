@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentes Reutilizáveis - Mente & Dados</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        .demo-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .demo-section {
+            margin: 3rem 0;
+            padding: 2rem;
+            background: white;
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-sm);
+        }
+        .demo-section h2 {
+            margin-bottom: 1.5rem;
+            color: var(--navy);
+        }
+        .demo-grid {
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+        code {
+            display: block;
+            background: var(--navy);
+            color: var(--gold);
+            padding: 1rem;
+            border-radius: var(--radius-md);
+            margin: 1rem 0;
+            overflow-x: auto;
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body style="background: var(--warm);">
+    <div class="demo-container">
+        <h1 style="text-align: center; margin-bottom: 0.5rem;">🎨 Componentes Reutilizáveis</h1>
+        <div class="section-divider" style="margin-bottom: 2rem;"></div>
+        <p style="text-align: center; color: var(--muted);">Demonstração dos componentes implementados no Mente & Dados</p>
+        
+        <!-- ===== BOTÕES ===== -->
+        <div class="demo-section">
+            <h2>🔘 Botões</h2>
+            <div class="demo-grid">
+                <div>
+                    <h3>Botão Primary</h3>
+                    <button class="btn btn-primary">Comprar Agora</button>
+                </div>
+                <div>
+                    <h3>Botão Secondary</h3>
+                    <button class="btn btn-secondary">Ver Detalhes</button>
+                </div>
+                <div>
+                    <h3>Botão Outline</h3>
+                    <button class="btn btn-outline">Saiba Mais</button>
+                </div>
+                <div>
+                    <h3>Botão Small</h3>
+                    <button class="btn btn-primary btn-sm">Pequeno</button>
+                </div>
+                <div>
+                    <h3>Botão Large</h3>
+                    <button class="btn btn-primary btn-lg">Grande</button>
+                </div>
+                <div>
+                    <h3>Botão Block</h3>
+                    <button class="btn btn-primary btn-block">Largura Total</button>
+                </div>
+            </div>
+            <code>&lt;button class="btn btn-primary"&gt;Comprar Agora&lt;/button&gt;</code>
+        </div>
+        
+        <!-- ===== CARDS ===== -->
+        <div class="demo-section">
+            <h2>🃏 Cards</h2>
+            <div class="demo-grid">
+                <div class="card">
+                    <h3>Card Padrão</h3>
+                    <p>Este é um card padrão com sombra suave e efeito hover.</p>
+                    <button class="btn btn-outline btn-sm mt-3">Ver mais</button>
+                </div>
+                <div class="card card--featured">
+                    <div class="trilha-badge">DESTAQUE</div>
+                    <h3>Card Destacado</h3>
+                    <p>Card com borda dourada e gradiente suave.</p>
+                    <button class="btn btn-primary btn-sm mt-3">Comprar</button>
+                </div>
+                <div class="trilha-card">
+                    <div class="trilha-icon">🚀</div>
+                    <h3 class="trilha-title">Trilha 00</h3>
+                    <h4 class="trilha-subtitle">Fundamentos</h4>
+                    <p class="trilha-description">Base sólida para engenharia de dados.</p>
+                    <div class="trilha-price">
+                        <span class="price-old">R$ 97</span>
+                        <span class="price-current">R$ 67</span>
+                    </div>
+                    <button class="btn btn-secondary btn-block">Ver detalhes</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ===== FAQ ACCORDION ===== -->
+        <div class="demo-section">
+            <h2>❓ FAQ Accordion</h2>
+            <div class="faq-item">
+                <div class="faq-question">
+                    Como funciona o acesso aos materiais?
+                </div>
+                <div class="faq-answer">
+                    <p>Após a compra, você recebe um email com o link de acesso imediato. Todo o conteúdo fica disponível na sua área do aluno por 12 meses, com acesso 24/7.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    Posso parcelar a compra?
+                </div>
+                <div class="faq-answer">
+                    <p>Sim! Aceitamos parcelamento em até 12x no cartão de crédito através da Hotmart. Também aceitamos PIX com desconto à vista.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    Tenho garantia de satisfação?
+                </div>
+                <div class="faq-answer">
+                    <p>Sim! Você tem 7 dias de garantia incondicional. Se não gostar do conteúdo, devolvemos 100% do seu dinheiro, sem perguntas.</p>
+                </div>
+            </div>
+            <code>&lt;div class="faq-item"&gt;<br>  &lt;div class="faq-question"&gt;Pergunta&lt;/div&gt;<br>  &lt;div class="faq-answer"&gt;Resposta&lt;/div&gt;<br>&lt;/div&gt;</code>
+        </div>
+        
+        <!-- ===== SECTION HEADERS ===== -->
+        <div class="demo-section">
+            <h2>📌 Section Headers</h2>
+            <div class="section-header">
+                <h2 class="section-title">Nossas Trilhas</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Metodologia passo a passo para dominar engenharia de dados</p>
+            </div>
+            <code>&lt;div class="section-header"&gt;<br>  &lt;h2 class="section-title"&gt;Título&lt;/h2&gt;<br>  &lt;div class="section-divider"&gt;&lt;/div&gt;<br>  &lt;p class="section-subtitle"&gt;Subtítulo&lt;/p&gt;<br>&lt;/div&gt;</code>
+        </div>
+        
+        <!-- ===== FORMULÁRIO ===== -->
+        <div class="demo-section">
+            <h2>📝 Formulário com Validação</h2>
+            <form data-validate-form>
+                <div class="form-group">
+                    <label class="form-label">Nome completo *</label>
+                    <input type="text" class="form-input" name="nome" required minlength="3" data-minlength="3" placeholder="Seu nome completo">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Email *</label>
+                    <input type="email" class="form-input" name="email" required placeholder="seu@email.com">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Telefone</label>
+                    <input type="tel" class="form-input" name="telefone" data-validate="phone" data-mask="phone" placeholder="(11) 99999-9999">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Mensagem</label>
+                    <textarea class="form-input" name="mensagem" rows="4" placeholder="Sua mensagem..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Enviar mensagem</button>
+            </form>
+            <code>&lt;form data-validate-form&gt;<br>  &lt;input type="text" required minlength="3"&gt;<br>  &lt;input type="email" required&gt;<br>  &lt;button type="submit"&gt;Enviar&lt;/button&gt;<br>&lt;/form&gt;</code>
+        </div>
+        
+        <!-- ===== STICKY CTA ===== -->
+        <div class="demo-section">
+            <h2>📌 Sticky CTA (Role para baixo)</h2>
+            <div style="height: 200px; background: linear-gradient(135deg, var(--gold-pale) 0%, white 100%); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center;">
+                <p>Role para baixo para ver o Sticky CTA aparecer →</p>
+            </div>
+        </div>
+        
+        <!-- ===== DEPOIMENTOS ===== -->
+        <div class="demo-section">
+            <h2>⭐ Depoimentos</h2>
+            <div class="depoimentos-grid" style="display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                <div class="depoimento-card">
+                    <div class="depoimento-stars">★★★★★</div>
+                    <p class="depoimento-text">"Material excelente! Consegui minha primeira vaga como engenheira de dados graças ao conteúdo da Trilha 00."</p>
+                    <div class="depoimento-author">
+                        <strong>Camila Santos</strong>
+                        <span>Engenheira de Dados Júnior</span>
+                    </div>
+                </div>
+                <div class="depoimento-card">
+                    <div class="depoimento-stars">★★★★★</div>
+                    <p class="depoimento-text">"Metodologia prática e direta. Recomendo para quem quer entrar na área de dados."</p>
+                    <div class="depoimento-author">
+                        <strong>Rafael Oliveira</strong>
+                        <span>Analista de Dados</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Sticky CTA Component -->
+    <div id="sticky-cta" class="sticky-cta">
+        <button class="btn btn-primary" onclick="alert('Redirecionando para checkout!')">
+            🚀 Garantir minha vaga
+        </button>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="assets/js/faq-accordion.js"></script>
+    <script src="assets/js/sticky-cta.js"></script>
+    <script src="assets/js/form-validation.js"></script>
+    
+    <script>
+        // Inicialização manual (já é feita automaticamente pelos scripts)
+        console.log('Componentes inicializados!');
+        
+        // Scroll para testar sticky CTA
+        const scrollMsg = document.createElement('div');
+        scrollMsg.style.position = 'fixed';
+        scrollMsg.style.bottom = '20px';
+        scrollMsg.style.left = '20px';
+        scrollMsg.style.background = 'var(--navy)';
+        scrollMsg.style.color = 'var(--gold)';
+        scrollMsg.style.padding = '8px 16px';
+        scrollMsg.style.borderRadius = '8px';
+        scrollMsg.style.fontSize = '12px';
+        scrollMsg.style.fontFamily = 'monospace';
+        scrollMsg.style.zIndex = '999';
+        scrollMsg.innerHTML = '📌 Sticky CTA aparecerá após scroll de 600px';
+        document.body.appendChild(scrollMsg);
+        
+        // Event listeners para debugging
+        document.addEventListener('sticky-cta:show', () => {
+            console.log('📌 Sticky CTA apareceu!');
+        });
+        
+        document.addEventListener('faq:open', (e) => {
+            console.log('📖 FAQ aberto:', e.detail.question);
+        });
+        
+        document.addEventListener('form:valid-submit', (e) => {
+            console.log('✅ Formulário válido:', e.detail.values);
+            alert('Formulário enviado com sucesso! (demonstração)');
+        });
+    </script>
+</body>
+</html>

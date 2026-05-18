@@ -22,3 +22,38 @@ http://127.0.0.1:5500 (Live Server)
 
 COMMIT:
 feat(landing): implement landing page HTML structure (T2.1)
+
+✅ T2.2 - Validação do CSS Global e Design System
+
+CRITÉRIOS ATENDIDOS:
+- [x] Variables CSS com paleta completa (cores, espaçamentos, breakpoints)
+- [x] Reset/normalize CSS implementado
+- [x] Typography com Google Fonts (Playfair Display, Source Serif 4, DM Mono)
+- [x] Grid system responsivo (12 colunas)
+- [x] Utility classes (spacing, colors, display, etc.)
+- [x] Componentes reutilizáveis (buttons, cards, forms)
+- [x] Mobile-first approach
+- [x] Design tokens centralizados
+- [x] Acessibilidade básica (focus styles)
+
+ARQUIVOS CRIADOS:
+- assets/css/reset.css
+- assets/css/variables.css
+- assets/css/typography.css
+- assets/css/grid.css
+- assets/css/components.css
+- assets/css/utilities.css
+- assets/css/pages.css
+- assets/css/main.css
+- test-styles.html
+
+TESTES REALIZADOS:
+- [ ] Abrir test-styles.html no navegador
+- [ ] Verificar cores do design system
+- [ ] Testar responsividade (mobile, tablet, desktop)
+- [ ] Validar botões em diferentes estados
+- [ ] Verificar grid system
+- [ ] Testar tipografia responsiva
+
+COMMIT:
+feat(css): implement global CSS and design system (T2.2)
