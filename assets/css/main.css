@@ -24,14 +24,11 @@
 /* Estilos Específicos por Página */
 @import url('pages.css');
 
-/* ============================================
-   MAIN CSS - Mente & Dados
-   ============================================ */
+/* Responsividade e Mobile */
+@import url('responsive.css');
 
-/* Custom styles adicionais */
-body {
-  scroll-behavior: smooth;
-}
+/* ===== CUSTOM STYLES ===== */
+/* Qualquer estilo adicional ou override pode ser adicionado aqui */
 
 /* Performance improvements */
 @media (prefers-reduced-motion: reduce) {
@@ -47,5 +44,32 @@ body {
   @page {
     margin: 2cm;
   }
+  
+  .header,
+  .footer,
+  .sticky-cta,
+  .btn {
+    display: none;
+  }
 }
 
+/* Touch feedback para dispositivos móveis */
+.touch-active {
+  transform: scale(0.98);
+  transition: transform 0.05s ease;
+}
+
+/* Slow connection fallback */
+.slow-connection img {
+  display: none;
+}
+
+/* Lazy loading */
+img[data-src] {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+img.loaded {
+  opacity: 1;
+}
