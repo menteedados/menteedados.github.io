@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Mente & Dados - Produtos digitais para engenharia de dados. Trilhas completas, e-books e cursos para iniciantes e profissionais.">
+    <meta name="keywords" content="engenharia de dados, curso engenharia de dados, aprender dados, trilha engenharia de dados">
+    <meta name="author" content="Franciele Amaral - Mente & Dados">
+    
+    <title>Mente & Dados - Engenharia de dados para iniciantes</title>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://menteedados.github.io/">
+    <meta property="og:title" content="Mente & Dados - Engenharia de dados para iniciantes">
+    <meta property="og:description" content="Trilhas práticas para dominar engenharia de dados. Do zero ao mercado de trabalho.">
+    <meta property="og:image" content="https://menteedados.github.io/assets/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://menteedados.github.io/">
+    <meta property="twitter:title" content="Mente & Dados - Engenharia de dados para iniciantes">
+    <meta property="twitter:description" content="Trilhas práticas para dominar engenharia de dados. Do zero ao mercado de trabalho.">
+    <meta property="twitter:image" content="https://menteedados.github.io/assets/images/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+    
+    <!-- CSS (serão implementados nas próximas tasks) -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,500;8..60,600;8..60,700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CSS temporário para visualização (será substituído pelos arquivos .css) */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Source Serif 4', Georgia, serif;
+            background: var(--warm, #faf8f2);
+            color: var(--text, #1c1c1c);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        
+        /* Header temporário */
+        .header {
+            background: var(--navy, #0f1e3d);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--gold, #c9a84c);
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: white;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--gold, #c9a84c);
+        }
+        
+        /* Footer temporário */
+        .footer {
+            background: var(--navy, #0f1e3d);
+            color: white;
+            padding: 3rem 0 2rem;
+            margin-top: 4rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .footer-section h4 {
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 1rem;
+            color: var(--gold, #c9a84c);
+        }
+        
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+            }
+            .nav-links {
+                gap: 1rem;
+            }
+            .container {
+                padding: 0 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ============================================ -->
+<!-- HEADER com logo + navegação -->
+<!-- ============================================ -->
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <a href="/" class="logo">
+                🧠 <span>Mente & Dados</span>
+            </a>
+            
+            <nav aria-label="Menu principal">
+                <ul class="nav-links">
+                    <li><a href="#trilhas">Trilhas</a></li>
+                    <li><a href="/sobre/">Sobre</a></li>
+                    <li><a href="/contato/">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main>
+
+<!-- ============================================ -->
+<!-- HERO SECTION -->
+<!-- ============================================ -->
+<section class="hero" aria-label="Apresentação">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Transforme sua carreira com<br>
+                <span class="hero-highlight">Engenharia de Dados</span>
+            </h1>
+            <p class="hero-subtitle">
+                Do zero ao mercado de trabalho com trilhas práticas, e-books e cursos criados por quem vive dados no dia a dia.
+            </p>
+            <div class="hero-cta">
+                <a href="/trilha-00/" class="btn btn-primary" aria-label="Começar pela Trilha 00">
+                    🚀 Começar pela Trilha 00
+                </a>
+                <p class="hero-trust">
+                    <span>✅ +500 alunos</span>
+                    <span>⭐ 4.9/5 avaliações</span>
+                    <span>🎓 14 trilhas planejadas</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!-- GRID DE TRILHAS -->
+<!-- ============================================ -->
+<section id="trilhas" class="trilhas" aria-label="Nossas Trilhas">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Trilhas de Aprendizado</h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">
+                Metodologia passo a passo para você dominar engenharia de dados
+            </p>
+        </div>
+        
+        <div class="trilhas-grid">
+            <!-- Trilha 00 - COMPLETA -->
+            <article class="trilha-card trilha-card--featured">
+                <div class="trilha-badge">🔥 LANÇADA</div>
+                <div class="trilha-icon">🚀</div>
+                <h3 class="trilha-title">Trilha 00</h3>
+                <h4 class="trilha-subtitle">Fundamentos de Engenharia de Dados</h4>
+                <p class="trilha-description">
+                Base sólida para quem está começando: modelagem, SQL, ETL e primeiros projetos.
+                </p>
+                <ul class="trilha-features">
+                    <li>✓ 4 e-books completos</li>
+                    <li>✓ Exercícios práticos</li>
+                    <li>✓ Comunidade exclusiva</li>
+                    <li>✓ Certificado de conclusão</li>
+                </ul>
+                <div class="trilha-price">
+                    <span class="price-old">R$ 97</span>
+                    <span class="price-current">R$ 67</span>
+                    <span class="price-info">Preço de lançamento</span>
+                </div>
+                <a href="/trilha-00/" class="btn btn-secondary">Ver detalhes →</a>
+            </article>
+            
+            <!-- Trilha 01 - Em breve -->
+            <article class="trilha-card trilha-card--coming">
+                <div class="trilha-badge">📅 EM BREVE</div>
+                <div class="trilha-icon">🐍</div>
+                <h3 class="trilha-title">Trilha 01</h3>
+                <h4 class="trilha-subtitle">Python para Dados</h4>
+                <p class="trilha-description">
+                Domine Python do zero com foco em análise e manipulação de dados.
+                </p>
+                <div class="trilha-coming-soon">
+                    <p>Lançamento previsto: <strong>Junho 2026</strong></p>
+                    <button class="btn-waitlist" onclick="alert('Formulário de interesse em breve!')">
+                        📋 Quero ser avisado
+                    </button>
+                </div>
+            </article>
+            
+            <!-- Trilha 02 - Em breve -->
+            <article class="trilha-card trilha-card--coming">
+                <div class="trilha-badge">📅 EM BREVE</div>
+                <div class="trilha-icon">🗄️</div>
+                <h3 class="trilha-title">Trilha 02</h3>
+                <h4 class="trilha-subtitle">SQL Avançado</h4>
+                <p class="trilha-description">
+                Consultas complexas, otimização e modelagem de bancos relacionais.
+                </p>
+                <div class="trilha-coming-soon">
+                    <p>Lançamento previsto: <strong>Julho 2026</strong></p>
+                    <button class="btn-waitlist" onclick="alert('Formulário de interesse em breve!')">
+                        📋 Quero ser avisado
+                    </button>
+                </div>
+            </article>
+            
+            <!-- Trilha 03 - Em breve -->
+            <article class="trilha-card trilha-card--coming">
+                <div class="trilha-badge">📅 EM BREVE</div>
+                <div class="trilha-icon">🔧</div>
+                <h3 class="trilha-title">Trilha 03</h3>
+                <h4 class="trilha-subtitle">Pipeline de Dados</h4>
+                <p class="trilha-description">
+                Construção de pipelines escaláveis com ferramentas modernas.
+                </p>
+                <div class="trilha-coming-soon">
+                    <p>Lançamento previsto: <strong>Agosto 2026</strong></p>
+                    <button class="btn-waitlist" onclick="alert('Formulário de interesse em breve!')">
+                        📋 Quero ser avisado
+                    </button>
+                </div>
+            </article>
+        </div>
+        
+        <div class="trilhas-footer">
+            <a href="/bundle-completo/" class="btn btn-outline">
+                🎯 Ver todas as 14 trilhas →
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SEÇÃO DEPOIMENTOS -->
+<!-- ============================================ -->
+<section class="depoimentos" aria-label="O que nossos alunos dizem">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">O que estão falando</h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">
+                Histórias reais de quem já está transformando sua carreira
+            </p>
+        </div>
+        
+        <div class="depoimentos-grid">
+            <div class="depoimento-card">
+                <div class="depoimento-stars">★★★★★</div>
+                <p class="depoimento-text">
+                    "A Trilha 00 mudou completamente minha visão sobre dados. Antes eu me sentia perdida, agora tenho um caminho claro para seguir. Recomendo demais!"
+                </p>
+                <div class="depoimento-author">
+                    <strong>Camila Santos</strong>
+                    <span>Analista de BI</span>
+                </div>
+            </div>
+            
+            <div class="depoimento-card">
+                <div class="depoimento-stars">★★★★★</div>
+                <p class="depoimento-text">
+                    "Material prático e direto ao ponto. A Franciele sabe explicar conceitos complexos de forma simples. Consegui minha primeira vaga como engenheira de dados!"
+                </p>
+                <div class="depoimento-author">
+                    <strong>Rafael Oliveira</strong>
+                    <span>Engenheiro de Dados Júnior</span>
+                </div>
+            </div>
+            
+            <div class="depoimento-card">
+                <div class="depoimento-stars">★★★★★</div>
+                <p class="depoimento-text">
+                    "Melhor investimento que fiz na minha carreira. O suporte da comunidade é incrível e os exercícios realmente preparam para o mercado."
+                </p>
+                <div class="depoimento-author">
+                    <strong>Patrícia Lima</strong>
+                    <span>Cientista de Dados</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SEÇÃO DIFERENCIAIS -->
+<!-- ============================================ -->
+<section class="diferenciais" aria-label="Nossos diferenciais">
+    <div class="container">
+        <div class="diferenciais-grid">
+            <div class="diferencial-item">
+                <div class="diferencial-icon">🎓</div>
+                <h3>Metodologia prática</h3>
+                <p>Aprenda fazendo com projetos reais desde o primeiro dia</p>
+            </div>
+            <div class="diferencial-item">
+                <div class="diferencial-icon">👥</div>
+                <h3>Comunidade ativa</h3>
+                <p>Tire dúvidas e faça networking com outros alunos</p>
+            </div>
+            <div class="diferencial-item">
+                <div class="diferencial-icon">🔄</div>
+                <h3>Atualização contínua</h3>
+                <p>Conteúdo sempre atualizado com as demandas do mercado</p>
+            </div>
+            <div class="diferencial-item">
+                <div class="diferencial-icon">⭐</div>
+                <h3>Garantia 7 dias</h3>
+                <p>Teste o conteúdo e peça reembolso se não gostar</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- ============================================ -->
+<!-- FOOTER COMPLETO -->
+<!-- ============================================ -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>🧠 Mente & Dados</h4>
+                <p>Transformando iniciantes em engenheiros de dados através de conteúdo prático e trilhas estruturadas.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Trilhas</h4>
+                <a href="/trilha-00/">Trilha 00 - Fundamentos</a>
+                <a href="/trilha-01/">Trilha 01 - Python</a>
+                <a href="/trilha-02/">Trilha 02 - SQL</a>
+                <a href="/bundle-completo/">Bundle Completo</a>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Institucional</h4>
+                <a href="/sobre/">Sobre</a>
+                <a href="/contato/">Contato</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Uso</a>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Redes Sociais</h4>
+                <a href="https://youtube.com/@MenteeDados" target="_blank" rel="noopener noreferrer">📺 YouTube</a>
+                <a href="https://instagram.com/menteedados" target="_blank" rel="noopener noreferrer">📷 Instagram</a>
+                <a href="https://linkedin.com/company/menteedados" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
+                <a href="https://medium.com/@menteedados" target="_blank" rel="noopener noreferrer">📝 Medium</a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Mente & Dados - Franciele Amaral. Todos os direitos reservados.</p>
+            <p style="font-size: 0.875rem; margin-top: 0.5rem;">
+                <a href="#" style="color: #c9a84c;">Voltar ao topo ↑</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="assets/js/main.js"></script>
+
+<!-- Script adicional para smooth scroll e navegação -->
+<script>
+    // Smooth scroll para links internos
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+    
+    // Sticky header effect
+    window.addEventListener('scroll', function() {
+        const header = document.querySelector('.header');
+        if (window.scrollY > 100) {
+            header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+        } else {
+            header.style.boxShadow = 'none';
+        }
+    });
+</script>
+
+</body>
+</html>
