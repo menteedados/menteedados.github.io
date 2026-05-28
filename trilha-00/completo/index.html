@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modelagem Mental Antes do Código — Mente & Dados</title>
+    <!-- CSS Principal -->
+<link rel="stylesheet" href="/assets/css/main.css">
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <a href="/" class="logo">
+                <img src="/assets/imagens/logo/logotipo_icone.png" alt="Mente & Dados" height="40"> <span>Mente & Dados</span>
+            </a>
+            <nav aria-label="Menu principal">
+                <ul class="nav-links">
+                    <li><a href="/#trilhas">Trilhas</a></li>
+                    <li><a href="/sobre/">Sobre</a></li>
+                    <li><a href="/contato/">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!-- Botão Voltar -->
+    <div class="container" style="margin-top: 2rem;">
+        <a href="/trilha-00/" class="btn-back">
+            ← Ver todas as opções da Trilha 00
+        </a>
+    </div>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="bar">
+  Trilha 00 · Mente &amp; Dados — <span>Fundamentos de raciocínio antes das ferramentas</span>
+</div>
+
+
+
+<!-- ══════════════════════════════════ -->
+<!-- HERO                               -->
+<!-- ══════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-eyebrow">Trilha 00 · Mente &amp; Dados</div>
+
+  <h1>
+    Antes do SQL<br>
+    <em>existe raciocínio.</em><br>
+    E quase ninguém ensina essa parte.
+  </h1>
+
+  <p class="hero-sub">
+    A Trilha 00 é o início de um caminho estruturado. Não um curso de ferramenta — um método para pensar problemas de dados antes de abrir qualquer código.
+  </p>
+
+  <!-- MOCKUP BOOKS -->
+  <div class="books-wrap">
+    <div class="book book-eb">
+      <div class="book-inner"></div>
+      <div class="book-title">Modelagem<br>Mental<br>Antes do<br>Código</div>
+      <div class="book-diagram"></div>
+      <div class="book-sub">Trilha 00 · E-book</div>
+      <div class="book-brand">Mente &amp; Dados</div>
+    </div>
+    <div class="bundle-arrow">+</div>
+    <div class="book book-cad">
+      <div class="book-inner"></div>
+      <div class="book-title">Caderno de<br>Exercícios</div>
+      <div class="book-diagram"></div>
+      <div class="book-sub">Eng. de Dados</div>
+      <div class="book-brand">Mente &amp; Dados</div>
+    </div>
+    <div class="bundle-arrow">+</div>
+    <div class="book book-cad">
+      <div class="book-inner"></div>
+      <div class="book-title">3 bônus<br>Exclusivos</div>
+      <div class="book-diagram"></div>
+      <div class="book-sub">Eng. de Dados</div>
+      <div class="book-brand">Mente &amp; Dados</div>
+    </div>
+  </div>
+
+  <div class="price-hero">
+    <span class="price-was">de R$ 247,00</span>
+    <span class="price-now">R$ 127</span>
+    <span class="price-label">Preço de lançamento · acesso vitalício</span>
+  </div>
+
+  <a href="#comprar" class="cta-primary">Entrar na Trilha 00 →</a>
+  <div><p class="cta-guarantee">🔒 7 dias de garantia · Pagamento seguro via Hotmart · Acesso vitalício</p></div>
+</section>
+
+
+<!-- ══════════════════════════════════ -->
+<!-- PROBLEMA                          -->
+<!-- ══════════════════════════════════ -->
+<section class="problem">
+  <div class="container">
+    <div class="section-tag">O problema</div>
+    <div class="gold-line"></div>
+    <h2>O problema não é o código.<br><em>É o que acontece antes dele.</em></h2>
+    <p class="lead">A maioria dos cursos de engenharia de dados começa pelas ferramentas.
+      SQL. Python. Spark.
+      E você tenta acompanhar.
+
+      Mas em algum momento trava.
+
+      Não porque o código é impossível —
+      mas porque você não sabe exatamente o que precisa construir.
+    </p>
+
+    <p class="lead" style="margin-top:1rem;">
+    Você já abriu o VS Code, ficou olhando a tela… e fechou sem saber por onde começar?
+
+    Ou então resolveu copiando código — funcionou naquele momento —mas no próximo problema, travou de novo?
+    </p>
+    <div class="pain-grid">
+      <div class="pain-card">
+        <div class="icon"><img src="/assets/imagens/icons/headache.png" alt="cansado" height="40"></div>
+        <h3>O cursor fica piscando</h3>
+        <p>Você abre o VS Code, olha para o problema e não sabe nem por onde começar. Abre mil abas no YouTube, copia código do ChatGPT e continua perdido.</p>
+      </div>
+      <div class="pain-card">
+        <div class="icon"><img src="/assets/imagens/icons/link.png" alt="links" height="40"></div>
+        <h3>500 links salvos, ZERO resultado</h3>
+        <p>Você consome conteúdo sem parar, salva tudo no Notion — mas no final do mês ainda não consegue resolver um problema real de dados do zero.</p>
+      </div>
+      <div class="pain-card">
+        <div class="icon"><img src="/assets/imagens/icons/people.png" alt="ferramenta" height="40"></div>
+        <h3>Ferramentas sem raciocínio</h3>
+        <p>Você sabe usar as ferramentas. Mas sem um método para decompor problemas, cada projeto parece um labirinto diferente.</p>
+      </div>
+      <div class="pain-card">
+        <div class="icon"><img src="/assets/imagens/icons/confused.png" alt="ferramenta" height="40"></div>
+        <h3>Teoria que não vira prática</h3>
+        <p>Você lê e-books, assiste aulas, entende a teoria. Mas na hora de aplicar num problema real, surgem dúvidas que o material não respondeu.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════ -->
+<!-- ANTES VS DEPOIS                   -->
+<!-- ══════════════════════════════════ -->
+<section class="before-after">
+  <div class="container">
+    <div class="section-tag">A transformação</div>
+    <div class="gold-line"></div>
+    <h2>O que muda quando você<br><em>aprende a estrutura primeiro</em></h2>
+
+    <div class="ba-grid">
+      <div class="ba-col ba-before">
+        <div class="ba-label">Antes</div>
+        <ul>
+          <li>Código sem direção — você começa sem saber onde termina</li>
+          <li>Copiar sem entender — funciona hoje, trava amanhã</li>
+          <li>Travar sozinho diante de pedidos vagos</li>
+          <li>Projetos que parecem labirintos sem saída</li>
+          <li>Sensação de que falta algo que ninguém explica</li>
+        </ul>
+      </div>
+      <div class="ba-arrow">→</div>
+      <div class="ba-col ba-after">
+        <div class="ba-label">Depois</div>
+        <ul>
+          <li>Estrutura mental antes de abrir qualquer ferramenta</li>
+          <li>Clareza: você sabe o que está resolvendo e por quê</li>
+          <li>Mapa antes da execução — o problema se decompõe</li>
+          <li>Raciocínio transferível para qualquer projeto novo</li>
+          <li>A base que os sêniores construíram — e você vai construir agora</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════ -->
+<!-- SOLUÇÃO                           -->
+<!-- ══════════════════════════════════ -->
+<section class="solution">
+  <div class="container">
+    <div class="section-tag" style="color:var(--gold);">A estrutura</div>
+    <div class="gold-line"></div>
+    <h2>Um método para<br><em>pensar antes de codar</em></h2>
+    <p class="lead">Aqui você aprende a enxergar o problema antes de tocar na solução.
+
+      Não como teoria abstrata.
+      Mas como um processo repetível de decisão.
+
+      Um método em etapas para transformar qualquer problema de dados
+      em algo que pode ser desenhado, questionado e estruturado antes de virar código.</p>
+
+    <div class="product-cards">
+      <div class="product-card" data-label="Camada 1 · Entendimento">
+        <h3>Modelagem Mental<br>Antes do Código</h3>
+        <p style="font-size:0.85rem;margin-top:0.5rem;">O método em 6 etapas para transformar qualquer problema de dados em modelo, decisão e solução — antes de abrir qualquer ferramenta. 232 páginas de raciocínio aplicado.</p>
+        <ul>
+          <li>Como decompor um problema vago em perguntas certas</li>
+          <li>Mapear fluxo de negócio e encontrar onde os dados nascem</li>
+          <li>Escolher o grão certo — a habilidade mais subestimada</li>
+          <li>Separar tabelas Fato e Dimensão na prática</li>
+          <li>Modelagem orientada a consultas reais</li>
+          <li>O modelo mental completo, aplicado num e-commerce real</li>
+        </ul>
+      </div>
+      <div class="product-card" data-label="Camada 2 · Prática">
+        <h3>Caderno de Exercícios<br>de Engenharia de Dados</h3>
+        <p style="font-size:0.85rem;margin-top:0.5rem;">O lugar onde o raciocínio vira prática. 10 cenários reais — pedidos vagos de gerentes, decisões com dados incompletos, modelagem completa. 235 páginas de prática guiada.</p>
+        <ul>
+          <li>10 exercícios progressivos: intermediário → avançado</li>
+          <li>Simulações de pedidos reais (Slack, e-mail, reuniões)</li>
+          <li>Estrutura Compreenda / Pratique / Consolide</li>
+          <li>Solução comentada em cada exercício</li>
+          <li>Cenários: escola online, hotel, marketplace, concessionária</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CAMADA 2 highlight -->
+    <div style="margin-top:1.5rem;border:1px solid rgba(201,168,76,0.2);padding:1.5rem 2rem;background:rgba(255,255,255,0.03);">
+      <div style="font-family:'DM Mono',monospace;font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:0.75rem;">Camada 3 · Estrutura</div>
+      <p style="color:rgba(255,255,255,0.75);font-size:0.9rem;margin:0;">Os <strong style="color:var(--gold-light);">quadros, modelos e ferramentas de raciocínio</strong> que acompanham o método — instrumentos visuais para estruturar o pensamento antes de cada etapa. Não são slides. São mapas para a decisão.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════ -->
+<!-- ORIGEM DO MÉTODO                  -->
+<!-- ══════════════════════════════════ -->
+<section class="origin">
+  <div class="container">
+    <div class="section-tag">A origem</div>
+    <div class="gold-line"></div>
+    <h2>Isso nasceu de um<br><em>travamento real</em></h2>
+
+    <div class="origin-text">
+      <p>Não foi um método construído em sala de aula. Foi construído por tentativa, erro e a percepção lenta de que o problema nunca era a ferramenta.</p>
+      <p><strong>A tentativa:</strong> aprender tudo — Python, SQL, Spark, dbt, Airflow. Cursos, tutoriais, projetos.</p>
+      <p><strong>O erro:</strong> descobrir que saber as ferramentas não resolvia o travamento diante de um pedido vago.</p>
+      <p><strong>A percepção:</strong> o que faltava era anterior ao código. Era raciocínio. Era estrutura. Era mapa.</p>
+      <p><strong>A construção:</strong> Um método em etapas que nasceu da tentativa de aprender do jeito tradicional — e da percepção de que, sem estrutura, o código nunca se sustenta.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="method">
+  <div class="container">
+    <div class="section-tag">O método</div>
+    <div class="gold-line"></div>
+    <h2>As 6 etapas para<br><em>pensar antes</em> de codar</h2>
+    <p class="lead">Não é sobre ferramenta.
+    É sobre organizar o pensamento antes da execução.
+
+    Um processo que transforma dúvidas vagas em decisões estruturadas —
+    antes de qualquer código.</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h4>Decompor o Problema</h4>
+        <p>Transformar pedidos vagos nas quatro perguntas fundamentais antes de tocar em código.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h4>Mapear o Fluxo</h4>
+        <p>Entender onde os dados nascem, por onde passam e onde chegam no negócio real.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h4>Definir a Granularidade</h4>
+        <p>Escolher o nível de detalhe certo — a decisão que impacta tudo o que vem depois.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <h4>Separar Fato e Dimensão</h4>
+        <p>Identificar o que aconteceu (fato) e o contexto ao redor (dimensão) com precisão.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">05</div>
+        <h4>Modelar Para Consultas</h4>
+        <p>Desenhar tabelas para responder às perguntas reais — não para parecer bonito no papel.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">06</div>
+        <h4>Validar e Comunicar</h4>
+        <p>Documentar o que o modelo resolve e o que fica de fora — habilidade de sênior.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════ -->
+<!-- PROVA VISUAL DO RACIOCÍNIO        -->
+<!-- ══════════════════════════════════ -->
+<section class="visual-proof">
+  <div class="container">
+    <div class="section-tag">Na prática</div>
+    <div class="gold-line"></div>
+
+    <h2>Como isso funciona<br><em>na prática</em></h2>
+
+    <p class="lead">
+      Não é teoria. É o que acontece antes de qualquer código.
+    </p>
+
+    <div class="example-box">
+      <div class="example-label">Pedido real</div>
+      <p class="example-text">“Preciso de um relatório de vendas.”</p>
+
+      <div class="arrow">↓</div>
+
+      <div class="example-label">O que um iniciante faz</div>
+      <p class="example-text">Abre o SQL e começa sem direção.</p>
+
+      <div class="arrow">↓</div>
+
+      <div class="example-label">O que você aprende na Trilha 00</div>
+
+      <ul class="example-steps">
+        <li><strong>Pergunta real:</strong> vendas para qual decisão?</li>
+        <li><strong>Grão:</strong> pedido ou item?</li>
+        <li><strong>Fato:</strong> transação</li>
+        <li><strong>Dimensão:</strong> cliente, produto, tempo</li>
+        <li><strong>Saída:</strong> modelo pronto para consulta</li>
+      </ul>
+
+      <div class="example-result">
+        Resultado: você abre o SQL já sabendo exatamente o que construir.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════ -->
+<!-- PARA QUEM É                       -->
+<!-- ══════════════════════════════════ -->
+<section class="forwhom">
+  <div class="container">
+    <div class="section-tag">Para quem é</div>
+    <div class="gold-line"></div>
+    <h2>Esse material é para<br><em>um perfil muito específico</em></h2>
+
+    <div class="yes-no">
+      <div class="yes-box">
+        <h4>✦ É para você</h4>
+        <ul>
+          <li>Você trava antes de codar — não por falta de código, mas por falta de mapa</li>
+          <li>Você copia soluções e funciona, mas não entende o raciocínio por trás</li>
+          <li>Você quer construir estrutura mental antes de dominar ferramentas</li>
+          <li>Já fez cursos técnicos mas sente que falta o "porquê" por trás</li>
+          <li>Você prefere aprender por leitura e prática guiada, não vídeos passivos</li>
+          <li>Você quer entender como profissionais sêniores realmente pensam</li>
+        </ul>
+      </div>
+      <div class="no-box">
+        <h4>✦ Não é para você</h4>
+        <ul>
+          <li>Você quer código pronto para copiar e usar imediatamente</li>
+          <li>Você busca um curso de Spark, Airflow ou ferramenta específica</li>
+          <li>Você quer atalhos — não está disposto a pensar junto</li>
+          <li>Você já é pleno/sênior e busca conteúdo avançado de arquitetura</li>
+          <li>Você prefere certificados a fundação real</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════ -->
+<!-- O QUE ISSO NÃO É                  -->
+<!-- ══════════════════════════════════ -->
+<section class="not-this">
+  <div class="container">
+    <div class="section-tag">Clareza antes da decisão</div>
+    <div class="gold-line"></div>
+    <h2>O que a Trilha 00<br><em>não é</em></h2>
+
+    <div class="not-grid">
+      <div class="not-card">
+        <strong>Não é um curso de ferramenta</strong>
+        <p>Não ensinamos Spark, Airflow, dbt ou qualquer tecnologia específica. Ensinamos o raciocínio que antecede qualquer ferramenta.</p>
+      </div>
+      <div class="not-card">
+        <strong>Não é um tutorial passo a passo</strong>
+        <p>Não existe "copie esse código". Existe "pense esse problema" — com método, estrutura e prática guiada.</p>
+      </div>
+      <div class="not-card">
+        <strong>Não é código pronto</strong>
+        <p>É o mapa que você usa antes de escrever qualquer linha. Quem busca snippet, esse não é o material.</p>
+      </div>
+      <div class="not-card">
+        <strong>Não é conteúdo genérico de carreira</strong>
+        <p>É raciocínio aplicado. Específico, estruturado e construído a partir de problemas reais de engenharia de dados.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════ -->
+<!-- CONTEÚDO DETALHADO                -->
+<!-- ══════════════════════════════════ -->
+<section class="contents">
+  <div class="container">
+    <div class="section-tag">O que está incluído</div>
+    <div class="gold-line"></div>
+    <h2>232 + 235 páginas de<br><em>método e prática aplicada</em></h2>
+
+    <p style="font-size:0.95rem;color:var(--muted);margin-bottom:2rem;">Essas são as etapas que organizam o pensamento antes do código.</p>
+
+    <h3 style="margin-bottom:1rem;font-size:1rem;color:var(--gold);font-family:'DM Mono',monospace;letter-spacing:0.1em;text-transform:uppercase;">📗 E-book — Modelagem Mental Antes do Código</h3>
+    <div class="chapters">
+      <div class="chapter">
+        <span class="chapter-num">00</span>
+        <div class="chapter-info">
+          <strong>Introdução</strong>
+          <span>Por que engenharia de dados começa na cabeça, não no código</span>
+        </div>
+      </div>
+      <div class="chapter">
+        <span class="chapter-num">01</span>
+        <div class="chapter-info">
+          <strong>Decompor o Problema</strong>
+          <span>Você só resolve o que sabe definir</span>
+        </div>
+      </div>
+      <div class="chapter">
+        <span class="chapter-num">02</span>
+        <div class="chapter-info">
+          <strong>Mapear o Fluxo do Negócio</strong>
+          <span>Onde os dados nascem e por onde eles passam</span>
+        </div>
+      </div>
+      <div class="chapter">
+        <span class="chapter-num">03</span>
+        <div class="chapter-info">
+          <strong>Granularidade</strong>
+          <span>O segredo do grão e por que ele decide tudo</span>
+        </div>
+      </div>
+      <div class="chapter">
+        <span class="chapter-num">04</span>
+        <div class="chapter-info">
+          <strong>Fato e Dimensão</strong>
+          <span>Dois tipos de tabela, um propósito</span>
+        </div>
+      </div>
+      <div class="chapter">
+        <span class="chapter-num">05</span>
+        <div class="chapter-info">
+          <strong>Modelagem Orientada a Consultas</strong>
+          <span>Design de tabelas para o mundo real</span>
+        </div>
+      </div>
+      <div class="chapter">
+        <span class="chapter-num">06</span>
+        <div class="chapter-info">
+          <strong>O Modelo Mental do Engenheiro</strong>
+          <span>As 6 etapas aplicadas do começo ao fim</span>
+        </div>
+      </div>
+      <div class="chapter">
+        <span class="chapter-num">07</span>
+        <div class="chapter-info">
+          <strong>Implementando Tudo — E-commerce</strong>
+          <span>Do papel ao modelo, passo a passo</span>
+        </div>
+      </div>
+      <div class="chapter">
+        <span class="chapter-num">08</span>
+        <div class="chapter-info">
+          <strong>Minha Carreira</strong>
+          <span>Júnior → Pleno → Sênior: onde estou e para onde vou</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <h3 style="margin-bottom:1rem;font-size:1rem;color:var(--gold);font-family:'DM Mono',monospace;letter-spacing:0.1em;text-transform:uppercase;">📘 Caderno — 10 Exercícios com Cenários Reais</h3>
+    <div class="chapters">
+      <div class="chapter">
+        <span class="chapter-num">01</span>
+        <div class="chapter-info">
+          <strong>Do Pedido Vago à Pergunta de Negócio</strong>
+          <span>"Preciso de um relatório." — Intermediário</span>
+        </div>
+      </div>
+      <div class="chapter">
+        <span class="chapter-num">02</span>
+        <div class="chapter-info">
+          <strong>Seguindo o Rastro</strong>
+          <span>Mapeando o fluxo e os pontos de falha — Intermediário</span>
+        </div>
+      </div>
+      <div class="chapter">
+        <span class="chapter-num">03</span>
+        <div class="chapter-info">
+          <strong>O Momento da Verdade</strong>
+          <span>Encontrando o ponto da transação real — Intermediário</span>
+        </div>
+      </div>
+      <div class="chapter">
+        <span class="chapter-num">04</span>
+        <div class="chapter-info">
+          <strong>O Tamanho do Detalhe</strong>
+          <span>Escolhendo o grão certo — Intermediário</span>
+        </div>
+      </div>
+      <div class="chapter">
+        <span class="chapter-num">05</span>
+        <div class="chapter-info">
+          <strong>Separando o que Aconteceu do Contexto</strong>
+          <span>Fato e Dimensão — Intermediário</span>
+        </div>
+      </div>
+      <div class="chapter">
+        <span class="chapter-num">06</span>
+        <div class="chapter-info">
+          <strong>Modelagem Dimensional Completa</strong>
+          <span>Uma escola online — Avançado</span>
+        </div>
+      </div>
+      <div class="chapter">
+        <span class="chapter-num">07</span>
+        <div class="chapter-info">
+          <strong>Normalização vs Desnormalização</strong>
+          <span>O dilema do hotel — Avançado</span>
+        </div>
+      </div>
+      <div class="chapter">
+        <span class="chapter-num">08</span>
+        <div class="chapter-info">
+          <strong>Protegendo os Dados</strong>
+          <span>Gates de qualidade e alertas — Avançado</span>
+        </div>
+      </div>
+      <div class="chapter">
+        <span class="chapter-num">09</span>
+        <div class="chapter-info">
+          <strong>O Modelo Mental dos Engenheiros</strong>
+          <span>Concessionária de veículos — Avançado</span>
+        </div>
+      </div>
+      <div class="chapter">
+        <span class="chapter-num">10</span>
+        <div class="chapter-info">
+          <strong>Integrando Tudo</strong>
+          <span>Marketplace completo — Avançado</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════ -->
+<!-- PROVA SOCIAL                      -->
+<!-- ══════════════════════════════════ -->
+<section class="proof">
+  <div class="container">
+    <div class="section-tag" style="color:var(--gold);">Quem já leu</div>
+    <div class="gold-line" style="margin:0 auto 1.5rem;"></div>
+    <h2>O que os primeiros leitores estão dizendo</h2>
+
+    <div class="testimonials">
+      <div class="testi">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Eu travava SEMPRE antes de começar. Achava que era falta de técnica. Depois do método, percebi que era falta de estrutura. Hoje eu começo qualquer problema muito mais clara."</p>
+        <div class="testi-author">— Ana Paula · Transição de Administrativo para Dados</div>
+      </div>
+      <div class="testi">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"O que mais mudou foi minha cabeça. Antes eu ia direto pro SQL. Agora eu paro, estruturo e o código vira só execução."</p>
+        <div class="testi-author">— Lucas Ferreira · Analista de Dados Júnior</div>
+      </div>
+      <div class="testi">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Os exercícios parecem trabalho real. Não é acadêmico. É exatamente o tipo de problema que chega no dia a dia."</p>
+        <div class="testi-author">— Rafael Gomes · Desenvolvedor migrando para Dados</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════ -->
+<!-- BÔNUS — MATERIAIS EXCLUSIVOS      -->
+<!-- ══════════════════════════════════ -->
+<section class="bonus">
+  <div class="container">
+    <div class="section-tag">Materiais exclusivos</div>
+    <div class="gold-line"></div>
+    <h2>Você recebe <em>3 ferramentas de raciocínio</em><br>que engenheiros de dados usam toda semana</h2>
+
+    <div class="bonus-grid">
+      
+      <!-- Bônus 1: Quadro de Decisão -->
+      <div class="bonus-card">
+        <div class="bonus-icon"><img src="/assets/imagens/icons/data-model.png" alt="quadrodecisão" height="40"></div>
+        <div class="bonus-badge">Ferramenta #1</div>
+        <h4>Quadro de Decisão de Modelagem</h4>
+        <p>O fluxo de pensamento que vai do objetivo até a tabela Fato. São quatro perguntas que você se faz antes de escrever qualquer código. Um mapa mental que me salvou de ficar travado incontáveis vezes — e vai salvar você também.</p>
+      </div>
+
+      <!-- Bônus 2: Fato vs Dimensão -->
+      <div class="bonus-card">
+        <div class="bonus-icon"><img src="/assets/imagens/icons/cube.png" alt="fatodimensão" height="40"></div>
+        <div class="bonus-badge">Ferramenta #2</div>
+        <h4>Fato vs Dimensão</h4>
+        <p>A diferença que separa júnior de pleno. Explico com uma metáfora simples da padaria — você nunca mais vai confundir os dois conceitos. Tem exercício prático de verdade, com uma rede de supermercados, para você aplicar na hora e fixar o que aprendeu.</p>
+      </div>
+
+      <!-- Bônus 3: Caso DADOZILLA Cafés -->
+      <div class="bonus-card">
+        <div class="bonus-icon"><img src="/assets/imagens/icons/mascote_simples.png" alt="mascote_simples"></div>
+        <div class="bonus-badge">Ferramenta #3</div>
+        <h4>Caso DADOZILLA Cafés</h4>
+        <p>Um exemplo completo do zero. Você é o engenheiro de dados contratado por uma rede de 12 lojas com 3 canais de venda diferentes. Você vai identificar a tabela Fato, listar as dimensões e desenhar o pipeline. No final, tem uma solução comentada para você comparar. É o mais próximo de um problema real sem estar no trabalho.</p>
+      </div>
+
+    </div>
+
+    <p style="text-align: center; margin-top: 2rem; font-size: 0.85rem; color: var(--muted);">
+      ⚡ Nada de "bônus encheção de linguiça". São materiais que eu usei e refinei na prática.
+    </p>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════ -->
+<!-- AUTORA                            -->
+<!-- ══════════════════════════════════ -->
+
+<section class="author">
+  <div class="container">
+    <div class="section-tag">Quem criou</div>
+    <div class="gold-line"></div>
+    <div class="author-wrap">
+      <div class="author-avatar"><img src="/assets/imagens/icons/avatar_autora.png" alt="avatar_autora" height="40"></div>
+      <div>
+        <div class="author-name">Franciele Amaral</div>
+        <div class="author-role">Criadora · Mente &amp; Dados</div>
+        <p>Comecei como tantos outros: consumindo curso atrás de curso, mas sentindo que faltava alguma coisa. Eu sabia escrever SQL, mas travava antes. Sabia usar as ferramentas, mas não tinha um método para pensar.</p>
+        <p>Foi aí que comecei a estruturar o raciocínio que faltava. Aos poucos, fui montando um framework que funcionava — e funcionava de verdade. Hoje compartilho isso no canal do YouTube e nesta Trilha 00. Sou alguém que resolveu organizar o que funciona e jogar limpo com quem está no mesmo lugar que eu estava.</p>
+        <p>A Mente &amp; Dados nasceu assim: sem falsa arrogância, sem promessas milagrosas. É o material que eu gostaria de ter encontrado quando comecei.</p>
+        <p style="font-size:0.85rem;color:var(--muted); margin-top: 1rem;">
+          📸 <a href="https://instagram.com/menteedados" style="color:var(--gold);"> Instagram @menteedados.oficial</a> &nbsp;·&nbsp;
+          🎥 <a href="https://www.youtube.com/@MenteeDados" style="color:var(--gold);">YouTube @MenteeDados</a> &nbsp;·&nbsp;
+          ✍️ <a href="https://medium.com/@menteedados" style="color:var(--gold);">Medium @menteedados</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════ -->
+<!-- GARANTIA                          -->
+<!-- ══════════════════════════════════ -->
+<section class="guarantee">
+  <div class="container">
+    <div class="guarantee-box">
+      <div class="diferencial-icon"><img src="/assets/imagens/icons/shield.png" alt="garantia" height="40"></div>
+      <h2>Garantia de 7 dias,<br>sem perguntas</h2>
+      <p>Se você comprar, ler e não sentir que valeu cada centavo, devolvemos o seu dinheiro integral em até 7 dias — sem burocracia, sem perguntas, sem julgamento. O risco é zero. A decisão é sua.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════ -->
+<!-- PRICING / CTA                     -->
+<!-- ══════════════════════════════════ -->
+
+<section class="pricing" id="comprar">
+  <div class="container">
+    <div class="section-tag">Garanta o seu</div>
+    <div class="gold-line" style="margin:0 auto 2rem;"></div>
+    <h2 style="margin-bottom:2.5rem;">Comece agora.<br><em>Em algumas horas</em> você já tem tudo.</h2>
+
+    <div class="pricing-box">
+      <p class="pricing-was">De: R$ 247,00</p>
+      <p class="pricing-value">🎯 Por: R$ 127</p>
+      <p class="pricing-amount">R$ 127</p>
+      <p class="pricing-desc">pagamento único · acesso vitalício aos PDFs</p>
+
+      <ul class="pricing-includes">
+        <li>E-book "Modelagem Mental Antes do Código" (232 páginas)</li>
+        <li>Caderno de Exercícios de Engenharia de Dados (235 páginas)</li>
+        <li> Quadro de Decisão de Modelagem (bônus exclusivo)</li>
+        <li>Fato vs Dimensão com exercício prático (bônus exclusivo)</li>
+        <li>Caso completo DADOZILLA Cafés (bônus exclusivo)</li>
+        <li>🛡️ Garantia incondicional de 7 dias</li>
+        <li>⚡ Acesso vitalício · Atualizações inclusas</li>
+      </ul>
+
+      <a href="#" class="cta-big">Quero começar pela estrutura →</a>
+      <p class="cta-sub">🔒 Pagamento 100% seguro via Hotmart · Cartão, Pix ou Boleto</p>
+      <p class="cta-sub" style="margin-top:0.35rem;">Você recebe os arquivos imediatamente após a confirmação do pagamento</p>
+    </div>
+
+    <p class="urgency-note" style="margin-top:1.5rem;">⚡ Oferta especial de lançamento. O preço pode subir nas próximas semanas.</p>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════ -->
+<!-- FAQ                               -->
+<!-- ══════════════════════════════════ -->
+<section class="faq">
+  <div class="container">
+    <div class="section-tag">Dúvidas frequentes</div>
+    <div class="gold-line"></div>
+    <h2>Perguntas que<br><em>todo mundo faz</em></h2>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">Preciso ter experiência em engenharia de dados para comprar?</div>
+        <div class="faq-a">Não. O material foi criado especificamente para iniciantes e pessoas em transição de área. Se você nunca trabalhou com dados, este é o ponto de partida ideal. Se você já tem alguma experiência, vai entender por que estava travando e como avançar mais rápido.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">É um curso em vídeo ou é texto?</div>
+        <div class="faq-a">É um bundle de dois PDFs: um e-book de 232 páginas e um caderno de exercícios de 235 páginas. Se você aprende bem por leitura e prática guiada, esse formato vai funcionar muito bem para você. Não há vídeos nem plataforma de cursos — você recebe os arquivos diretamente.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Quanto tempo leva para terminar o material?</div>
+        <div class="faq-a">Depende do seu ritmo.Tem gente que leva 2 semanas, outras preferem espalhar em um mês. O importante não é a velocidade — é você internalizar o raciocínio. Prefiro entregar profundidade do que um material raso que você "termina" e esquece.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">O material vai ser atualizado? Terei acesso às atualizações?</div>
+        <div class="faq-a">Sim. Você recebe acesso vitalício. Qualquer atualização futura do material será disponibilizada para quem já comprou, sem custo adicional.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Como funciona a garantia?</div>
+        <div class="faq-a">Você tem 7 dias a partir da compra para pedir reembolso total. 
+          Basta acessar sua área de compras da Hotmart e solicitar o cancelamento. 
+          O reembolso é processado automaticamente pela plataforma. 
+          Se preferir, pode me chamar no e-mail shefatech.dev@gmail.com que eu ajudo você. 
+          Zero burocracia.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Esse material me ensina Python, SQL ou ferramentas?</div>
+        <div class="faq-a">Não diretamente. Este é o material de fundamentos — ele te ensina o raciocínio e o método antes das ferramentas. A Trilha 00 é a base para todas as trilhas seguintes (Trilha 01, 02...), que entrarão nas ferramentas. Pense nele como o "pensar antes de codar".</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Posso pagar com Pix ou boleto?</div>
+        <div class="faq-a">Sim. A Hotmart aceita cartão de crédito (em até 12x), Pix e boleto bancário. Com Pix ou boleto você recebe o acesso após confirmação do pagamento.</div>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:3rem;">
+      <p style="color:var(--muted);font-size:0.9rem;margin-bottom:1.5rem;">Ainda tem dúvida? Manda uma mensagem antes de comprar.</p>
+      <a href="mailto:shefatech.dev@gmail.com" style="color:var(--gold);font-family:'DM Mono',monospace;font-size:0.8rem;letter-spacing:0.1em;">shefatech.dev@gmail.com →</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- FINAL CTA -->
+<section style="background:var(--navy);text-align:center;padding:4rem 1.5rem;">
+  <div class="container">
+    <p style="font-family:'DM Mono',monospace;font-size:0.65rem;letter-spacing:0.2em;color:var(--gold);text-transform:uppercase;margin-bottom:1rem;">Último chamado</p>
+    <h2 style="color:white;max-width:600px;margin:0 auto 1.5rem;">O código você aprende em qualquer lugar.<br><em>O raciocínio, só aqui.</em></h2>
+    <p style="color:rgba(255,255,255,0.55);margin-bottom:2.5rem;max-width:480px;margin-left:auto;margin-right:auto;">Não é mais um e-book para encher sua pasta de downloads. É o método que você vai usar toda semana no trabalho.</p>
+    <a href="#comprar" class="cta-primary">Quero o Bundle por R$ 127 →</a>
+    <p style="color:rgba(255,255,255,0.3);font-size:0.72rem;margin-top:1rem;">🔒 Garantia de 7 dias · Acesso vitalício · Pagamento seguro</p>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════ -->
+<!-- FOOTER                            -->
+<!-- ══════════════════════════════════ -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4><img src="/assets/imagens/logo/logotipo_icone.png" alt="Mente & Dados" height="40"> Mente & Dados</h4>
+                <p>Transformando iniciantes em engenheiros de dados através de conteúdo prático e trilhas estruturadas.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Trilhas</h4>
+                <a href="/trilha-00/">Trilha 00 - Fundamentos</a>
+                <a href="/trilha-01/">Trilha 01 - Python</a>
+                <a href="/trilha-02/">Trilha 02 - SQL</a>
+                <a href="/bundle-completo/">Bundle Completo</a>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Institucional</h4>
+                <a href="/sobre/">Sobre</a>
+                <a href="/contato/">Contato</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Uso</a>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Redes Sociais</h4>
+                <a href="https://youtube.com/@MenteeDados" target="_blank" rel="noopener noreferrer"><img src="/assets/imagens/icons/youtube.png" alt="YouTube"> YouTube</a>
+                <a href="https://instagram.com/menteedados" target="_blank" rel="noopener noreferrer"><img src="/assets/imagens/icons/instagram.png" alt="instagram"> Instagram</a>
+                <a href="https://medium.com/@menteedados" target="_blank" rel="noopener noreferrer"><img src="/assets/imagens/icons/medium.png" alt="Medium"> Medium</a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+             <br><br>
+            Este produto é distribuído exclusivamente em formato digital via Hotmart.<br>
+            © 2026 Mente &amp; Dados — Todos os direitos reservados.<br>
+            <p style="font-size: 0.875rem; margin-top: 0.5rem;">
+                <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" style="color: #c9a84c;">Voltar ao topo ↑</a>
+            </p>
+        </div>
+    </div>
+</footer
+
+
+<!-- STICKY CTA -->
+
+<div class="sticky-cta" id="stickyCta">
+  <a href="#comprar" class="btn btn-primary">
+    <img src="/assets/imagens/icons/rocket.png" alt="Lançamento" height="40"> Bundle Ebook + Caderno + Bônus- R$ 127
+  </a>
+</div>
+
+
+<script>
+// FAQ accordion
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement;
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!wasOpen) item.classList.add('open');
+  });
+});
+
+// Sticky CTA on scroll
+const sticky = document.getElementById('stickyCta');
+const hero = document.querySelector('.hero');
+const observer = new IntersectionObserver(([e]) => {
+  sticky.classList.toggle('visible', !e.isIntersecting);
+}, { threshold: 0.1 });
+observer.observe(hero);
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+  });
+});
+</script>
+
+</body>
+</html>

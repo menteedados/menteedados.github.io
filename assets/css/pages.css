@@ -239,9 +239,17 @@
 .footer-section a {
   color: #ccc;
   text-decoration: none;
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   margin-bottom: 0.5rem;
   transition: color var(--transition-fast);
+}
+
+.footer-section a img {
+  height: 18px;
+  width: 18px;
+  object-fit: contain;
 }
 
 .footer-section a:hover {

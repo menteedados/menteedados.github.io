@@ -7,7 +7,7 @@
 // Carregar analytics primeiro
 (function() {
     const analyticsScript = document.createElement('script');
-    analyticsScript.src = 'assets/js/analytics.js';
+    analyticsScript.src = '/assets/js/analytics.js';
     analyticsScript.async = true;
     document.head.appendChild(analyticsScript);
     
