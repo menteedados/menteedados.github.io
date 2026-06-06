@@ -706,7 +706,7 @@
         <li>⚡ Acesso vitalício · Atualizações inclusas</li>
       </ul>
 
-      <a href="#" class="cta-big">Quero começar pela estrutura →</a>
+      <a href="#" class="cta-big" onclick="goToCheckout('completo', event)">Quero começar pela estrutura →</a>
       <p class="cta-sub">🔒 Pagamento 100% seguro via Hotmart · Cartão, Pix ou Boleto</p>
       <p class="cta-sub" style="margin-top:0.35rem;">Você recebe os arquivos imediatamente após a confirmação do pagamento</p>
     </div>
@@ -831,12 +831,12 @@
 <!-- STICKY CTA -->
 
 <div class="sticky-cta" id="stickyCta">
-  <a href="#comprar" class="btn btn-primary">
-    <img src="/assets/imagens/icons/rocket.png" alt="Lançamento" height="40"> Bundle Ebook + Caderno + Bônus- R$ 127
+  <a href="#" class="btn btn-primary" onclick="goToCheckout('completo', event)">
+    <img src="/assets/imagens/icons/rocket.png" alt="Lançamento" height="40"> Bundle Ebook + Caderno + Bônus - R$ 127
   </a>
 </div>
 
-
+<script src="/assets/js/hotmart-config.js"></script>
 <script>
 // FAQ accordion
 document.querySelectorAll('.faq-q').forEach(q => {
