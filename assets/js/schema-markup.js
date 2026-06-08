@@ -22,10 +22,10 @@ const organizationSchema = {
   "@type": "Organization",
   "name": "Mente & Dados",
   "url": "https://menteedados.github.io",
-  "logo": "https://menteedados.github.io/assets/imagens/logo/logotipo_icone.png",
+  "logo": "https://menteedados.github.io/assets/images/logo.svg",
   "sameAs": [
     "https://www.youtube.com/@MenteeDados",
-    "https://www.instagram.com/menteedados",
+    "https://www.instagram.com/menteedados.oficial",
     "https://medium.com/@menteedados"
   ],
   "description": "Produtos digitais para engenharia de dados. Trilhas, e-books e cursos para iniciantes e profissionais.",
@@ -56,7 +56,7 @@ function addEbookSchema() {
     "@type": "Product",
     "name": "E-book - Modelagem Mental Antes do Código",
     "description": "Método em 6 etapas para transformar qualquer problema de dados em modelo, decisão e solução. 232 páginas de raciocínio aplicado.",
-    "image": "https://menteedados.github.io/assets/imagens/og/og-ebook.png",
+    "image": "https://menteedados.github.io/assets/images/og/og-ebook.png",
     "brand": {
       "@type": "Brand",
       "name": "Mente & Dados"
@@ -81,6 +81,20 @@ function addEbookSchema() {
       "bestRating": 5,
       "worstRating": 1
     },
+    "review": [
+      {
+        "@type": "Review",
+        "author": {
+          "@type": "Person",
+          "name": "Ana Paula"
+        },
+        "reviewBody": "O método mudou completamente minha forma de pensar problemas de dados.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": 5
+        }
+      }
+    ],
     "audience": {
       "@type": "Audience",
       "audienceType": "Iniciantes em Engenharia de Dados"
@@ -100,7 +114,7 @@ function addCadernoSchema() {
     "@type": "Product",
     "name": "Caderno de Exercícios - Engenharia de Dados",
     "description": "10 cenários reais com soluções comentadas. 235 páginas de prática guiada com e-commerce, hotel, marketplace e mais.",
-    "image": "https://menteedados.github.io/assets/imagens/og/og-caderno.png",
+    "image": "https://menteedados.github.io/assets/images/og/og-caderno.png",
     "brand": {
       "@type": "Brand",
       "name": "Mente & Dados"
@@ -144,7 +158,7 @@ function addBundleSchema() {
     "@type": "Product",
     "name": "Bundle Completo - Trilha 00 Mente & Dados",
     "description": "Pacote completo com E-book (232 páginas) + Caderno de Exercícios (235 páginas) + 3 Bônus Exclusivos. Economia de R$ 47.",
-    "image": "https://menteedados.github.io/assets/imagens/og/og-bundle.png",
+    "image": "https://menteedados.github.io/assets/images/og/og-bundle.png",
     "brand": {
       "@type": "Brand",
       "name": "Mente & Dados"

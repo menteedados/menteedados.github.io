@@ -1,1 +1,21 @@
+# Mente & Dados - Robots.txt
+# https://menteedados.github.io/robots.txt
 
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://menteedados.github.io/sitemap.xml
+
+# Crawl delay para não sobrecarregar (opcional)
+Crawl-delay: 1
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
