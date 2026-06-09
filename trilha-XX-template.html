@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Orquestração de Dados | Em breve - Mente & Dados</title>
-    <meta name="description" content="Automatize seus pipelines. Lançamento em breve. Cadastre-se para receber novidades e ofertas especiais.">
+    <title>{{TRILHA_TITLE}} | Em breve - Mente & Dados</title>
+    <meta name="description" content="{{TRILHA_DESCRIPTION_SHORT}} Lançamento em breve. Cadastre-se para receber novidades e ofertas especiais.">
     <meta name="robots" content="noindex,follow">
     
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Orquestração de Dados | Em breve - Mente & Dados">
-    <meta property="og:description" content="Automatize seus pipelines. Cadastre-se para ser avisado no lançamento.">
+    <meta property="og:title" content="{{TRILHA_TITLE}} | Em breve - Mente & Dados">
+    <meta property="og:description" content="{{TRILHA_DESCRIPTION_SHORT}} Cadastre-se para ser avisado no lançamento.">
     <meta property="og:image" content="https://menteedados.github.io/assets/images/og/og-placeholder-trilha.jpg">
-    <meta property="og:url" content="https://menteedados.github.io/trilha-08/">
+    <meta property="og:url" content="https://menteedados.github.io/trilha-{{TRILHA_NUM}}/">
     
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/main.css">
@@ -320,11 +320,11 @@
             <div class="coming-badge">
                 <span><img src="/assets/imagens/icons/binary-code.png" alt="em desenvolvimento" height="40"></span> Em desenvolvimento
             </div>
-            <div class="trilha-number">TRILHA 08</div>
-            <h1>Orquestração de Dados</h1>
-            <p>Airflow, DAGs e automação de pipelines. Durma enquanto o pipeline roda.</p>
+            <div class="trilha-number">TRILHA {{TRILHA_NUM}}</div>
+            <h1>{{TRILHA_TITLE}}</h1>
+            <p>{{TRILHA_DESCRIPTION}}</p>
             <div class="release-date">
-                🚀 Lançamento previsto: <strong>Março 2027</strong>
+                🚀 Lançamento previsto: <strong>{{RELEASE_DATE}}</strong>
             </div>
         </div>
     </section>
@@ -344,7 +344,7 @@
                 
                 <form id="waitlist-form" class="waitlist-form" method="POST">
                     <input type="email" id="email" name="email" placeholder="Seu melhor e-mail" required>
-                    <input type="hidden" id="trilha" name="trilha" value="Trilha 08 - Orquestração de Dados">
+                    <input type="hidden" id="trilha" name="trilha" value="Trilha {{TRILHA_NUM}} - {{TRILHA_TITLE}}">
                     <input type="text" id="sugestao" name="sugestao" placeholder="Deixe sua sugestão (opcional)">
                     <button type="submit" class="btn-waitlist-submit">
                         <img src="/assets/imagens/icons/checklist.png" alt="lista" height="40"> Quero ser avisado →
@@ -364,10 +364,10 @@
     <section class="expect-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">O que esperar da <span class="text-gold">Trilha 08</span></h2>
+                <h2 class="section-title">O que esperar da <span class="text-gold">Trilha {{TRILHA_NUM}}</span></h2>
                 <div class="section-divider"></div>
                 <p class="section-subtitle">
-                    Conteúdo prático e estruturado para você dominar Orquestração
+                    Conteúdo prático e estruturado para você dominar {{TRILHA_TOPIC}}
                 </p>
             </div>
             
