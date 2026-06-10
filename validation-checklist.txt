@@ -82,3 +82,52 @@ Tarefas concluídas:
 - T2.2: CSS Global e Design System ✅
 - T2.3: Componentes Reutilizáveis ✅
 - T2.4: Responsividade e Mobile ✅
+
+
+# ✅ T4.1 - Template Placeholder - Checklist de Validação
+
+## Critérios de Aceitação
+
+| Critério | Status | Observação |
+|----------|--------|------------|
+| Template genérico `/trilha-XX/` | ✅ Completo | trilha-XX-template.html |
+| Hero com "Em Breve" | ✅ Completo | Todas as 13 páginas |
+| Descrição breve da trilha | ✅ Completo | Conteúdo personalizado |
+| Form email capture | ✅ Completo | Google Forms + localStorage |
+| CTA secundário (voltar ao início) | ✅ Completo | Link na página |
+| Template replicável | ✅ Completo | Script de geração |
+
+## Páginas Geradas
+
+| Trilha | Título | Data | Status |
+|--------|--------|------|--------|
+| 01 | Python para Dados | Jun/2026 | ✅ |
+| 02 | SQL Avançado | Jul/2026 | ✅ |
+| 03 | Pipeline de Dados | Ago/2026 | ✅ |
+| 04 | Modelagem de Dados Avançada | Set/2026 | ✅ |
+| 05 | Cloud para Dados | Out/2026 | ✅ |
+| 06 | Data Warehousing | Nov/2026 | ✅ |
+| 07 | Big Data com Spark | Dez/2026 | ✅ |
+| 08 | Data Lake e Lakehouse | Jan/2027 | ✅ |
+| 09 | Data Governance | Fev/2027 | ✅ |
+| 10 | Data Observability | Mar/2027 | ✅ |
+| 11 | Data Mesh | Abr/2027 | ✅ |
+| 12 | Streaming de Dados | Mai/2027 | ✅ |
+| 13 | Carreira em Dados | Jun/2027 | ✅ |
+
+## Funcionalidades do Formulário
+
+- [x] Validação de email
+- [x] Loading state no botão
+- [x] Mensagem de sucesso
+- [x] Prevenção de duplo envio
+- [x] localStorage persistence
+- [x] GA4 tracking (generate_lead)
+- [x] Meta Pixel tracking (Lead)
+
+## Como testar
+
+1. Abrir qualquer trilha futura:
+   ```bash
+   open trilha-01/index.html
+

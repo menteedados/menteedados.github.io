@@ -27,8 +27,9 @@
 /* Responsividade e Mobile */
 @import url('responsive.css');
 
-/* Responsividade e Mobile */
+/* Paginas */
 @import url('pages/pages_trilha-00.css');
+@import url('pages/sobre.css');
 
 
 /* ===== CUSTOM STYLES ===== */
