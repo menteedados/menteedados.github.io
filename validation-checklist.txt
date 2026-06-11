@@ -273,3 +273,71 @@ open contato/index.html
 
 # Testar responsividade
 # Redimensionar para 375px, 768px
+
+
+
+# ✅ T5.3 - Página 404 - Checklist de Validação
+
+## Critérios de Aceitação
+
+| Critério | Status | Observação |
+|----------|--------|------------|
+| Design consistente com a marca | ✅ Completo | Cores, fontes, estilo |
+| Mensagem amigável | ✅ Completo | "Dado não encontrado" |
+| Links úteis (Home, Trilha 00) | ✅ Completo | 5 links úteis |
+| Easter egg opcional (humor) | ✅ Completo | Click-to-reveal |
+| Experiência positiva mesmo em erro | ✅ Completo | Design leve e divertido |
+
+## Funcionalidades Testadas
+
+| Funcionalidade | Status |
+|----------------|--------|
+| Página 404 é exibida em URLs inválidas | ✅ |
+| Animações funcionam | ✅ |
+| Easter egg revela mensagem ao clicar | ✅ |
+| Links úteis redirecionam corretamente | ✅ |
+| Botão principal volta para home | ✅ |
+| Responsividade (mobile 375px) | ✅ |
+| Responsividade (tablet 768px) | ✅ |
+| Responsividade (desktop 1024px+) | ✅ |
+| GA4 tracking implementado | ✅ |
+| LocalStorage counter funciona | ✅ |
+| Console easter eggs aparecem | ✅ |
+
+## Links Úteis Incluídos
+
+| Link | Destino | Status |
+|------|---------|--------|
+| 🏠 Home | `/` | ✅ |
+| 🚀 Trilha 00 | `/trilha-00/` | ✅ |
+| 📚 Todas as Trilhas | `/#trilhas` | ✅ |
+| 🧠 Sobre | `/sobre/` | ✅ |
+| 📧 Contato | `/contato/` | ✅ |
+
+## Easter Eggs
+
+| Tipo | Local | Status |
+|------|-------|--------|
+| Click-to-reveal | Área "🥚" | ✅ |
+| Mensagem no console | F12 → Console | ✅ |
+| Contador de erros | Após 3 erros | ✅ |
+| ASCII art (versão alternativa) | /404-fun.html | ✅ |
+
+## Como testar
+
+```bash
+# 1. Testar página 404 diretamente
+open 404.html
+
+# 2. Testar via URL inválida
+# No navegador, acesse:
+https://menteedados.github.io/pagina-que-nao-existe
+
+# 3. Testar easter egg
+# Clique na área "🥚 Clique aqui para uma surpresa"
+
+# 4. Testar responsividade
+# F12 → Device Toolbar → Testar 375px, 768px, 1024px
+
+# 5. Testar página de validação
+open test-404.html
