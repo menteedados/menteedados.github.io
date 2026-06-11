@@ -201,3 +201,75 @@ open sobre/index.html
 
 # Verificar schema
 # https://search.google.com/test/rich-results
+
+# ✅ T5.2 - Página Contato - Checklist de Validação
+
+## Critérios de Aceitação
+
+| Critério | Status | Observação |
+|----------|--------|------------|
+| Form simples (nome, email, mensagem) | ✅ Completo | + campo assunto |
+| Link mailto direto | ✅ Completo | /contato/mailto.html |
+| Links redes sociais redundantes | ✅ Completo | YouTube, Instagram, Medium |
+| Acessível | ✅ Completo | Labels, focus states |
+| Funcional | ✅ Completo | FormSubmit integrado |
+
+## Campos do Formulário
+
+| Campo | Obrigatório | Status |
+|-------|-------------|--------|
+| Nome completo | ✅ | ✅ |
+| E-mail | ✅ | ✅ |
+| Assunto | ❌ | ✅ |
+| Mensagem | ✅ | ✅ |
+
+## Validações
+
+- [x] Nome: mínimo 3 caracteres
+- [x] Email: formato válido (@ e .)
+- [x] Mensagem: mínimo 10 caracteres
+- [x] Feedback visual de erro
+
+## Integrações
+
+- [x] FormSubmit (envio de email)
+- [x] GA4 tracking (generate_lead)
+- [x] Meta Pixel tracking (Contact)
+
+
+## Redes Sociais
+
+| Rede | Link | Status |
+|------|------|--------|
+| YouTube | @MenteeDados | ✅ |
+| Instagram | @menteedados.oficial | ✅ |
+| Medium | @menteedados | ✅ |
+
+
+## Seções da Página
+
+| Seção | Status |
+|-------|--------|
+| Hero | ✅ |
+| Formulário de contato | ✅ |
+| Informações de contato | ✅ |
+| Redes sociais | ✅ |
+| FAQ rápido (4 perguntas) | ✅ |
+| Back link para home | ✅ |
+| Footer | ✅ |
+
+## Como testar
+
+```bash
+# Abrir página
+open contato/index.html
+
+# Testar formulário
+# 1. Preencher campos inválidos → ver erro
+# 2. Preencher campos válidos → enviar
+# 3. Verificar mensagem de sucesso
+
+
+
+# Testar responsividade
+# Redimensionar para 375px, 768px

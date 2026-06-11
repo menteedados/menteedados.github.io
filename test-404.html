@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Página 404 | Mente & Dados</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <style>
+        body { background: var(--warm); padding: 2rem; }
+        .container { max-width: 800px; margin: 0 auto; }
+        .card { background: white; padding: 2rem; border-radius: 12px; margin: 1rem 0; }
+        .btn { display: inline-block; background: var(--gold); color: var(--navy); padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; margin: 0.25rem; }
+        .url-list { font-family: monospace; background: #f4f4f4; padding: 1rem; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧪 Teste da Página 404</h1>
+        
+        <div class="card">
+            <h2>Links que NÃO existem (devem mostrar 404)</h2>
+            <div class="url-list">
+                <p><a href="/pagina-que-nao-existe" target="_blank">/pagina-que-nao-existe</a></p>
+                <p><a href="/trilha-99" target="_blank">/trilha-99</a></p>
+                <p><a href="/qualquer-coisa" target="_blank">/qualquer-coisa</a></p>
+                <p><a href="/404-test" target="_blank">/404-test</a></p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Links que EXISTEM (devem funcionar)</h2>
+            <div class="url-list">
+                <p><a href="/" target="_blank">/ - Home</a></p>
+                <p><a href="/trilha-00/" target="_blank">/trilha-00/</a></p>
+                <p><a href="/sobre/" target="_blank">/sobre/</a></p>
+                <p><a href="/contato/" target="_blank">/contato/</a></p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>✅ Verificações da Página 404</h2>
+            <ul>
+                <li>✔️ Design consistente com a marca</li>
+                <li>✔️ Mensagem amigável e com humor</li>
+                <li>✔️ Easter egg interativo</li>
+                <li>✔️ Links úteis (Home, Trilha 00, Contato)</li>
+                <li>✔️ Botão para voltar ao início</li>
+                <li>✔️ Responsivo (mobile/desktop)</li>
+                <li>✔️ Tracking GA4 implementado</li>
+                <li>✔️ LocalStorage para contar erros</li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>🎯 Como testar</h2>
+            <ol>
+                <li>Clique em qualquer link que não existe acima</li>
+                <li>Verifique se aparece a página 404 personalizada</li>
+                <li>Teste o easter egg (clique na área "🥚")</li>
+                <li>Verifique os links úteis</li>
+                <li>Teste responsividade (F12 → Device Toolbar)</li>
+            </ol>
+        </div>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="/" class="btn">← Voltar para Home</a>
+        </div>
+    </div>
+</body>
+</html>
