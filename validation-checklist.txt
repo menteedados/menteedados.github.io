@@ -131,3 +131,73 @@ Tarefas concluídas:
    ```bash
    open trilha-01/index.html
 
+# ✅ T5.1 - Página Sobre - Checklist de Validação
+
+## Critérios de Aceitação
+
+| Critério | Status | Observação |
+|----------|--------|------------|
+| História da Franciele | ✅ Completo | Storytelling emocional |
+| Missão Mente & Dados | ✅ Completo | Missão clara e inspiradora |
+| Credenciais (LinkedIn, certificações) | ✅ Completo | 6 certificações listadas |
+| Links para redes sociais | ✅ Completo | YouTube, Instagram, Medium, LinkedIn |
+| Humanizar marca | ✅ Completo | História pessoal, valores, timeline |
+| Conexão emocional | ✅ Completo | Tom autêntico e transparente |
+
+## Seções da Página
+
+| Seção | Status |
+|-------|--------|
+| Hero | ✅ |
+| Foto/Avatar + Stats | ✅ |
+| História (storytelling) | ✅ |
+| Timeline (jornada 2021-2026) | ✅ |
+| Missão | ✅ |
+| Valores (6 itens) | ✅ |
+| Credenciais (6 itens) | ✅ |
+| CTA para Trilha 00 | ✅ |
+| Footer com links sociais | ✅ |
+
+## Estatísticas
+
+- Alunos: +500 ✅
+- Trilhas: 14 ✅
+- Avaliação: 4.9 ✅
+
+## Valores
+
+- [x] Método, não atalho
+- [x] Transparência total
+- [x] Comunidade ativa
+- [x] Prática real
+- [x] Atualização constante
+- [x] Qualidade acima de tudo
+
+## Links Sociais
+
+- [x] YouTube: https://youtube.com/@MenteeDados
+- [x] Instagram: https://instagram.com/menteedados.oficial
+- [x] Medium: https://medium.com/@menteedados
+
+
+## Schema.org
+
+- [x] ProfilePage type
+- [x] Person entity with jobTitle
+- [x] SameAs social links
+- [x] knowsAbout skills
+
+## Como testar
+
+```bash
+# Abrir página
+open sobre/index.html
+
+# Verificar responsividade
+# Redimensionar janela para 375px, 768px, 1024px
+
+# Verificar links
+# Clicar em cada rede social
+
+# Verificar schema
+# https://search.google.com/test/rich-results

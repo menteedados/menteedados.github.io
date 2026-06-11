@@ -1,0 +1,391 @@
+/* Estilos específicos da página Contato */
+
+/* Hero */
+.contact-hero {
+    background: var(--navy);
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+    position: relative;
+}
+
+.contact-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.contact-hero h1 em {
+    color: var(--gold-light);
+    font-style: italic;
+}
+
+.contact-hero .subtitle {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Conteúdo principal */
+.contact-content {
+    padding: 4rem 0;
+    background: var(--warm);
+}
+
+.contact-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+
+/* Formulário */
+.contact-form-container {
+    background: white;
+    border-radius: var(--radius-xl);
+    padding: 2rem;
+    box-shadow: var(--shadow-md);
+}
+
+.contact-form-container h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--navy);
+}
+
+.form-label .required {
+    color: var(--red-accent);
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+    transition: all var(--transition-fast);
+    font-family: inherit;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.1);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn-submit {
+    background: var(--gold);
+    color: var(--navy);
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: var(--radius-md);
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.btn-submit:hover {
+    background: var(--gold-light);
+    transform: translateY(-2px);
+}
+
+.btn-submit:disabled {
+    opacity: 0.6;
+    cursor: wait;
+    transform: none;
+}
+
+/* Mensagens de feedback */
+.form-success {
+    background: var(--success-bg);
+    border: 1px solid var(--success);
+    color: var(--success);
+    padding: 1rem;
+    border-radius: var(--radius-md);
+    margin-bottom: 1rem;
+    display: none;
+}
+
+.form-error {
+    background: var(--error-bg);
+    border: 1px solid var(--error);
+    color: var(--error);
+    padding: 1rem;
+    border-radius: var(--radius-md);
+    margin-bottom: 1rem;
+    display: none;
+}
+
+.form-success.show,
+.form-error.show {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Barra Lateral de Informações */
+
+.contact-sidebar {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.contact-info {
+    background: white;
+    border-radius: var(--radius-xl);
+    padding: 2.5rem;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-light);
+}
+
+.contact-info h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    color: var(--navy);
+    margin-bottom: 1.5rem;
+}
+
+/* Força a lista a virar uma grade 2x2 */
+.contact-info .info-list {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem !important;
+}
+
+/* Ajuste individual de cada card para se separar na grade */
+.contact-info .info-item {
+    display: flex !important;
+    align-items: flex-start;
+    gap: 1.2rem;
+    padding: 1rem !important;
+    background: var(--cream) !important;
+    border-radius: var(--radius-md) !important;
+    border: none !important;
+    margin: 0 !important;
+    width: auto !important;
+    /* Garante que não herde largura total */
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+    padding: 1.2rem 0;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.info-item:first-child {
+    padding-top: 0;
+}
+
+.info-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.info-icon {
+    font-size: 1.4rem;
+    margin-top: 0.1rem;
+}
+
+.info-content h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 0.35rem;
+}
+
+.info-content p {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.info-content a {
+    color: var(--gold-dark);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.info-content a:hover {
+    color: var(--gold);
+    text-decoration: underline;
+}
+
+/* Redes sociais horizontais e integradas */
+.social-section {
+    background: white;
+    border-radius: var(--radius-xl);
+    padding: 2rem 2.5rem;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-light);
+    margin-top: 2rem;
+}
+
+.social-section h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 1.2rem;
+}
+
+.social-grid {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: var(--cream);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    color: var(--navy);
+    transition: all var(--transition-base);
+    border: 1px solid transparent;
+}
+
+.social-card:hover {
+    background: white;
+    border-color: var(--gold-pale);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-sm);
+}
+
+.social-card span {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+
+/* Nota de suporte sutil */
+.support-notice {
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.5;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+/* Conversa aberta - substituindo a FAQ genérica */
+.conversation {
+    padding: 3rem 0;
+    background: var(--cream);
+    text-align: center;
+}
+
+.conversation-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.conversation h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: var(--navy);
+    margin-bottom: 1rem;
+}
+
+.conversation p {
+    color: var(--muted);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.conversation-note {
+    font-size: 0.85rem;
+    color: var(--muted);
+    border-top: 1px solid var(--border-light);
+    padding-top: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* Botão voltar */
+
+.back-link-container {
+    text-align: center;
+    padding: 2rem 0 4rem;
+    background: var(--warm);
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--gold-dark);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all var(--transition-fast);
+}
+
+.back-link:hover {
+    color: var(--gold);
+    gap: 0.8rem;
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-form-container,
+    .contact-info {
+        padding: 1.5rem;
+    }
+
+    .social-grid {
+        flex-direction: column;
+    }
+
+    .social-card {
+        justify-content: flex-start;
+    }
+}
+
+/* Loading state */
+.btn-loading {
+    opacity: 0.7;
+    cursor: wait;
+}
