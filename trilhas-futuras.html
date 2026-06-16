@@ -22,6 +22,30 @@
             padding: 1.5rem;
             border: 1px solid var(--border);
             transition: all var(--transition-base);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .trilha-status-lancada {
+            display: inline-block;
+            background: var(--gold-dark);
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            width: fit-content;
+            align-self: flex-end;
+        }
+        .trilha-preview::before {
+            content: '';
+            position: absolute;
+            left: 0; top: 0; bottom: 0;
+            width: 4px;
+            background: var(--navy);
+            border-radius: var(--radius-xl) 0 0 var(--radius-xl);
         }
         .trilha-preview:hover {
             transform: translateY(-4px);
@@ -55,20 +79,29 @@
             margin: 0.5rem 0;
         }
         .btn-preview {
-            display: inline-block;
-            margin-top: 1rem;
+            margin-top: auto;
+            padding-top: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid var(--border);
             color: var(--gold-dark);
             text-decoration: none;
             font-weight: 500;
+            font-size: 0.85rem;
         }
         .btn-preview:hover {
-            color: var(--gold);
+            color: var(--gold-dark);
         }
         .back-link {
             display: inline-block;
             margin-top: 2rem;
             color: var(--gold);
             text-decoration: none;
+        }
+        .btn-preview::after {
+            content: '→';
+            font-size: 0.9rem;
         }
     </style>
 </head>
@@ -81,7 +114,8 @@
                 </a>
                 <nav>
                     <ul class="nav-links">
-                        <li><a href="/">Home</a></li>
+                        <li><a href="/aprender/" aria-current="page">Biblioteca</a></li>
+                        <li><a href="/trilhas-futuras.html">Trilhas</a></li>
                         <li><a href="/sobre/">Sobre</a></li>
                         <li><a href="/contato/">Contato</a></li>
                     </ul>
@@ -150,36 +184,135 @@
     
     <script>
         const trilhas = [
-            { num: "00", title: "Modelagem Mental", date: "Já disponível", status: "LANÇADA", link: "/trilha-00/" },
-            { num: "01", title: "SQL para Dados", date: "Agosto 2026", status: "Em breve", link: "/trilha-01/" },
-            { num: "02", title: "Python para Engenharia de Dados", date: "Setembro 2026", status: "Em breve", link: "/trilha-02/" },
-            { num: "03", title: "Git e Organização", date: "Outubro 2026", status: "Em breve", link: "/trilha-03/" },
-            { num: "04", title: "Projetos Integrados", date: "Novembro 2026", status: "Em breve", link: "/trilha-04/" },
-            { num: "05", title: "Bancos de Dados Relacionais", date: "Dezembro 2026", status: "Em breve", link: "/trilha-05/" },
-            { num: "06", title: "Modelagem Avançada", date: "Janeiro 2027", status: "Em breve", link: "/trilha-06/" },
-            { num: "07", title: "ETL/ELT na Prática", date: "Fevereiro 2027", status: "Em breve", link: "/trilha-07/" },
-            { num: "08", title: "Orquestração de Dados", date: "Março 2027", status: "Em breve", link: "/trilha-08/" },
-            { num: "09", title: "Analytics Engineering", date: "Abril 2027", status: "Em breve", link: "/trilha-09/" },
-            { num: "10", title: "Data Warehouse Completo", date: "Maio 2027", status: "Em breve", link: "/trilha-10/" },
-            { num: "11", title: "Produtos DADOZILLA", date: "Junho 2027", status: "Em breve", link: "/trilha-11/" },
-            { num: "12", title: "IA para Dados", date: "Julho 2027", status: "Em breve", link: "/trilha-12/" },
-            { num: "13", title: "Carreira em Dados", date: "Agosto 2027", status: "Em breve", link: "/trilha-13/" }
+            { 
+                num: "00", 
+                title: "Modelagem Mental", 
+                descricao: "O método que organiza o caos antes do código. Aprenda a pensar em camadas e estruturar problemas.",
+                date: "Já disponível", 
+                status: "LANÇADA", 
+                link: "/trilha-00/" 
+            },
+            { 
+                num: "01", 
+                title: "SQL para Dados", 
+                descricao: "Aprenda SQL para executar o desenho dos dados. Consultas, joins e modelagem prática.", 
+                date: "Agosto 2026", 
+                status: "Em breve", 
+                link: "/trilha-01/" 
+            },
+            { 
+                num: "02", 
+                title: "Python para Engenharia de Dados", 
+                descricao: "Python Mínimo Viável para pipeline. Foco em dados, não web. Pandas, arquivos e ETL.", 
+                date: "Setembro 2026", 
+                status: "Em breve", 
+                link: "/trilha-02/" 
+            },
+            { 
+                num: "03", 
+                title: "Git e Organização", 
+                descricao: "Versionamento e organização de projetos de dados. Do básico ao prático.", 
+                date: "Outubro 2026", 
+                status: "Em breve", 
+                link: "/trilha-03/" 
+            },
+            { 
+                num: "04", 
+                title: "Projetos Integrados", 
+                descricao: "Integre SQL, Python e Git em projetos completos de engenharia de dados.", 
+                date: "Novembro 2026", 
+                status: "Em breve", 
+                link: "/trilha-04/" 
+            },
+            { 
+                num: "05", 
+                title: "Bancos de Dados Relacionais", 
+                descricao: "PostgreSQL, índices, constraints e boas práticas para engenharia de dados.", 
+                date: "Dezembro 2026", 
+                status: "Em breve", 
+                link: "/trilha-05/" 
+            },
+            { 
+                num: "06", 
+                title: "Modelagem Avançada", 
+                descricao: "Star Schema, SCD, modelagem para Data Warehouse e decisões de design.", 
+                date: "Janeiro 2027", 
+                status: "Em breve", 
+                link: "/trilha-06/" 
+            },
+            { 
+                num: "07", 
+                title: "ETL/ELT na Prática", 
+                descricao: "Construção de pipelines de dados com Python e SQL. Extraia, transforme e carregue.", 
+                date: "Fevereiro 2027", 
+                status: "Em breve", 
+                link: "/trilha-07/" 
+            },
+            { 
+                num: "08", 
+                title: "Orquestração de Dados", 
+                descricao: "Airflow, DAGs e automação de pipelines. Durma enquanto o pipeline roda.", 
+                date: "Março 2027", 
+                status: "Em breve", 
+                link: "/trilha-08/" 
+            },
+            { 
+                num: "09", 
+                title: "Analytics Engineering", 
+                descricao: "Transformações com dbt, documentação e boas práticas de analytics.", 
+                date: "Abril 2027", 
+                status: "Em breve", 
+                link: "/trilha-09/" 
+            },
+            { 
+                num: "10", 
+                title: "Data Warehouse Completo", 
+                descricao: "Construa um Data Warehouse do zero. Portfólio completo para o mercado.", 
+                date: "Maio 2027", 
+                status: "Em breve", 
+                link: "/trilha-10/" 
+            },
+            { 
+                num: "11", 
+                title: "Produtos DADOZILLA", 
+                descricao: "Crie dashboards para vender. Transforme conhecimento em produto digital.", 
+                date: "Junho 2027", 
+                status: "Em breve", 
+                link: "/trilha-11/" 
+            },
+            { 
+                num: "12", 
+                title: "IA para Dados", 
+                descricao: "Use Inteligência Artificial para acelerar sua análise e pipeline de dados.", 
+                date: "Julho 2027", 
+                status: "Em breve", 
+                link: "/trilha-12/" 
+            },
+            { 
+                num: "13", 
+                title: "Carreira em Dados", 
+                descricao: "Monte seu currículo, prepare-se para entrevistas e conquiste sua vaga.", 
+                date: "Agosto 2027", 
+                status: "Em breve", 
+                link: "/trilha-13/" 
+            }
         ];
         
         const grid = document.getElementById('trilhasGrid');
-        
-        trilhas.forEach(trilha => {
-            const card = document.createElement('div');
-            card.className = 'trilha-preview';
-            card.innerHTML = `
-                <div class="trilha-number">TRILHA ${trilha.num}</div>
-                <h3>${trilha.title}</h3>
-                <div class="trilha-status">${trilha.status}</div>
-                <div class="trilha-date">🚀 ${trilha.date === "Já disponível" ? "Já disponível" : `Lançamento: ${trilha.date}`}</div>
-                <a href="${trilha.link}" class="btn-preview">Ver página →</a>
-            `;
-            grid.appendChild(card);
-        });
+
+trilhas.forEach(trilha => {
+    const card = document.createElement('div');
+    card.className = 'trilha-preview';
+    card.innerHTML = `
+        ${trilha.status === "LANÇADA" ? `<div class="trilha-status-lancada">Lançada</div>` : ''}
+        <div class="trilha-number">TRILHA ${trilha.num}</div>
+        <h3>${trilha.title}</h3>
+        <p class="trilha-descricao">${trilha.descricao}</p>
+        <div class="trilha-date">🚀 ${trilha.date === "Já disponível" ? "Já disponível" : `Lançamento: ${trilha.date}`}</div>
+        <a href="${trilha.link}" class="btn-preview">${trilha.status === "LANÇADA" ? "Disponível agora" : "Ver detalhes →"}</a>
+    `;
+    grid.appendChild(card);
+});
     </script>
 </body>
 </html>
