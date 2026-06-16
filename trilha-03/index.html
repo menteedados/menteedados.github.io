@@ -1,0 +1,550 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Git e Organização | Em breve - Mente & Dados</title>
+    <meta name="description" content="Git para engenheiros de dados. Lançamento em breve. Cadastre-se para receber novidades e ofertas especiais.">
+    <meta name="robots" content="noindex,follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Git e Organização | Em breve - Mente & Dados">
+    <meta property="og:description" content="Git para engenheiros de dados. Cadastre-se para ser avisado no lançamento.">
+    <meta property="og:image" content="https://menteedados.github.io/assets/images/og/og-placeholder-trilha.jpg">
+    <meta property="og:url" content="https://menteedados.github.io/trilha-03/">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Serif+4:wght@300;400;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Estilos específicos para página de lançamento */
+        .coming-soon-hero {
+            background: linear-gradient(135deg, var(--navy) 0%, #1a1a2e 100%);
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .coming-soon-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: radial-gradient(ellipse 80% 60% at 20% 40%, rgba(201,168,76,0.08) 0%, transparent 60%);
+            pointer-events: none;
+        }
+        
+        .coming-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(201,168,76,0.15);
+            border: 1px solid rgba(201,168,76,0.4);
+            color: var(--gold-light);
+            font-size: 0.7rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            padding: 0.4rem 1rem;
+            border-radius: 30px;
+            margin-bottom: 2rem;
+            font-family: 'DM Mono', monospace;
+        }
+
+        .coming-badge img {
+            height: 14px;
+            width: 14px;
+            object-fit: contain;
+        }
+        
+        .coming-soon-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 900;
+            margin-bottom: 1rem;
+        }
+        
+        .coming-soon-hero .trilha-number {
+            color: var(--gold-light);
+            font-size: 1.2rem;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+        
+        .coming-soon-hero p {
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.75);
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+        
+        .release-date {
+            display: inline-block;
+            background: rgba(255,255,255,0.1);
+            padding: 0.5rem 1.5rem;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            margin-bottom: 2rem;
+        }
+        
+        .release-date strong {
+            color: var(--gold);
+        }
+        
+        /* Formulário de captura */
+        .waitlist-section {
+            padding: 4rem 0;
+            background: var(--cream);
+        }
+        
+        .waitlist-card {
+            max-width: 500px;
+            margin: 0 auto;
+            background: white;
+            border-radius: var(--radius-xl);
+            padding: 2.5rem;
+            box-shadow: var(--shadow-lg);
+            text-align: center;
+            border: 1px solid var(--border);
+        }
+        
+        .waitlist-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .waitlist-icon img {
+            height: 48px;
+            width: 48px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .waitlist-card h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--navy);
+            margin-bottom: 0.5rem;
+        }
+        
+        .waitlist-card p {
+            color: var(--muted);
+            margin-bottom: 1.5rem;
+        }
+        
+        .waitlist-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .waitlist-form input {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            font-size: 1rem;
+            transition: all var(--transition-fast);
+        }
+        
+        .waitlist-form input:focus {
+            outline: none;
+            border-color: var(--gold);
+            box-shadow: 0 0 0 3px rgba(201,168,76,0.1);
+        }
+        
+        .btn-waitlist-submit {
+            background: var(--gold);
+            color: var(--navy);
+            padding: 1rem;
+            border: none;
+            border-radius: var(--radius-md);
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all var(--transition-base);
+        }
+        
+        .btn-waitlist-submit:hover {
+            background: var(--gold-light);
+            transform: translateY(-2px);
+        }
+
+        .btn-waitlist-submit img {
+            height: 20px;
+            width: 20px;
+            object-fit: contain;
+            vertical-align: middle;
+        }
+        
+        .waitlist-guarantee {
+            font-size: 0.7rem;
+            color: var(--muted);
+            margin-top: 1rem;
+        }
+        
+        /* O que esperar */
+        .expect-section {
+            padding: 4rem 0;
+            background: var(--warm);
+        }
+        
+        .expect-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .expect-card {
+            text-align: center;
+            padding: 1.5rem;
+        }
+        
+        .expect-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .expect-icon img {
+            height: 48px;
+            width: 48px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .expect-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            color: var(--navy);
+            margin-bottom: 0.5rem;
+        }
+        
+        .expect-card p {
+            font-size: 0.85rem;
+            color: var(--muted);
+        }
+        
+        /* Back link */
+        .back-link-container {
+            text-align: center;
+            padding: 2rem 0 4rem;
+            background: var(--warm);
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--gold-dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all var(--transition-fast);
+        }
+        
+        .back-link:hover {
+            color: var(--gold);
+            gap: 0.8rem;
+        }
+        
+        /* Notificação de sucesso */
+        .success-message {
+            background: var(--success-bg);
+            border: 1px solid var(--success);
+            color: var(--success);
+            padding: 1rem;
+            border-radius: var(--radius-md);
+            margin-top: 1rem;
+            display: none;
+        }
+        
+        .success-message.show {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .btn-loading {
+            opacity: 0.6;
+            cursor: wait;
+            transform: none !important;
+        }
+        
+        @media (max-width: 768px) {
+            .waitlist-card {
+                padding: 1.5rem;
+                margin: 0 1rem;
+            }
+            .coming-soon-hero {
+                padding: 3rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <a href="/" class="logo">
+                <img src="/assets/imagens/logo/logotipo_icone.png" alt="Mente & Dados" height="40"> <span>Mente & Dados</span>
+            </a>
+            <nav aria-label="Menu principal">
+                <ul class="nav-links">
+                    <li><a href="/aprender/" aria-current="page">Biblioteca</a></li>
+                    <li><a href="/trilhas-futuras.html">Trilhas</a></li>
+                    <li><a href="/sobre/">Sobre</a></li>
+                    <li><a href="/contato/">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- Hero Section - Em Breve -->
+    <section class="coming-soon-hero">
+        <div class="container">
+            <div class="coming-badge">
+                <span><img src="/assets/imagens/icons/binary-code.png" alt="em desenvolvimento" height="40"></span> Em desenvolvimento
+            </div>
+            <div class="trilha-number">TRILHA 03</div>
+            <h1>Git e Organização</h1>
+            <p>Versionamento e organização de projetos de dados. Do básico ao prático.</p>
+            <div class="release-date">
+                🚀 Lançamento previsto: <strong>Outubro 2026</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Captura -->
+    <section class="waitlist-section">
+        <div class="container">
+            <div class="waitlist-card">
+                <div class="waitlist-icon"><img src="/assets/imagens/icons/communications.png" alt="comunicação" height="40"></div>
+                <h2>Quer ser avisado no lançamento?</h2>
+                <p>Cadastre-se e receba:</p>
+                <ul style="text-align: left; margin: 1rem 0; color: var(--muted); font-size: 0.85rem;">
+                    <li>✓ Alerta exclusivo quando a trilha for lançada</li>
+                    <li>✓ Oferta especial de lançamento (desconto para primeiros compradores)</li>
+                    <li>✓ Conteúdos gratuitos relacionados ao tema</li>
+                </ul>
+                
+                <form id="waitlist-form" class="waitlist-form" method="POST">
+                    <input type="email" id="email" name="email" placeholder="Seu melhor e-mail" required>
+                    <input type="hidden" id="trilha" name="trilha" value="Trilha 03 - Git e Organização">
+                    <input type="text" id="sugestao" name="sugestao" placeholder="Deixe sua sugestão (opcional)">
+                    <button type="submit" class="btn-waitlist-submit">
+                        <img src="/assets/imagens/icons/checklist.png" alt="lista" height="40"> Quero ser avisado →
+                    </button>                    
+                </form>
+                <div id="success-message" class="success-message">
+                    ✅ Obrigado! Você receberá novidades no seu e-mail.
+                </div>
+                <p class="waitlist-guarantee">
+                    🔒 Sem spam. Você pode cancelar a qualquer momento.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- O que esperar da trilha -->
+    <section class="expect-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">O que esperar da <span class="text-gold">Trilha 03</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">
+                    Conteúdo prático e estruturado para você dominar Git e Versionamento
+                </p>
+            </div>
+            
+            <div class="expect-grid">
+                <div class="expect-card">
+                    <div class="expect-icon"><img src="/assets/imagens/icons/stack-of-books.png" alt="conteudo" height="40"></div>
+                    <h3>Material Completo</h3>
+                    <p>E-books, exercícios e materiais complementares para aprendizado profundo</p>
+                </div>
+                <div class="expect-card">
+                    <div class="expect-icon"><img src="/assets/imagens/icons/programming.png" alt="projetos" height="40"></div>
+                    <h3>Projetos Práticos</h3>
+                    <p>Exercícios baseados em cenários reais do mercado</p>
+                </div>
+                <div class="expect-card">
+                    <div class="expect-icon"><img src="/assets/imagens/icons/group-chat.png" alt="gupochat" height="40"></div>
+                    <h3>Comunidade colaborativa</h3>
+                    <p>Acesso a grupo de alunos para tirar dúvidas</p>
+                </div>
+                <div class="expect-card">
+                    <div class="expect-icon"><img src="/assets/imagens/icons/certificate.png" alt="lista" height="40"></div>
+                    <h3>Certificado</h3>
+                    <p>Certificado de conclusão ao final da trilha</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Back link -->
+    <div class="back-link-container">
+        <a href="/" class="back-link">
+            ← Voltar para a página inicial
+        </a>
+    </div>
+</main>
+
+<!-- Footer - Simplificado -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4><img src="/assets/imagens/logo/logotipo_icone.png" alt="Mente & Dados" height="40"> Mente & Dados</h4>
+                <p>Transformando iniciantes em engenheiros de dados através de conteúdo prático e trilhas estruturadas.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Trilhas</h4>
+                <a href="/trilha-00/">Trilha 00 - Fundamentos</a>
+                <a href="/trilha-01/">Trilha 01 - Python</a>
+                <a href="/trilha-02/">Trilha 02 - SQL</a>
+                <a href="/trilhas-futuras.html">Todas as trilhas</a>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Institucional</h4>
+                <a href="/sobre/">Sobre</a>
+                <a href="/contato/">Contato</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Uso</a>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Redes Sociais</h4>
+                <a href="https://youtube.com/@MenteeDados" target="_blank" rel="noopener noreferrer"><img src="/assets/imagens/icons/youtube.png" alt="YouTube"> YouTube</a>
+                <a href="https://www.instagram.com/menteedados.oficial/" target="_blank" rel="noopener noreferrer"><img src="/assets/imagens/icons/instagram.png" alt="instagram"> Instagram</a>
+                <a href="https://medium.com/@menteedados" target="_blank" rel="noopener noreferrer"><img src="/assets/imagens/icons/medium.png" alt="Medium"> Medium</a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Mente & Dados - Franciele Amaral. Todos os direitos reservados.</p>
+            <p style="font-size: 0.875rem; margin-top: 0.5rem;">
+                <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" style="color: #c9a84c;">Voltar ao topo ↑</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Form submission handler
+    const form = document.getElementById('waitlist-form');
+    const successMsg = document.getElementById('success-message');
+    
+    if (form) {
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            const trilha = document.getElementById('trilha').value;
+            const sugestao = document.getElementById('sugestao').value; // Campo de sugestão
+            const submitBtn = form.querySelector('button[type="submit"]');
+            
+            if (!email || !email.includes('@')) {
+                alert('Por favor, digite um e-mail válido.');
+                return;
+            }
+            
+            // Disable button and show loading
+            submitBtn.disabled = true;
+            submitBtn.classList.add('btn-loading');
+            submitBtn.textContent = '⏳ Enviando...';
+            
+            // Configuração do Google Forms (ATUALIZADO)
+            const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSd9WOEP9K57X8Y3MDYx-m695GxBEBF86JYQVBX5VQVXt4psmg/formResponse';
+            
+            try {
+                // Montar os dados do formulário
+                const formData = new FormData();
+                formData.append('emailAddress', email);                    // ✅ Campo email
+                formData.append('entry.2124155835', trilha);               // ✅ Campo Trilha de interesse
+                formData.append('entry.1452062749', sugestao);             // ✅ Campo Sugestão (opcional)
+                
+                // Enviar para Google Forms
+                await fetch(googleFormUrl, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    body: formData
+                });
+                
+                // Salvar no localStorage para rastreamento
+                const waitlistData = JSON.parse(localStorage.getItem('menteedados_waitlist') || '[]');
+                waitlistData.push({
+                    email: email,
+                    trilha: trilha,
+                    sugestao: sugestao,
+                    date: new Date().toISOString()
+                });
+                localStorage.setItem('menteedados_waitlist', JSON.stringify(waitlistData));
+                
+                // GA4 Event Tracking
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'generate_lead', {
+                        event_category: 'waitlist',
+                        event_label: trilha,
+                        value: 0,
+                        currency: 'BRL'
+                    });
+                }
+                
+                // Meta Pixel Event
+                if (typeof fbq !== 'undefined') {
+                    fbq('track', 'Lead', {
+                        content_name: trilha,
+                        content_category: 'waitlist'
+                    });
+                }
+                
+                // Show success message
+                successMsg.classList.add('show');
+                form.reset();
+                
+                // Log para debug
+                console.log(`✅ Waitlist: ${email} cadastrado para ${trilha}`);
+                
+            } catch (error) {
+                console.error('Erro ao cadastrar:', error);
+                alert('Ocorreu um erro. Por favor, tente novamente ou entre em contato.');
+            } finally {
+                // Reset button
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('btn-loading');
+                submitBtn.textContent = '📋 Quero ser avisado →';
+                
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    successMsg.classList.remove('show');
+                }, 5000);
+            }
+        });
+    }
+</script>
+
+<script src="/assets/js/analytics.js"></script>
+<script src="/assets/js/faq-accordion.js"></script>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/hotmart-config.js"></script>
+<script src="/assets/js/schema-markup.js"></script>
+
+</body>
+</html>

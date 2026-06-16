@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <!-- ============================================ -->
+    <!-- PÁGINAS PRINCIPAIS - Prioridade Alta         -->
+    <!-- ============================================ -->
+    
+    <url>
+        <loc>https://menteedados.github.io/</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://menteedados.github.io/assets/images/og/og-home.jpg</image:loc>
+            <image:title>Mente & Dados - Engenharia de Dados para Iniciantes</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://menteedados.github.io/trilha-00/</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+        <image:image>
+            <image:loc>https://menteedados.github.io/assets/images/og/og-trilha00.jpg</image:loc>
+            <image:title>Trilha 00 - Modelagem Mental para Engenharia de Dados</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://menteedados.github.io/trilha-00/ebook/</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+        <image:image>
+            <image:loc>https://menteedados.github.io/assets/images/og/og-ebook.jpg</image:loc>
+            <image:title>E-book - Modelagem Mental Antes do Código</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://menteedados.github.io/trilha-00/caderno/</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+        <image:image>
+            <image:loc>https://menteedados.github.io/assets/images/og/og-caderno.jpg</image:loc>
+            <image:title>Caderno de Exercícios - Engenharia de Dados</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://menteedados.github.io/trilha-00/completo/</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://menteedados.github.io/assets/images/og/og-bundle.jpg</image:loc>
+            <image:title>Bundle Completo - Teoria + Prática + Bônus</image:title>
+        </image:image>
+    </url>
+
+    <!-- ============================================ -->
+    <!-- PÁGINAS INSTITUCIONAIS - Prioridade Média    -->
+    <!-- ============================================ -->
+
+    <url>
+        <loc>https://menteedados.github.io/sobre/</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://menteedados.github.io/contato/</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://menteedados.github.io/bundle-completo/</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- ============================================ -->
+    <!-- TRILHAS FUTURAS (Placeholders) - Prioridade Baixa -->
+    <!-- ============================================ -->
+
+    <url>
+        <loc>https://menteedados.github.io/trilha-01/</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://menteedados.github.io/trilha-02/</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://menteedados.github.io/trilha-03/</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://menteedados.github.io/trilha-04/</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://menteedados.github.io/trilha-05/</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://menteedados.github.io/trilha-06/</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://menteedados.github.io/trilha-07/</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://menteedados.github.io/trilha-08/</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://menteedados.github.io/trilha-09/</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://menteedados.github.io/trilha-10/</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://menteedados.github.io/trilha-11/</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://menteedados.github.io/trilha-12/</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://menteedados.github.io/trilha-13/</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <!-- ============================================ -->
+    <!-- PÁGINA DE TESTE                               -->
+    <!-- ============================================ -->
+
+    <url>
+        <loc>https://menteedados.github.io/trilhas-futuras.html</loc>
+        <lastmod>2026-06-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+    </url>
+
+</urlset>

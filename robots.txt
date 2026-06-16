@@ -1,0 +1,75 @@
+# ============================================
+# robots.txt - Mente & Dados
+# Configuração de crawling para motores de busca
+# ============================================
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://menteedados.github.io/sitemap.xml
+
+# Tempo de crawl (recomendado)
+Crawl-delay: 1
+
+# ============================================
+# Googlebot (configurações específicas)
+# ============================================
+
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Otimizações para indexação
+User-agent: Googlebot-Image
+Allow: /assets/images/
+
+User-agent: Googlebot-News
+Allow: /
+
+# ============================================
+# Bingbot
+# ============================================
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# ============================================
+# Outros bots
+# ============================================
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+# ============================================
+# Bots bloqueados (opcional)
+# ============================================
+
+# Bloquear bots maliciosos (opcional)
+# User-agent: AhrefsBot
+# Disallow: /
+
+# User-agent: SemrushBot
+# Disallow: /
+
+# ============================================
+# Diretórios bloqueados (nenhum por enquanto)
+# ============================================
+
+# Disallow: /admin/
+# Disallow: /private/
+

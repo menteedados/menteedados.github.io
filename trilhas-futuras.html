@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todas as Trilhas - Mente & Dados</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <style>
+        .trilhas-futuras {
+            padding: 4rem 0;
+            background: var(--warm);
+        }
+        .trilhas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .trilha-preview {
+            background: white;
+            border-radius: var(--radius-xl);
+            padding: 1.5rem;
+            border: 1px solid var(--border);
+            transition: all var(--transition-base);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .trilha-status-lancada {
+            display: inline-block;
+            background: var(--gold-dark);
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            width: fit-content;
+            align-self: flex-end;
+        }
+        .trilha-preview::before {
+            content: '';
+            position: absolute;
+            left: 0; top: 0; bottom: 0;
+            width: 4px;
+            background: var(--navy);
+            border-radius: var(--radius-xl) 0 0 var(--radius-xl);
+        }
+        .trilha-preview:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+        .trilha-number {
+            font-family: 'DM Mono', monospace;
+            font-size: 0.7rem;
+            color: var(--gold);
+            letter-spacing: 0.1em;
+        }
+        .trilha-preview h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+            color: var(--navy);
+        }
+        .trilha-status {
+            display: inline-block;
+            background: var(--gold-pale);
+            color: var(--gold-dark);
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            margin: 0.5rem 0;
+        }
+        .trilha-date {
+            font-size: 0.8rem;
+            color: var(--muted);
+            margin: 0.5rem 0;
+        }
+        .btn-preview {
+            margin-top: auto;
+            padding-top: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid var(--border);
+            color: var(--gold-dark);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.85rem;
+        }
+        .btn-preview:hover {
+            color: var(--gold-dark);
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: var(--gold);
+            text-decoration: none;
+        }
+        .btn-preview::after {
+            content: '→';
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">
+                <img src="/assets/imagens/logo/logotipo_icone.png" alt="Mente & Dados" height="40"> <span>Mente & Dados</span>
+                </a>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="/aprender/" aria-current="page">Biblioteca</a></li>
+                        <li><a href="/trilhas-futuras.html">Trilhas</a></li>
+                        <li><a href="/sobre/">Sobre</a></li>
+                        <li><a href="/contato/">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="trilhas-futuras">
+            <div class="container">
+                <div class="section-header">
+                    <h1 class="section-title">Todas as <span class="text-gold">Trilhas</span></h1>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">
+                        Conheça o roadmap completo das trilhas Mente & Dados
+                    </p>
+                </div>
+                
+                <div class="trilhas-grid" id="trilhasGrid"></div>
+                
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="/" class="back-link">← Voltar para a página inicial</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer - Simplificado -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4><img src="/assets/imagens/logo/logotipo_icone.png" alt="Mente & Dados" height="40"> Mente & Dados</h4>
+                    <p>Transformando iniciantes em engenheiros de dados através de conteúdo prático e trilhas estruturadas.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Trilha</h4>
+                    <a href="/trilha-00/">Trilha 00 - Fundamentos</a>
+                    <a href="/trilha-01/">Trilha 01 - Em breve</a>
+                    <a href="/trilha-02/">Trilha 02 - Em breve</a>
+                    <a href="/trilhas-futuras.html">Todas as trilhas</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Institucional</h4>
+                    <a href="/sobre/">Sobre</a>
+                    <a href="/contato/">Contato</a>
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <a href="https://youtube.com/@MenteeDados" target="_blank" rel="noopener noreferrer"><img src="/assets/imagens/icons/youtube.png" alt="YouTube"> YouTube</a>
+                    <a href="https://www.instagram.com/menteedados.oficial/" target="_blank" rel="noopener noreferrer"><img src="/assets/imagens/icons/instagram.png" alt="instagram"> Instagram</a>
+                    <a href="https://medium.com/@menteedados" target="_blank" rel="noopener noreferrer"><img src="/assets/imagens/icons/medium.png" alt="Medium"> Medium</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mente & Dados - Franciele Amaral. Todos os direitos reservados.</p>
+                <p style="font-size: 0.875rem; margin-top: 0.5rem;">
+                    <a href="#" style="color: #c9a84c;">Voltar ao topo ↑</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        const trilhas = [
+            { 
+                num: "00", 
+                title: "Modelagem Mental", 
+                descricao: "O método que organiza o caos antes do código. Aprenda a pensar em camadas e estruturar problemas.",
+                date: "Já disponível", 
+                status: "LANÇADA", 
+                link: "/trilha-00/" 
+            },
+            { 
+                num: "01", 
+                title: "SQL para Dados", 
+                descricao: "Aprenda SQL para executar o desenho dos dados. Consultas, joins e modelagem prática.", 
+                date: "Agosto 2026", 
+                status: "Em breve", 
+                link: "/trilha-01/" 
+            },
+            { 
+                num: "02", 
+                title: "Python para Engenharia de Dados", 
+                descricao: "Python Mínimo Viável para pipeline. Foco em dados, não web. Pandas, arquivos e ETL.", 
+                date: "Setembro 2026", 
+                status: "Em breve", 
+                link: "/trilha-02/" 
+            },
+            { 
+                num: "03", 
+                title: "Git e Organização", 
+                descricao: "Versionamento e organização de projetos de dados. Do básico ao prático.", 
+                date: "Outubro 2026", 
+                status: "Em breve", 
+                link: "/trilha-03/" 
+            },
+            { 
+                num: "04", 
+                title: "Projetos Integrados", 
+                descricao: "Integre SQL, Python e Git em projetos completos de engenharia de dados.", 
+                date: "Novembro 2026", 
+                status: "Em breve", 
+                link: "/trilha-04/" 
+            },
+            { 
+                num: "05", 
+                title: "Bancos de Dados Relacionais", 
+                descricao: "PostgreSQL, índices, constraints e boas práticas para engenharia de dados.", 
+                date: "Dezembro 2026", 
+                status: "Em breve", 
+                link: "/trilha-05/" 
+            },
+            { 
+                num: "06", 
+                title: "Modelagem Avançada", 
+                descricao: "Star Schema, SCD, modelagem para Data Warehouse e decisões de design.", 
+                date: "Janeiro 2027", 
+                status: "Em breve", 
+                link: "/trilha-06/" 
+            },
+            { 
+                num: "07", 
+                title: "ETL/ELT na Prática", 
+                descricao: "Construção de pipelines de dados com Python e SQL. Extraia, transforme e carregue.", 
+                date: "Fevereiro 2027", 
+                status: "Em breve", 
+                link: "/trilha-07/" 
+            },
+            { 
+                num: "08", 
+                title: "Orquestração de Dados", 
+                descricao: "Airflow, DAGs e automação de pipelines. Durma enquanto o pipeline roda.", 
+                date: "Março 2027", 
+                status: "Em breve", 
+                link: "/trilha-08/" 
+            },
+            { 
+                num: "09", 
+                title: "Analytics Engineering", 
+                descricao: "Transformações com dbt, documentação e boas práticas de analytics.", 
+                date: "Abril 2027", 
+                status: "Em breve", 
+                link: "/trilha-09/" 
+            },
+            { 
+                num: "10", 
+                title: "Data Warehouse Completo", 
+                descricao: "Construa um Data Warehouse do zero. Portfólio completo para o mercado.", 
+                date: "Maio 2027", 
+                status: "Em breve", 
+                link: "/trilha-10/" 
+            },
+            { 
+                num: "11", 
+                title: "Produtos DADOZILLA", 
+                descricao: "Crie dashboards para vender. Transforme conhecimento em produto digital.", 
+                date: "Junho 2027", 
+                status: "Em breve", 
+                link: "/trilha-11/" 
+            },
+            { 
+                num: "12", 
+                title: "IA para Dados", 
+                descricao: "Use Inteligência Artificial para acelerar sua análise e pipeline de dados.", 
+                date: "Julho 2027", 
+                status: "Em breve", 
+                link: "/trilha-12/" 
+            },
+            { 
+                num: "13", 
+                title: "Carreira em Dados", 
+                descricao: "Monte seu currículo, prepare-se para entrevistas e conquiste sua vaga.", 
+                date: "Agosto 2027", 
+                status: "Em breve", 
+                link: "/trilha-13/" 
+            }
+        ];
+        
+        const grid = document.getElementById('trilhasGrid');
+
+trilhas.forEach(trilha => {
+    const card = document.createElement('div');
+    card.className = 'trilha-preview';
+    card.innerHTML = `
+        ${trilha.status === "LANÇADA" ? `<div class="trilha-status-lancada">Lançada</div>` : ''}
+        <div class="trilha-number">TRILHA ${trilha.num}</div>
+        <h3>${trilha.title}</h3>
+        <p class="trilha-descricao">${trilha.descricao}</p>
+        <div class="trilha-date">🚀 ${trilha.date === "Já disponível" ? "Já disponível" : `Lançamento: ${trilha.date}`}</div>
+        <a href="${trilha.link}" class="btn-preview">${trilha.status === "LANÇADA" ? "Disponível agora" : "Ver detalhes →"}</a>
+    `;
+    grid.appendChild(card);
+});
+    </script>
+</body>
+</html>

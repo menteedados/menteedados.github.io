@@ -1,0 +1,83 @@
+/* ============================================
+   MAIN CSS - Mente & Dados
+   Ponto de entrada central para todos os estilos
+   ============================================ */
+
+/* Reset e Normalize */
+@import url('reset.css');
+
+/* Variáveis do Design System */
+@import url('variables.css');
+
+/* Tipografia */
+@import url('typography.css');
+
+/* Grid System */
+@import url('grid.css');
+
+/* Componentes Reutilizáveis */
+@import url('components.css');
+
+/* Classes Utilitárias */
+@import url('utilities.css');
+
+/* Estilos Específicos por Página */
+@import url('pages.css');
+
+/* Responsividade e Mobile */
+@import url('responsive.css');
+
+/* Paginas */
+@import url('pages/pages_trilha-00.css');
+@import url('pages/sobre.css');
+@import url('pages/contato.css');
+@import url('pages/404.css');
+@import url('pages/aprender.css');
+
+
+/* ===== CUSTOM STYLES ===== */
+/* Qualquer estilo adicional ou override pode ser adicionado aqui */
+
+/* Performance improvements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  @page {
+    margin: 2cm;
+  }
+  
+  .header,
+  .footer,
+  .sticky-cta,
+  .btn {
+    display: none;
+  }
+}
+
+/* Touch feedback para dispositivos móveis */
+.touch-active {
+  transform: scale(0.98);
+  transition: transform 0.05s ease;
+}
+
+/* Slow connection fallback */
+.slow-connection img {
+  display: none;
+}
+
+/* Lazy loading */
+img[data-src] {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+img.loaded {
+  opacity: 1;
+}

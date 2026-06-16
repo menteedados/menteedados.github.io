@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Teste de Responsividade - Mente & Dados</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <style>
+        .test-toolbar {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: rgba(15, 30, 61, 0.95);
+            padding: 12px;
+            border-radius: 8px;
+            z-index: 9999;
+            font-family: monospace;
+            font-size: 12px;
+            color: white;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        
+        .test-toolbar button {
+            background: var(--gold);
+            color: var(--navy);
+            border: none;
+            padding: 4px 8px;
+            margin: 0 4px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 11px;
+        }
+        
+        .test-toolbar span {
+            margin: 0 8px;
+        }
+        
+        .device-indicator {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        
+        .device-mobile { background: #2d6a4f; }
+        .device-tablet { background: #f57c00; }
+        .device-desktop { background: #1976d2; }
+        
+        @media (max-width: 640px) {
+            .test-toolbar { font-size: 10px; padding: 8px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="test-toolbar" id="testToolbar">
+        <strong>📱 Teste Responsivo</strong>
+        <span id="deviceInfo"></span>
+        <button onclick="toggleSidebar()">Menu</button>
+        <button onclick="scrollToTop()">↑ Topo</button>
+    </div>
+    
+    <div class="container" style="padding-top: 80px;">
+        <div class="section-header">
+            <h1 class="section-title">Teste de Responsividade</h1>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">Redimensione a janela para testar os breakpoints</p>
+        </div>
+        
+        <!-- Status -->
+        <div style="background: var(--gold-pale); padding: 1rem; border-radius: 8px; margin-bottom: 2rem; text-align: center;">
+            <h3>📐 Status atual</h3>
+            <p><strong>Largura:</strong> <span id="windowWidth"></span>px</p>
+            <p><strong>Altura:</strong> <span id="windowHeight"></span>px</p>
+            <p><strong>Tipo:</strong> <span id="deviceType"></span></p>
+            <p><strong>Touch suportado:</strong> <span id="touchSupport"></span></p>
+        </div>
+        
+        <!-- Botões (testar touch targets) -->
+        <div class="demo-section" style="margin-bottom: 2rem;">
+            <h2>🔘 Touch Targets (mínimo 44x44px)</h2>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                <button class="btn btn-primary">Botão 1</button>
+                <button class="btn btn-secondary">Botão 2</button>
+                <button class="btn btn-outline">Botão 3</button>
+                <button class="btn btn-primary btn-sm">Pequeno</button>
+                <button class="btn btn-primary btn-lg">Grande</button>
+            </div>
+            <p class="text-muted mt-3">✓ Todos os botões têm área de toque ≥ 44x44px</p>
+        </div>
+        
+        <!-- Grid responsivo -->
+        <div class="demo-section" style="margin-bottom: 2rem;">
+            <h2>📱 Grid Responsivo</h2>
+            <div class="trilhas-grid" style="margin-bottom: 1rem;">
+                <div class="card">
+                    <h3>Card 1</h3>
+                    <p>Teste de responsividade do grid</p>
+                </div>
+                <div class="card">
+                    <h3>Card 2</h3>
+                    <p>Deve se adaptar ao tamanho da tela</p>
+                </div>
+                <div class="card">
+                    <h3>Card 3</h3>
+                    <p>Mobile: 1 coluna, Tablet: 2, Desktop: 3</p>
+                </div>
+                <div class="card">
+                    <h3>Card 4</h3>
+                    <p>Testando comportamento responsivo</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- FAQ (teste mobile) -->
+        <div class="demo-section" style="margin-bottom: 2rem;">
+            <h2>❓ FAQ Mobile</h2>
+            <div class="faq-item">
+                <div class="faq-question">Como testar responsividade?</div>
+                <div class="faq-answer">Use as ferramentas do desenvolvedor (F12) e alterne entre os modos de dispositivo.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Qual o tamanho mínimo dos botões?</div>
+                <div class="faq-answer">44x44px para garantir boa usabilidade em dispositivos touch.</div>
+            </div>
+        </div>
+        
+        <!-- Formulário mobile -->
+        <div class="demo-section" style="margin-bottom: 2rem;">
+            <h2>📝 Formulário Mobile</h2>
+            <form data-validate-form>
+                <div class="form-group">
+                    <label class="form-label">Nome</label>
+                    <input type="text" class="form-input" placeholder="Digite seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-input" placeholder="seu@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Telefone</label>
+                    <input type="tel" class="form-input" data-mask="phone" placeholder="(11) 99999-9999">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+            </form>
+            <p class="text-muted mt-3">⚠️ Inputs com font-size: 16px previnem zoom no iOS</p>
+        </div>
+        
+        <!-- Tabela responsiva -->
+        <div class="demo-section" style="margin-bottom: 2rem;">
+            <h2>📊 Tabela Responsiva</h2>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr><th>Produto</th><th>Preço</th><th>Prazo</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Trilha 00</td><td>R$ 67</td><td>Imediato</td></tr>
+                        <tr><td>Trilha 01</td><td>Em breve</td><td>Jun/2026</td></tr>
+                        <tr><td>Bundle</td><td>Em breve</td><td>Jul/2026</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!-- Breakpoints info -->
+        <div class="demo-section">
+            <h2>📏 Breakpoints Definidos</h2>
+            <ul>
+                <li><strong>Mobile:</strong> até 640px</li>
+                <li><strong>Tablet:</strong> 641px - 1024px</li>
+                <li><strong>Desktop:</strong> 1025px - 1280px</li>
+                <li><strong>Desktop Large:</strong> 1281px+</li>
+                <li><strong>Touch targets:</strong> mínimo 44x44px</li>
+                <li><strong>Safe area:</strong> Suporte iPhone X+</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Sticky CTA para teste -->
+    <div id="sticky-cta" class="sticky-cta">
+        <button class="btn btn-primary" onclick="alert('CTA testado!')">
+            📱 Testar CTA Mobile
+        </button>
+    </div>
+    
+    <script src="assets/js/faq-accordion.js"></script>
+    <script src="assets/js/sticky-cta.js"></script>
+    <script src="assets/js/performance.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+    <script>
+        // Atualizar informações de janela
+        function updateWindowInfo() {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            let deviceType = '';
+            
+            if (width <= 640) {
+                deviceType = '📱 Mobile';
+            } else if (width <= 1024) {
+                deviceType = '📟 Tablet';
+            } else {
+                deviceType = '💻 Desktop';
+            }
+            
+            document.getElementById('windowWidth').textContent = width;
+            document.getElementById('windowHeight').textContent = height;
+            document.getElementById('deviceType').textContent = deviceType;
+            
+            // Atualizar cor do badge
+            const deviceSpan = document.getElementById('deviceType');
+            if (width <= 640) {
+                deviceSpan.style.color = '#2d6a4f';
+            } else if (width <= 1024) {
+                deviceSpan.style.color = '#f57c00';
+            } else {
+                deviceSpan.style.color = '#1976d2';
+            }
+        }
+        
+        // Detectar touch support
+        const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+        document.getElementById('touchSupport').textContent = isTouch ? '✅ Sim' : '❌ Não';
+        document.getElementById('touchSupport').style.color = isTouch ? '#2d6a4f' : '#d32f2f';
+        
+        window.addEventListener('resize', updateWindowInfo);
+        window.addEventListener('load', updateWindowInfo);
+        updateWindowInfo();
+        
+        function toggleSidebar() {
+            alert('Menu mobile: funcionalidade disponível');
+        }
+        
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        // Testar performance
+        console.log('✅ Página de teste de responsividade carregada');
+    </script>
+</body>
+</html>

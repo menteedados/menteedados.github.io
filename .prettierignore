@@ -1,0 +1,6 @@
+*.log
+*.md
+.gitignore
+.idea/
+.vscode/
+EOF

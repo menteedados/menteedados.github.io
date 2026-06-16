@@ -1,0 +1,25 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "name": "Sobre Franciele Amaral - Mente & Dados",
+  "description": "Conheça a história da Franciele Amaral, criadora da Mente & Dados. Uma jornada de transição para engenharia de dados.",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Franciele Amaral",
+    "jobTitle": "Engenheira de Dados | Criadora da Mente & Dados",
+    "url": "https://menteedados.github.io/sobre/",
+    "sameAs": [
+      "https://www.youtube.com/@MenteeDados",
+      "https://www.instagram.com/menteedados.oficial",
+      "https://medium.com/@menteedados",
+      "https://www.linkedin.com/in/franciele-amaral"
+    ],
+    "knowsAbout": ["Engenharia de Dados", "Modelagem de Dados", "SQL", "Python", "ETL", "Data Warehousing"],
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Especialização em Engenharia de Dados"
+    },
+    "award": "Certificações em Cloud, Python e SQL Avançado"
+  }
+}
+

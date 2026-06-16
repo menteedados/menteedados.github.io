@@ -1,0 +1,33 @@
+{
+  "trilha": {
+    "num": "01",
+    "titulo": "SQL para Dados",
+    "descricao_curta": "SQL para executar seu desenho de dados.",
+    "descricao_longa": "Aprenda SQL para executar o desenho dos dados. Consultas, joins e modelagem prática — sem teoria vazia, com exemplos reais de engenharia de dados.",
+    "topico": "SQL e Bancos de Dados",
+    "data_lancamento": "Agosto 2026"
+  },
+  "aulas": [
+    {
+      "num": "01",
+      "titulo": "SELECT básico",
+      "resumo_inline": "Consultas simples com SELECT, FROM e WHERE.",
+      "blog_texto": "SQL começa com uma ideia simples: diga o que você quer ver, de onde, e sob qual condição. Nesta aula você escreve suas primeiras consultas reais contra um banco de dados de cafeteria — sem teoria vazia.",
+      "link_medium": "https://medium.com/@menteedados/sql-select-basico",
+      "youtube_id": "dQw4w9WgXcQ",
+      "downloads": [
+        { "label": "📄 Exercícios PDF", "url": "/assets/downloads/sql-01-exercicios.pdf" },
+        { "label": "💾 Dataset .csv",   "url": "/assets/downloads/sql-01-dataset.csv" }
+      ]
+    },
+    {
+      "num": "02",
+      "titulo": "JOINs na prática",
+      "resumo_inline": "Combine tabelas com INNER, LEFT e RIGHT JOIN.",
+      "blog_texto": "Dados raramente vivem em uma só tabela. Aqui você entende como o banco une informações espalhadas — e por que o tipo do JOIN muda completamente o resultado.",
+      "link_medium": "https://medium.com/@menteedados/sql-joins",
+      "youtube_id": "",
+      "downloads": []
+    }   
+  ]
+}

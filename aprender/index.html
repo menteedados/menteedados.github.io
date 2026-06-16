@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca | Mente & Dados</title>
+    <meta name="description" content="Conteúdo gratuito que não trata você como iniciante genérico. Vídeos, artigos e reflexões sobre estrutura de pensamento em dados.">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Serif+4:wght@300;400;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+<!-- ============================================ -->
+<!-- HEADER com logo + navegação -->
+<!-- ============================================ -->
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <a href="/" class="logo">
+                <img src="/assets/imagens/logo/logotipo_icone.png" alt="Mente & Dados" height="40"> <span>Mente & Dados</span>
+            </a>
+            
+            <nav aria-label="Menu principal">
+                <ul class="nav-links">
+                    <li><a href="/aprender/" aria-current="page">Biblioteca</a></li>
+                    <li><a href="/trilhas-futuras.html">Trilhas</a></li>
+                    <li><a href="/sobre/">Sobre</a></li>
+                    <li><a href="/contato/">Contato</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <section class="hero-aprender">
+        <div class="container">
+            <h1><em>Biblioteca</em></h1>
+            <p class="subtitle">
+                Um acervo de vídeos, artigos e trilhas para quem prefere entendimento a atalhos. Um espaço para desenvolver entendimento antes da ferramenta.
+            </p>
+        </div>
+    </section>
+
+    <section class="trilhas-section">
+        <div class="container">
+            <p class="trilhas-section-label">14 trilhas · conteúdo em vídeo + artigo</p>
+            <div class="trilhas-grid" id="trilhas-grid">
+                <!-- Os cards serão gerados via JavaScript para verificação dinâmica -->
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-produto">
+        <div class="container">
+            <h3>Quer aprofundar esse caminho?</h3>
+            <p>
+                A Trilha 00 foi construída para desenvolver a habilidade mais negligenciada do<br>
+                aprendizado moderno: saber estruturar o pensamento antes da ferramenta.
+            </p>
+            <a href="/trilha-00/" class="btn-trilha">Conhecer a Trilha 00 →</a>
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer --->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4><img src="/assets/imagens/logo/logotipo_icone.png" alt="Mente & Dados" height="40"> Mente & Dados</h4>
+                <p>Transformando iniciantes em engenheiros de dados através de conteúdo prático e trilhas estruturadas.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Trilhas</h4>
+                <a href="/trilha-00/">Trilha 00 - Fundamentos</a>
+                <a href="/trilha-01/">Trilha 01 - Python</a>
+                <a href="/trilha-02/">Trilha 02 - SQL</a>
+                <a href="/trilhas-futuras.html">Todas as trilhas</a>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Institucional</h4>
+                <a href="/sobre/">Sobre</a>
+                <a href="/contato/">Contato</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Uso</a>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Redes Sociais</h4>
+                <a href="https://youtube.com/@MenteeDados" target="_blank" rel="noopener noreferrer"><img src="/assets/imagens/icons/youtube.png" alt="YouTube"> YouTube</a>
+                <a href="https://www.instagram.com/menteedados.oficial/" target="_blank" rel="noopener noreferrer"><img src="/assets/imagens/icons/instagram.png" alt="instagram"> Instagram</a>
+                <a href="https://medium.com/@menteedados" target="_blank" rel="noopener noreferrer"><img src="/assets/imagens/icons/medium.png" alt="Medium"> Medium</a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Mente & Dados - Franciele Amaral. Todos os direitos reservados.</p>
+            <p style="font-size: 0.875rem; margin-top: 0.5rem;">
+                <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" style="color: #c9a84c;">Voltar ao topo ↑</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+<script>
+    // Lista de todas as trilhas disponíveis no site
+    const trilhas = [
+        { num: "00", nome: "Fundamentos do Pensamento em Dados", topic: "Estrutura de Pensamento", descricao: "O método que organiza o caos antes do código. Aprenda a pensar em camadas, diagnosticar problemas e construir clareza antes de qualquer ferramenta.", caminho: "/aprender/trilha-00-fundamentos/", previsto: "Disponível agora" },
+        { num: "01", nome: "SQL para Dados", topic: "SQL e Bancos de Dados", descricao: "Aprenda SQL para executar o desenho dos dados. Consultas, joins e modelagem prática.", caminho: "/aprender/trilha-01-sql/", previsto: "Agosto 2026" },
+        { num: "02", nome: "Python para Engenharia de Dados", topic: "Python e Automação", descricao: "Python Mínimo Viável para pipeline. Não é Python genérico — é foco em dados.", caminho: "/aprender/trilha-02-python/", previsto: "Setembro 2026" },
+        { num: "03", nome: "Git e Organização", topic: "Git e Versionamento", descricao: "Versionamento e organização de projetos de dados. Do básico ao prático.", caminho: "/aprender/trilha-03-git/", previsto: "Outubro 2026" },
+        { num: "04", nome: "Projetos Integrados", topic: "Projetos de Dados", descricao: "Integre SQL, Python e Git em projetos completos de engenharia de dados.", caminho: "/aprender/trilha-04-projetos/", previsto: "Novembro 2026" },
+        { num: "05", nome: "Bancos de Dados Relacionais", topic: "Bancos de Dados", descricao: "PostgreSQL, índices, constraints e boas práticas para engenharia de dados.", caminho: "/aprender/trilha-05-bancos/", previsto: "Dezembro 2026" },
+        { num: "06", nome: "Modelagem Avançada", topic: "Modelagem de Dados", descricao: "Star Schema, SCD, modelagem para Data Warehouse e decisões de design.", caminho: "/aprender/trilha-06-modelagem/", previsto: "Janeiro 2027" },
+        { num: "07", nome: "ETL/ELT na Prática", topic: "ETL e Pipelines", descricao: "Construção de pipelines de dados com Python e SQL. Extraia, transforme e carregue.", caminho: "/aprender/trilha-07-etl/", previsto: "Fevereiro 2027" },
+        { num: "08", nome: "Orquestração de Dados", topic: "Orquestração", descricao: "Airflow, DAGs e automação de pipelines. Durma enquanto o pipeline roda.", caminho: "/aprender/trilha-08-orquestracao/", previsto: "Março 2027" },
+        { num: "09", nome: "Analytics Engineering", topic: "Analytics Engineering", descricao: "Transformações com dbt, documentação e boas práticas de analytics.", caminho: "/aprender/trilha-09-analytics/", previsto: "Abril 2027" },
+        { num: "10", nome: "Data Warehouse Completo", topic: "Data Warehouse", descricao: "Construa um Data Warehouse do zero. Portfólio completo para o mercado.", caminho: "/aprender/trilha-10-dw/", previsto: "Maio 2027" },
+        { num: "11", nome: "Produtos DADOZILLA", topic: "Produtos de Dados", descricao: "Crie dashboards para vender. Transforme conhecimento em produto digital.", caminho: "/aprender/trilha-11-dadozilla/", previsto: "Junho 2027" },
+        { num: "12", nome: "IA para Dados", topic: "IA e Dados", descricao: "Use Inteligência Artificial para acelerar sua análise e pipeline de dados.", caminho: "/aprender/trilha-12-ia/", previsto: "Julho 2027" },
+        { num: "13", nome: "Carreira em Dados", topic: "Carreira", descricao: "Monte seu currículo, prepare-se para entrevistas e conquiste sua vaga.", caminho: "/aprender/trilha-13-carreira/", previsto: "Agosto 2027" }
+    ];
+
+    // Função para verificar se uma página existe via fetch
+    async function verificarPaginaExiste(url) {
+        try {
+            // Verifica se o arquivo index.html existe dentro da pasta
+            const response = await fetch(`${url}index.html`, { 
+                method: 'HEAD',
+                cache: 'no-cache'
+            });
+            return response.ok;
+        } catch (error) {
+            return false;
+        }
+    }
+
+    // Função para criar o card HTML
+    function criarCard(trilha, disponivel) {
+        const isDisponivel = disponivel;
+        const cardClass = isDisponivel ? 'lancada' : 'em-desenvolvimento';
+        const badgeClass = isDisponivel ? 'badge-disponivel' : 'badge-desenvolvimento';
+        const badgeText = isDisponivel ? 'Disponível' : 'Em desenvolvimento';
+        const hrefLink = isDisponivel ? trilha.caminho : '#';
+        const onClickPrevent = !isDisponivel ? 'return false;' : '';
+        
+        return `
+            <a href="${hrefLink}" class="trilha-card-aprender ${cardClass}" ${!isDisponivel ? 'onclick="return false;"' : ''}>
+                <div class="trilha-card-header-aprender">
+                    <span class="trilha-num">TRILHA ${trilha.num}</span>
+                    <span class="trilha-status ${badgeClass}">${badgeText}</span>
+                </div>
+                <span class="trilha-topic">${trilha.topic}</span>
+                <h2 class="trilha-titulo">${trilha.nome}</h2>
+                <p class="trilha-descricao">${trilha.descricao}</p>
+                <div class="trilha-card-footer-aprender">
+                    <span class="trilha-date">${trilha.previsto}</span>
+                    <span class="trilha-arrow">→</span>
+                </div>
+                ${!isDisponivel ? '<span class="aviso-dev">📝 em produção</span>' : ''}
+            </a>
+        `;
+    }
+
+    // Função principal: verificar todas as trilhas e renderizar
+    async function carregarTrilhas() {
+        const grid = document.getElementById('trilhas-grid');
+        
+        // Mostra loading
+        grid.innerHTML = '<div style="grid-column:1/-1; text-align:center; padding:3rem;">🔍 Verificando trilhas disponíveis...</div>';
+        
+        // Verifica cada trilha
+        const resultados = [];
+        
+        for (const trilha of trilhas) {
+            // Tenta verificar se a página existe
+            const existe = await verificarPaginaExiste(trilha.caminho);
+            resultados.push({ trilha, disponivel: existe });
+        }
+        
+        // Renderiza os cards
+        grid.innerHTML = '';
+        resultados.forEach(({ trilha, disponivel }) => {
+            const cardHtml = criarCard(trilha, disponivel);
+            grid.innerHTML += cardHtml;
+        });
+        
+        // Log no console para debug
+        const disponiveis = resultados.filter(r => r.disponivel).length;
+        console.log(`📚 Mente & Dados - ${disponiveis} de ${trilhas.length} trilhas disponíveis`);
+        if (disponiveis > 0) {
+            console.log('✅ Trilhas disponíveis:', resultados.filter(r => r.disponivel).map(r => `Trilha ${r.trilha.num}`).join(', '));
+        }
+    }
+
+    // Executa quando a página carregar
+    document.addEventListener('DOMContentLoaded', carregarTrilhas);
+</script>
+<script src="/assets/js/analytics.js"></script>
+<script src="/assets/js/hotmart-config.js"></script>
+<script src="/assets/js/faq-accordion.js"></script>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/schema-markup.js"></script>
+
+</body>
+</html>
