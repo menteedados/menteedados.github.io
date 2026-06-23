@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trilha | Mente & Dados</title>
     <meta name="description" content="">
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Serif+4:wght@300;400;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Serif+4:wght@300;400;600&family=DM+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
     <!-- ===== FAVICON - Mente & Dados ===== -->
     <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
@@ -22,6 +25,7 @@
             padding: 3.5rem 0 3rem;
             text-align: center;
         }
+
         .hero-trilha .trilha-num-label {
             font-family: 'DM Mono', monospace;
             font-size: 0.7rem;
@@ -31,6 +35,7 @@
             display: block;
             margin-bottom: 0.75rem;
         }
+
         .hero-trilha h1 {
             font-family: 'Playfair Display', serif;
             font-size: clamp(2rem, 4vw, 2.75rem);
@@ -38,10 +43,11 @@
             margin-bottom: 1rem;
             line-height: 1.15;
         }
+
         .hero-trilha .subtitle {
             max-width: 640px;
             margin: 0 auto;
-            color: rgba(255,255,255,0.72);
+            color: rgba(255, 255, 255, 0.72);
             line-height: 1.65;
             font-size: 1rem;
         }
@@ -52,24 +58,28 @@
             border-bottom: 1px solid var(--border-light);
             padding: 2.5rem 0;
         }
+
         .trilha-intro-grid {
             display: grid;
             grid-template-columns: 1fr auto;
             gap: 2rem;
             align-items: start;
         }
+
         .trilha-intro h2 {
             font-family: 'Playfair Display', serif;
             font-size: 1.25rem;
             color: var(--navy);
             margin-bottom: 0.75rem;
         }
+
         .trilha-intro p {
             color: var(--text-light);
             line-height: 1.7;
             font-size: 0.95rem;
             margin: 0;
         }
+
         .trilha-intro-meta {
             display: flex;
             flex-direction: column;
@@ -77,11 +87,13 @@
             min-width: 160px;
             text-align: right;
         }
+
         .meta-item {
             font-family: 'DM Mono', monospace;
             font-size: 0.68rem;
             color: var(--muted);
         }
+
         .meta-item strong {
             color: var(--gold-dark);
             display: block;
@@ -94,6 +106,7 @@
             padding: 3rem 0 4rem;
             background: var(--warm);
         }
+
         .aulas-section-label {
             font-family: 'DM Mono', monospace;
             font-size: 0.7rem;
@@ -113,6 +126,7 @@
             box-shadow: var(--shadow-sm);
             transition: box-shadow var(--transition-base), border-color var(--transition-base);
         }
+
         .aula-card.open {
             border-color: var(--gold);
             box-shadow: var(--shadow-md);
@@ -129,7 +143,10 @@
             user-select: none;
             -webkit-user-select: none;
         }
-        .aula-header:hover { background: var(--cream, #f9f6f0); }
+
+        .aula-header:hover {
+            background: var(--cream, #f9f6f0);
+        }
 
         .aula-header-left {
             display: flex;
@@ -138,6 +155,7 @@
             flex: 1;
             min-width: 0;
         }
+
         .aula-numero {
             font-family: 'DM Mono', monospace;
             font-size: 0.65rem;
@@ -145,7 +163,11 @@
             white-space: nowrap;
             flex-shrink: 0;
         }
-        .aula-titulo-wrap { min-width: 0; }
+
+        .aula-titulo-wrap {
+            min-width: 0;
+        }
+
         .aula-titulo {
             font-family: 'Playfair Display', serif;
             font-size: 1.05rem;
@@ -154,6 +176,7 @@
             line-height: 1.3;
             margin: 0 0 0.15rem;
         }
+
         .aula-resumo-inline {
             font-size: 0.78rem;
             color: var(--muted);
@@ -162,13 +185,19 @@
             overflow: hidden;
             text-overflow: ellipsis;
         }
+
         .aula-header-right {
             display: flex;
             align-items: center;
             gap: 0.75rem;
             flex-shrink: 0;
         }
-        .aula-badges { display: flex; gap: 0.4rem; }
+
+        .aula-badges {
+            display: flex;
+            gap: 0.4rem;
+        }
+
         .badge-mini {
             font-family: 'DM Mono', monospace;
             font-size: 0.6rem;
@@ -177,9 +206,21 @@
             font-weight: 600;
             letter-spacing: 0.03em;
         }
-        .badge-mini.has-video    { background: #fef3c7; color: #92400e; }
-        .badge-mini.has-article  { background: #dbeafe; color: #1e40af; }
-        .badge-mini.has-download { background: #d1fae5; color: #065f46; }
+
+        .badge-mini.has-video {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .badge-mini.has-article {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+
+        .badge-mini.has-download {
+            background: #d1fae5;
+            color: #065f46;
+        }
 
         .aula-chevron {
             width: 20px;
@@ -188,6 +229,7 @@
             transition: transform 0.25s ease;
             flex-shrink: 0;
         }
+
         .aula-card.open .aula-chevron {
             transform: rotate(180deg);
             color: var(--gold-dark);
@@ -199,7 +241,10 @@
             border-top: 1px solid var(--border-light);
             padding: 1.5rem;
         }
-        .aula-card.open .aula-body { display: block; }
+
+        .aula-card.open .aula-body {
+            display: block;
+        }
 
         .aula-body-label {
             font-family: 'DM Mono', monospace;
@@ -209,12 +254,14 @@
             color: var(--gold-dark);
             margin-bottom: 0.6rem;
         }
+
         .aula-blog-texto {
             font-size: 0.88rem;
             color: var(--text-light);
             line-height: 1.7;
             margin-bottom: 0.75rem;
         }
+
         .btn-medium {
             display: inline-flex;
             align-items: center;
@@ -229,7 +276,10 @@
             font-weight: 600;
             transition: all var(--transition-base);
         }
-        .btn-medium:hover { background: var(--gold); }
+
+        .btn-medium:hover {
+            background: var(--gold);
+        }
 
         .aula-divider {
             border: none;
@@ -243,17 +293,22 @@
             overflow: hidden;
             background: var(--navy);
         }
+
         .aula-video-ratio {
             position: relative;
             padding-bottom: 56.25%;
             height: 0;
         }
+
         .aula-video-ratio iframe {
             position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             border: none;
         }
+
         .aula-video-empty {
             background: var(--cream, #f9f6f0);
             border-radius: var(--radius-xl);
@@ -270,6 +325,7 @@
             gap: 0.6rem;
             margin-top: 0.5rem;
         }
+
         .btn-download {
             display: inline-flex;
             align-items: center;
@@ -284,7 +340,11 @@
             font-weight: 600;
             transition: all var(--transition-base);
         }
-        .btn-download:hover { border-color: var(--gold); background: white; }
+
+        .btn-download:hover {
+            border-color: var(--gold);
+            background: white;
+        }
 
         /* Empty / erro state */
         .aulas-empty {
@@ -304,18 +364,21 @@
             text-align: center;
             border-top: 1px solid var(--border-light);
         }
+
         .cta-produto h3 {
             font-family: 'Playfair Display', serif;
             font-size: 1.5rem;
             color: var(--navy);
             margin-bottom: 0.5rem;
         }
+
         .cta-produto p {
             color: var(--muted);
             max-width: 500px;
             margin: 0 auto 1.5rem;
             line-height: 1.6;
         }
+
         .btn-trilha {
             display: inline-block;
             background: var(--gold);
@@ -326,7 +389,11 @@
             font-weight: 700;
             transition: all var(--transition-base);
         }
-        .btn-trilha:hover { background: var(--gold-light); transform: translateY(-2px); }
+
+        .btn-trilha:hover {
+            background: var(--gold-light);
+            transform: translateY(-2px);
+        }
 
         /* Back link */
         .back-link {
@@ -340,173 +407,206 @@
             font-weight: 600;
             transition: gap var(--transition-base);
         }
-        .back-link:hover { gap: 0.75rem; }
+
+        .back-link:hover {
+            gap: 0.75rem;
+        }
 
         /* ── Responsive ──────────────────────────────────────── */
         @media (max-width: 768px) {
-            .trilha-intro-grid { grid-template-columns: 1fr; }
-            .trilha-intro-meta { text-align: left; flex-direction: row; flex-wrap: wrap; gap: 1rem; }
-            .aula-resumo-inline { display: none; }
-            .aula-header { padding: 1rem 1.1rem; }
-            .aula-body  { padding: 1.1rem; }
+            .trilha-intro-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .trilha-intro-meta {
+                text-align: left;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+
+            .aula-resumo-inline {
+                display: none;
+            }
+
+            .aula-header {
+                padding: 1rem 1.1rem;
+            }
+
+            .aula-body {
+                padding: 1.1rem;
+            }
         }
     </style>
 </head>
+
 <body>
 
-<!-- ============================================ -->
-<!-- HEADER com logo + navegação -->
-<!-- ============================================ -->
-<header class="header">
-    <div class="container">
-        <div class="header-content">
-            <a href="/" class="logo">
-                <img src="/assets/imagens/logo/logotipo_icone.png" alt="Mente & Dados" height="40"> <span>Mente & Dados</span>
-            </a>
-            
-            <nav aria-label="Menu principal">
-                <ul class="nav-links">
-                    <li><a href="/aprender/" aria-current="page">Biblioteca</a></li>
-                    <li><a href="/trilhas-futuras.html">Trilhas</a></li>
-                    <li><a href="/sobre/">Sobre</a></li>
-                    <li><a href="/contato/">Contato</a></li>
-                    
-                </ul>
-            </nav>
-        </div>
-    </div>
-</header>
-
-<main>
-
-    <section class="hero-trilha" id="hero">
+    <!-- ============================================ -->
+    <!-- HEADER com logo + navegação -->
+    <!-- ============================================ -->
+    <header class="header">
         <div class="container">
-            <span class="trilha-num-label" id="hero-num">Trilha · Material gratuito</span>
-            <h1 id="hero-titulo">Carregando…</h1>
-            <p class="subtitle" id="hero-subtitulo"></p>
+            <div class="header-content">
+                <a href="/" class="logo">
+                    <img src="/assets/imagens/logo/logotipo_icone.png" alt="Mente & Dados" height="40">
+                    <span>Mente & Dados</span>
+                </a>
+                <!-- Botão hambúrguer: só aparece no mobile via CSS -->
+                <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                <nav class="nav-menu" aria-label="Menu principal">
+                    <ul class="nav-links">
+                        <li><a href="/aprender/">Biblioteca</a></li>
+                        <li><a href="/trilhas-futuras.html">Trilhas</a></li>
+                        <li><a href="/sobre/">Sobre</a></li>
+                        <li><a href="/contato/">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-    </section>
+    </header>
 
-    <section class="trilha-intro" id="intro">
-        <div class="container">
-            <div class="trilha-intro-grid">
-                <div>
-                    <h2>Sobre esta trilha</h2>
-                    <p id="intro-descricao"></p>
+    <main>
+
+        <section class="hero-trilha" id="hero">
+            <div class="container">
+                <span class="trilha-num-label" id="hero-num">Trilha · Material gratuito</span>
+                <h1 id="hero-titulo">Carregando…</h1>
+                <p class="subtitle" id="hero-subtitulo"></p>
+            </div>
+        </section>
+
+        <section class="trilha-intro" id="intro">
+            <div class="container">
+                <div class="trilha-intro-grid">
+                    <div>
+                        <h2>Sobre esta trilha</h2>
+                        <p id="intro-descricao"></p>
+                    </div>
+                    <div class="trilha-intro-meta">
+                        <div class="meta-item"><strong>Tópico</strong><span id="meta-topico"></span></div>
+                        <div class="meta-item"><strong>Lançamento</strong><span id="meta-data"></span></div>
+                        <div class="meta-item"><strong>Aulas</strong><span id="meta-total"></span></div>
+                    </div>
                 </div>
-                <div class="trilha-intro-meta">
-                    <div class="meta-item"><strong>Tópico</strong><span id="meta-topico"></span></div>
-                    <div class="meta-item"><strong>Lançamento</strong><span id="meta-data"></span></div>
-                    <div class="meta-item"><strong>Aulas</strong><span id="meta-total"></span></div>
+            </div>
+        </section>
+
+        <section class="aulas-section">
+            <div class="container">
+                <a href="/aprender/" class="back-link">← Voltar para biblioteca</a>
+                <p class="aulas-section-label" id="aulas-label">Carregando…</p>
+                <div id="aulas-container"></div>
+            </div>
+        </section>
+
+        <section class="cta-produto">
+            <div class="container">
+                <h3>Quer aprofundar esse caminho?</h3>
+                <p>
+                    A Trilha 00 foi construída para desenvolver a habilidade mais negligenciada do<br>
+                    aprendizado moderno: saber estruturar o pensamento antes da ferramenta.
+                </p>
+                <a href="/trilha-00/" class="btn-trilha">Conhecer a Trilha 00 →</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4><img src="/assets/imagens/logo/logotipo_icone.png" alt="Mente & Dados" height="40"> Mente &
+                        Dados</h4>
+                    <p>Transformando iniciantes em engenheiros de dados através de conteúdo prático e trilhas
+                        estruturadas.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Trilhas</h4>
+                    <a href="/trilha-00/">Trilha 00 - Fundamentos</a>
+                    <a href="/trilha-01/">Trilha 01 - Python</a>
+                    <a href="/trilha-02/">Trilha 02 - SQL</a>
+                    <a href="/trilhas-futuras.html">Todas as trilhas</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Institucional</h4>
+                    <a href="/sobre/">Sobre</a>
+                    <a href="/contato/">Contato</a>
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <a href="https://youtube.com/@MenteeDados" target="_blank" rel="noopener noreferrer"><img
+                            src="/assets/imagens/icons/youtube.png" alt="YouTube"> YouTube</a>
+                    <a href="https://www.instagram.com/menteedados.oficial/" target="_blank"
+                        rel="noopener noreferrer"><img src="/assets/imagens/icons/instagram.png" alt="instagram">
+                        Instagram</a>
+                    <a href="https://medium.com/@menteedados" target="_blank" rel="noopener noreferrer"><img
+                            src="/assets/imagens/icons/medium.png" alt="Medium"> Medium</a>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section class="aulas-section">
-        <div class="container">
-            <a href="/aprender/" class="back-link">← Voltar para biblioteca</a>
-            <p class="aulas-section-label" id="aulas-label">Carregando…</p>
-            <div id="aulas-container"></div>
-        </div>
-    </section>
-
-    <section class="cta-produto">
-        <div class="container">
-            <h3>Quer aprofundar esse caminho?</h3>
-            <p>
-                A Trilha 00 foi construída para desenvolver a habilidade mais negligenciada do<br>
-                aprendizado moderno: saber estruturar o pensamento antes da ferramenta.
-            </p>
-            <a href="/trilha-00/" class="btn-trilha">Conhecer a Trilha 00 →</a>
-        </div>
-    </section>
-
-</main>
-
-<footer class="footer">
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4><img src="/assets/imagens/logo/logotipo_icone.png" alt="Mente & Dados" height="40"> Mente & Dados</h4>
-                <p>Transformando iniciantes em engenheiros de dados através de conteúdo prático e trilhas estruturadas.</p>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Trilhas</h4>
-                <a href="/trilha-00/">Trilha 00 - Fundamentos</a>
-                <a href="/trilha-01/">Trilha 01 - Python</a>
-                <a href="/trilha-02/">Trilha 02 - SQL</a>
-                <a href="/trilhas-futuras.html">Todas as trilhas</a>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Institucional</h4>
-                <a href="/sobre/">Sobre</a>
-                <a href="/contato/">Contato</a>
-                <a href="#">Política de Privacidade</a>
-                <a href="#">Termos de Uso</a>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Redes Sociais</h4>
-                <a href="https://youtube.com/@MenteeDados" target="_blank" rel="noopener noreferrer"><img src="/assets/imagens/icons/youtube.png" alt="YouTube"> YouTube</a>
-                <a href="https://www.instagram.com/menteedados.oficial/" target="_blank" rel="noopener noreferrer"><img src="/assets/imagens/icons/instagram.png" alt="instagram"> Instagram</a>
-                <a href="https://medium.com/@menteedados" target="_blank" rel="noopener noreferrer"><img src="/assets/imagens/icons/medium.png" alt="Medium"> Medium</a>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mente & Dados - Franciele Amaral. Todos os direitos reservados.</p>
+                <p style="font-size: 0.875rem; margin-top: 0.5rem;">
+                    <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;"
+                        style="color: #c9a84c;">Voltar ao topo ↑</a>
+                </p>
             </div>
         </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2026 Mente & Dados - Franciele Amaral. Todos os direitos reservados.</p>
-            <p style="font-size: 0.875rem; margin-top: 0.5rem;">
-                <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" style="color: #c9a84c;">Voltar ao topo ↑</a>
-            </p>
-        </div>
-    </div>
-</footer>
+    </footer>
 
-<script src="/assets/js/main.js"></script>
-<script>
-/* ─── Fetch data.json da própria pasta ──────────────────────── */
-async function init() {
-    let data;
-    try {
-        const res = await fetch('./data.json');
-        if (!res.ok) throw new Error('fetch failed');
-        data = await res.json();
-    } catch (e) {
-        document.getElementById('aulas-container').innerHTML =
-            '<div class="aulas-empty">⚠️ Não foi possível carregar o conteúdo desta trilha.</div>';
-        return;
-    }
+    <script src="/assets/js/main.js"></script>
+    <script>
+        /* ─── Fetch data.json da própria pasta ──────────────────────── */
+        async function init() {
+            let data;
+            try {
+                const res = await fetch('./data.json');
+                if (!res.ok) throw new Error('fetch failed');
+                data = await res.json();
+            } catch (e) {
+                document.getElementById('aulas-container').innerHTML =
+                    '<div class="aulas-empty">⚠️ Não foi possível carregar o conteúdo desta trilha.</div>';
+                return;
+            }
 
-    const { trilha, aulas } = data;
+            const { trilha, aulas } = data;
 
-    /* Preenche hero */
-    document.title = `${trilha.titulo} | Mente & Dados`;
-    document.querySelector('meta[name="description"]').setAttribute('content', trilha.descricao_curta);
-    document.getElementById('hero-num').textContent      = `Trilha ${trilha.num} · Material gratuito`;
-    document.getElementById('hero-titulo').textContent   = trilha.titulo;
-    document.getElementById('hero-subtitulo').textContent = trilha.descricao_curta;
+            /* Preenche hero */
+            document.title = `${trilha.titulo} | Mente & Dados`;
+            document.querySelector('meta[name="description"]').setAttribute('content', trilha.descricao_curta);
+            document.getElementById('hero-num').textContent = `Trilha ${trilha.num} · Material gratuito`;
+            document.getElementById('hero-titulo').textContent = trilha.titulo;
+            document.getElementById('hero-subtitulo').textContent = trilha.descricao_curta;
 
-    /* Preenche intro */
-    document.getElementById('intro-descricao').textContent = trilha.descricao_longa;
-    document.getElementById('meta-topico').textContent     = trilha.topico;
-    document.getElementById('meta-data').textContent       = trilha.data_lancamento;
-    document.getElementById('meta-total').textContent      = `${aulas.length} vídeo${aulas.length !== 1 ? 's' : ''}`;
+            /* Preenche intro */
+            document.getElementById('intro-descricao').textContent = trilha.descricao_longa;
+            document.getElementById('meta-topico').textContent = trilha.topico;
+            document.getElementById('meta-data').textContent = trilha.data_lancamento;
+            document.getElementById('meta-total').textContent = `${aulas.length} vídeo${aulas.length !== 1 ? 's' : ''}`;
 
-    /* Label da seção */
-    document.getElementById('aulas-label').textContent =
-        `${aulas.length} aula${aulas.length !== 1 ? 's' : ''} · ${trilha.topico}`;
+            /* Label da seção */
+            document.getElementById('aulas-label').textContent =
+                `${aulas.length} aula${aulas.length !== 1 ? 's' : ''} · ${trilha.topico}`;
 
-    /* Renderiza cards */
-    if (!aulas.length) {
-        document.getElementById('aulas-container').innerHTML =
-            '<div class="aulas-empty">📺 Nenhuma aula publicada ainda. Volte em breve!</div>';
-        return;
-    }
+            /* Renderiza cards */
+            if (!aulas.length) {
+                document.getElementById('aulas-container').innerHTML =
+                    '<div class="aulas-empty">📺 Nenhuma aula publicada ainda. Volte em breve!</div>';
+                return;
+            }
 
-    document.getElementById('aulas-container').innerHTML = aulas.map((aula, i) => `
+            document.getElementById('aulas-container').innerHTML = aulas.map((aula, i) => `
         <div class="aula-card" id="card-${i}">
             <div class="aula-header" onclick="toggle(${i})" aria-expanded="false" aria-controls="body-${i}">
                 <div class="aula-header-left">
@@ -518,8 +618,8 @@ async function init() {
                 </div>
                 <div class="aula-header-right">
                     <div class="aula-badges">
-                        ${aula.youtube_id                         ? '<span class="badge-mini has-video">vídeo</span>'    : ''}
-                        ${aula.link_medium                        ? '<span class="badge-mini has-article">artigo</span>' : ''}
+                        ${aula.youtube_id ? '<span class="badge-mini has-video">vídeo</span>' : ''}
+                        ${aula.link_medium ? '<span class="badge-mini has-article">artigo</span>' : ''}
                         ${aula.downloads && aula.downloads.length ? '<span class="badge-mini has-download">download</span>' : ''}
                     </div>
                     <svg class="aula-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -557,24 +657,77 @@ async function init() {
                 <p class="aula-body-label">Conteúdo para baixar</p>
                 <div class="aula-downloads">
                     ${aula.downloads.map(d =>
-                        `<a href="${d.url}" class="btn-download" target="_blank">${d.label}</a>`
-                    ).join('')}
+                    `<a href="${d.url}" class="btn-download" target="_blank">${d.label}</a>`
+                ).join('')}
                 </div>` : ''}
 
             </div>
         </div>
     `).join('');
-}
+        }
 
-function toggle(i) {
-    const card   = document.getElementById(`card-${i}`);
-    const header = card.querySelector('.aula-header');
-    const isOpen = card.classList.contains('open');
-    card.classList.toggle('open', !isOpen);
-    header.setAttribute('aria-expanded', String(!isOpen));
-}
+        function toggle(i) {
+            const card = document.getElementById(`card-${i}`);
+            const header = card.querySelector('.aula-header');
+            const isOpen = card.classList.contains('open');
+            card.classList.toggle('open', !isOpen);
+            header.setAttribute('aria-expanded', String(!isOpen));
+        }
 
-document.addEventListener('DOMContentLoaded', init);
-</script>
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+
+    <!-- Menu hamburguer -->
+    <script>
+        /* ── Smooth scroll ── */
+        document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                var target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        /* ── Sticky header shadow ── */
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('.header');
+            header.style.boxShadow = window.scrollY > 100 ? '0 2px 10px rgba(0,0,0,0.1)' : 'none';
+        });
+
+        /* ── Menu hambúrguer (mobile only) ── */
+        document.addEventListener('DOMContentLoaded', function () {
+            var toggle = document.querySelector('.menu-toggle');
+            var menu = document.querySelector('.nav-menu');
+            if (!toggle || !menu) return;
+
+            /* Abrir / fechar ao clicar no botão */
+            toggle.addEventListener('click', function (e) {
+                e.stopPropagation();
+                var isOpen = menu.classList.toggle('active');
+                toggle.classList.toggle('active', isOpen);
+                toggle.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            /* Fechar ao clicar em um link do menu */
+            document.querySelectorAll('.nav-links a').forEach(function (link) {
+                link.addEventListener('click', function () {
+                    menu.classList.remove('active');
+                    toggle.classList.remove('active');
+                    toggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+
+            /* Fechar ao clicar fora do header */
+            document.addEventListener('click', function (e) {
+                var header = document.querySelector('.header');
+                if (header && !header.contains(e.target)) {
+                    menu.classList.remove('active');
+                    toggle.classList.remove('active');
+                    toggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+    </script>
 </body>
+
 </html>

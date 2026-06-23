@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Contato | Mente & Dados</title>
-    <meta name="description" content="Entre em contato com a Mente & Dados. Tire dúvidas, sugira temas ou faça parcerias. Respondemos em até 24h úteis.">
+    <meta name="description"
+        content="Entre em contato com a Mente & Dados. Tire dúvidas, sugira temas ou faça parcerias. Respondemos em até 24h úteis.">
     <meta name="keywords" content="contato, dúvidas, parcerias, suporte, mente e dados">
-    
+
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://menteedados.github.io/contato/">
     <meta property="og:title" content="Contato | Mente & Dados">
     <meta property="og:description" content="Entre em contato conosco. Tire dúvidas, sugira temas ou faça parcerias.">
     <meta property="og:image" content="https://menteedados.github.io/assets/images/og/og-contato.jpg">
-    
+
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Contato | Mente & Dados">
@@ -39,11 +41,13 @@
         ]
         }
     </script>
-    
+
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Serif+4:wght@300;400;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-        <!-- ===== FAVICON - Mente & Dados ===== -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Serif+4:wght@300;400;600&family=DM+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- ===== FAVICON - Mente & Dados ===== -->
     <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
@@ -52,298 +56,374 @@
     <!-- ===== FIM FAVICON ===== -->
 
 </head>
+
 <body>
 
-<!-- ============================================ -->
-<!-- HEADER com logo + navegação -->
-<!-- ============================================ -->
-<header class="header">
-    <div class="container">
-        <div class="header-content">
-            <a href="/" class="logo">
-                <img src="/assets/imagens/logo/logotipo_icone.png" alt="Mente & Dados" height="40"> <span>Mente & Dados</span>
+    <!-- ============================================ -->
+    <!-- HEADER com logo + navegação -->
+    <!-- ============================================ -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">
+                    <img src="/assets/imagens/logo/logotipo_icone.png" alt="Mente & Dados" height="40">
+                    <span>Mente & Dados</span>
+                </a>
+                <!-- Botão hambúrguer: só aparece no mobile via CSS -->
+                <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                <nav class="nav-menu" aria-label="Menu principal">
+                    <ul class="nav-links">
+                        <li><a href="/aprender/">Biblioteca</a></li>
+                        <li><a href="/trilhas-futuras.html">Trilhas</a></li>
+                        <li><a href="/sobre/">Sobre</a></li>
+                        <li><a href="/contato/">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="contact-hero">
+            <div class="container">
+                <h1>Vamos <em>conversar</em></h1>
+                <p class="subtitle">Dúvida, sugestão ou vontade de construir algo junto? Este canal é aberto.</p>
+            </div>
+        </section>
+
+        <!-- Conteúdo principal -->
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Formulário -->
+                    <div class="contact-form-container">
+                        <h2>Envie sua mensagem</h2>
+                        <p style="color: var(--muted); margin-bottom: 1.5rem;">Não se preocupe com formalidades. Escreva
+                            como você pensa.</p>
+
+                        <div id="form-success" class="form-success">
+                            <img src="/assets/imagens/icons/success.png" alt="sucesso"> Mensagem enviada. Responderei
+                            pessoalmente em até 48h úteis.
+                        </div>
+                        <div id="form-error" class="form-error">
+                            <img src="/assets/imagens/icons/error-message.png" alt="error"> Erro ao enviar. Você pode
+                            tentar diretamente no email: contato@menteedados.com
+                        </div>
+
+                        <form id="contact-form" method="POST">
+                            <div class="form-group">
+                                <label class="form-label" for="nome">Nome <span class="required">*</span></label>
+                                <input type="text" id="nome" name="nome" class="form-input" required minlength="3">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="email">E-mail <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="assunto">Assunto</label>
+                                <input type="text" id="assunto" name="assunto" class="form-input"
+                                    placeholder="Ex: Dúvida sobre a Trilha 00, sugestão de tema, parceria">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="mensagem">Mensagem <span
+                                        class="required">*</span></label>
+                                <textarea id="mensagem" name="mensagem" class="form-textarea" required minlength="10"
+                                    placeholder="O que você gostaria de dizer? Seja breve ou longo — o importante é clareza."></textarea>
+                            </div>
+
+                            <button type="submit" id="submit-btn" class="btn-submit">
+                                📨 Enviar mensagem
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Informações de contato -->
+                    <div class="contact-info">
+                        <h2>Canais diretos</h2>
+                        <div class="info-list">
+                            <div class="info-item">
+                                <div class="info-icon">📧</div>
+                                <div class="info-content">
+                                    <h3>E-mail direto</h3>
+                                    <p><a href="mailto:shefatech.dev@gmail.com">shefatech.dev@gmail.com</a></p>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon">⏱️</div>
+                                <div class="info-content">
+                                    <h3>Resposta</h3>
+                                    <p>Até 48h úteis, direto comigo</p>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon">💬</div>
+                                <div class="info-content">
+                                    <h3>Sugestões de conteúdo</h3>
+                                    <p>Temas que você gostaria de ver aprofundados</p>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon">🤝</div>
+                                <div class="info-content">
+                                    <h3>Parcerias</h3>
+                                    <p>Se você também acredita que profundidade importa, vamos conversar.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Redes sociais -->
+                        <div class="social-section">
+                            <h3>Redes Sociais</h3>
+                            <div class="social-grid">
+                                <a href="https://youtube.com/@MenteeDados" target="_blank" class="social-card">
+                                    <img src="/assets/imagens/icons/youtube.png" alt="YouTube" width="24" height="24">
+                                    <span>YouTube</span>
+                                </a>
+                                <a href="https://www.instagram.com/menteedados.oficial/" target="_blank"
+                                    class="social-card">
+                                    <img src="/assets/imagens/icons/instagram.png" alt="Instagram" width="24"
+                                        height="24">
+                                    <span>Instagram</span>
+                                </a>
+                                <a href="https://medium.com/@menteedados" target="_blank" class="social-card">
+                                    <img src="/assets/imagens/icons/medium.png" alt="Medium" width="24" height="24">
+                                    <span>Medium</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conversa aberta - substituindo a FAQ genérica -->
+        <section class="conversation">
+            <div class="container">
+                <div class="conversation-content">
+                    <h2>Não há perguntas prontas</h2>
+                    <p>Cada pessoa que chega até aqui tem um contexto, uma dúvida, um incômodo. Não trato isso como
+                        "atendimento ao cliente". Trato como uma conversa.</p>
+                    <p>Se você está cansado de respostas genéricas e quer um diálogo real sobre aprendizado, estrutura
+                        de pensamento ou engenharia de dados — o email está aberto.</p>
+                    <div class="conversation-note">
+                        * Se sua dúvida for sobre acesso à Trilha 00, o suporte técnico responde em até 48h.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Back link -->
+        <div class="back-link-container">
+            <a href="/" class="back-link">
+                ← Voltar para a página inicial
             </a>
-            
-            <nav aria-label="Menu principal">
-                <ul class="nav-links">
-                    <li><a href="/aprender/" aria-current="page">Biblioteca</a></li>
-                    <li><a href="/trilhas-futuras.html">Trilhas</a></li>
-                    <li><a href="/sobre/">Sobre</a></li>
-                    <li><a href="/contato/">Contato</a></li>
-                    
-                </ul>
-            </nav>
         </div>
-    </div>
-</header>
+    </main>
 
-<main>
-    <!-- Hero -->
-    <section class="contact-hero">
+    <!-- Footer --->
+    <footer class="footer">
         <div class="container">
-            <h1>Vamos <em>conversar</em></h1>
-            <p class="subtitle">Dúvida, sugestão ou vontade de construir algo junto? Este canal é aberto.</p>
-        </div>
-    </section>
-
-    <!-- Conteúdo principal -->
-    <section class="contact-content">
-        <div class="container">
-            <div class="contact-grid">
-                <!-- Formulário -->
-                <div class="contact-form-container">
-                    <h2>Envie sua mensagem</h2>
-                    <p style="color: var(--muted); margin-bottom: 1.5rem;">Não se preocupe com formalidades. Escreva como você pensa.</p>
-                    
-                    <div id="form-success" class="form-success">
-                        <img src="/assets/imagens/icons/success.png" alt="sucesso"> Mensagem enviada. Responderei pessoalmente em até 48h úteis.
-                    </div>
-                    <div id="form-error" class="form-error">
-                        <img src="/assets/imagens/icons/error-message.png" alt="error"> Erro ao enviar. Você pode tentar diretamente no email: contato@menteedados.com
-                    </div>
-                    
-                    <form id="contact-form" method="POST">
-                        <div class="form-group">
-                            <label class="form-label" for="nome">Nome <span class="required">*</span></label>
-                            <input type="text" id="nome" name="nome" class="form-input" required minlength="3">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label class="form-label" for="email">E-mail <span class="required">*</span></label>
-                            <input type="email" id="email" name="email" class="form-input" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label class="form-label" for="assunto">Assunto</label>
-                            <input type="text" id="assunto" name="assunto" class="form-input" placeholder="Ex: Dúvida sobre a Trilha 00, sugestão de tema, parceria">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label class="form-label" for="mensagem">Mensagem <span class="required">*</span></label>
-                            <textarea id="mensagem" name="mensagem" class="form-textarea" required minlength="10" placeholder="O que você gostaria de dizer? Seja breve ou longo — o importante é clareza."></textarea>
-                        </div>
-                        
-                        <button type="submit" id="submit-btn" class="btn-submit">
-                            📨 Enviar mensagem
-                        </button>
-                    </form>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4><img src="/assets/imagens/logo/logotipo_icone.png" alt="Mente & Dados" height="40"> Mente &
+                        Dados</h4>
+                    <p>Transformando iniciantes em engenheiros de dados através de conteúdo prático e trilhas
+                        estruturadas.</p>
                 </div>
-                
-                <!-- Informações de contato -->
-                <div class="contact-info">
-                    <h2>Canais diretos</h2>
-                   <div class="info-list">
-                        <div class="info-item">
-                            <div class="info-icon">📧</div>
-                            <div class="info-content">
-                                <h3>E-mail direto</h3>
-                                <p><a href="mailto:shefatech.dev@gmail.com">shefatech.dev@gmail.com</a></p>
-                            </div>
-                        </div>
-                        
-                        <div class="info-item">
-                            <div class="info-icon">⏱️</div>
-                            <div class="info-content">
-                                <h3>Resposta</h3>
-                                <p>Até 48h úteis, direto comigo</p>
-                            </div>
-                        </div>
-                        
-                        <div class="info-item">
-                            <div class="info-icon">💬</div>
-                            <div class="info-content">
-                                <h3>Sugestões de conteúdo</h3>
-                                <p>Temas que você gostaria de ver aprofundados</p>
-                            </div>
-                        </div>
-                        
-                        <div class="info-item">
-                            <div class="info-icon">🤝</div>
-                            <div class="info-content">
-                                <h3>Parcerias</h3>
-                                <p>Se você também acredita que profundidade importa, vamos conversar.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Redes sociais -->
-                    <div class="social-section">
-                        <h3>Redes Sociais</h3>
-                        <div class="social-grid">
-                            <a href="https://youtube.com/@MenteeDados" target="_blank" class="social-card">
-                                <img src="/assets/imagens/icons/youtube.png" alt="YouTube" width="24" height="24">
-                                <span>YouTube</span>
-                            </a>
-                            <a href="https://www.instagram.com/menteedados.oficial/" target="_blank" class="social-card">
-                                <img src="/assets/imagens/icons/instagram.png" alt="Instagram" width="24" height="24">
-                                <span>Instagram</span>
-                            </a>
-                            <a href="https://medium.com/@menteedados" target="_blank" class="social-card">
-                                <img src="/assets/imagens/icons/medium.png" alt="Medium" width="24" height="24">
-                                <span>Medium</span>
-                            </a>                            
-                        </div>
-                    </div>
+
+                <div class="footer-section">
+                    <h4>Trilhas</h4>
+                    <a href="/trilha-00/">Trilha 00 - Fundamentos</a>
+                    <a href="/trilha-01/">Trilha 01 - Python</a>
+                    <a href="/trilha-02/">Trilha 02 - SQL</a>
+                    <a href="/trilhas-futuras.html">Todas as trilhas</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Institucional</h4>
+                    <a href="/sobre/">Sobre</a>
+                    <a href="/contato/">Contato</a>
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <a href="https://youtube.com/@MenteeDados" target="_blank" rel="noopener noreferrer"><img
+                            src="/assets/imagens/icons/youtube.png" alt="YouTube"> YouTube</a>
+                    <a href="https://www.instagram.com/menteedados.oficial/" target="_blank"
+                        rel="noopener noreferrer"><img src="/assets/imagens/icons/instagram.png" alt="instagram">
+                        Instagram</a>
+                    <a href="https://medium.com/@menteedados" target="_blank" rel="noopener noreferrer"><img
+                            src="/assets/imagens/icons/medium.png" alt="Medium"> Medium</a>
                 </div>
             </div>
-        </div>
-    </section>
-    
-    <!-- Conversa aberta - substituindo a FAQ genérica -->
-    <section class="conversation">
-        <div class="container">
-            <div class="conversation-content">
-                <h2>Não há perguntas prontas</h2>
-                <p>Cada pessoa que chega até aqui tem um contexto, uma dúvida, um incômodo. Não trato isso como "atendimento ao cliente". Trato como uma conversa.</p>
-                <p>Se você está cansado de respostas genéricas e quer um diálogo real sobre aprendizado, estrutura de pensamento ou engenharia de dados — o email está aberto.</p>
-                <div class="conversation-note">
-                    * Se sua dúvida for sobre acesso à Trilha 00, o suporte técnico responde em até 48h.
-                </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mente & Dados - Franciele Amaral. Todos os direitos reservados.</p>
+                <p style="font-size: 0.875rem; margin-top: 0.5rem;">
+                    <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;"
+                        style="color: #c9a84c;">Voltar ao topo ↑</a>
+                </p>
             </div>
         </div>
-    </section>
-    
-    <!-- Back link -->
-    <div class="back-link-container">
-        <a href="/" class="back-link">
-            ← Voltar para a página inicial
-        </a>
-    </div>
-</main>
+    </footer>
 
-<!-- Footer --->
-<footer class="footer">
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4><img src="/assets/imagens/logo/logotipo_icone.png" alt="Mente & Dados" height="40"> Mente & Dados</h4>
-                <p>Transformando iniciantes em engenheiros de dados através de conteúdo prático e trilhas estruturadas.</p>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Trilhas</h4>
-                <a href="/trilha-00/">Trilha 00 - Fundamentos</a>
-                <a href="/trilha-01/">Trilha 01 - Python</a>
-                <a href="/trilha-02/">Trilha 02 - SQL</a>
-                <a href="/trilhas-futuras.html">Todas as trilhas</a>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Institucional</h4>
-                <a href="/sobre/">Sobre</a>
-                <a href="/contato/">Contato</a>
-                <a href="#">Política de Privacidade</a>
-                <a href="#">Termos de Uso</a>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Redes Sociais</h4>
-                <a href="https://youtube.com/@MenteeDados" target="_blank" rel="noopener noreferrer"><img src="/assets/imagens/icons/youtube.png" alt="YouTube"> YouTube</a>
-                <a href="https://www.instagram.com/menteedados.oficial/" target="_blank" rel="noopener noreferrer"><img src="/assets/imagens/icons/instagram.png" alt="instagram"> Instagram</a>
-                <a href="https://medium.com/@menteedados" target="_blank" rel="noopener noreferrer"><img src="/assets/imagens/icons/medium.png" alt="Medium"> Medium</a>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2026 Mente & Dados - Franciele Amaral. Todos os direitos reservados.</p>
-            <p style="font-size: 0.875rem; margin-top: 0.5rem;">
-                <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" style="color: #c9a84c;">Voltar ao topo ↑</a>
-            </p>
-        </div>
-    </div>
-</footer>
+    <script src="/assets/js/analytics.js"></script>
+    <script src="/assets/js/hotmart-config.js"></script>
+    <script src="/assets/js/faq-accordion.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/schema-markup.js"></script>
 
-<script src="/assets/js/analytics.js"></script>
-<script src="/assets/js/hotmart-config.js"></script>
-<script src="/assets/js/faq-accordion.js"></script>
-<script src="/assets/js/main.js"></script>
-<script src="/assets/js/schema-markup.js"></script>
+    <script>
+        // Form submission handler
+        const form = document.getElementById('contact-form');
+        const successMsg = document.getElementById('form-success');
+        const errorMsg = document.getElementById('form-error');
+        const submitBtn = document.getElementById('submit-btn');
 
-<script>
-    // Form submission handler
-    const form = document.getElementById('contact-form');
-    const successMsg = document.getElementById('form-success');
-    const errorMsg = document.getElementById('form-error');
-    const submitBtn = document.getElementById('submit-btn');
-    
-    if (form) {
-        form.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            
-            const nome = document.getElementById('nome').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const mensagem = document.getElementById('mensagem').value.trim();
-            
-            if (!nome || !email || !mensagem) {
-                alert('Por favor, preencha nome, email e mensagem.');
-                return;
-            }
-            
-            if (!email.includes('@') || !email.includes('.')) {
-                alert('Por favor, digite um e-mail válido.');
-                return;
-            }
-            
-            submitBtn.disabled = true;
-            submitBtn.classList.add('btn-loading');
-            submitBtn.innerHTML = '⏳ Enviando...';
-            
-            successMsg.classList.remove('show');
-            errorMsg.classList.remove('show');
-            
-            const formSubmitUrl = 'https://formsubmit.co/ajax/shefatech.dev@gmail.com';
+        if (form) {
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
 
-            const formData = {
-                name: nome,
-                email: email,
-                subject: document.getElementById('assunto').value || 'Contato via site',
-                message: mensagem,
-                _subject: `Mente & Dados - Contato de ${nome}`,
-                _captcha: 'false'
-            };
-            
-            try {
-                const response = await fetch(formSubmitUrl, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'Accept': 'application/json'
-                    },
-                    body: JSON.stringify(formData)
-                });
-                
-                if (response.ok) {
-                    successMsg.classList.add('show');
-                    form.reset();
-                    
-                    if (typeof gtag !== 'undefined') {
-                        gtag('event', 'generate_lead', {
-                            event_category: 'contact',
-                            event_label: 'form_submit'
-                        });
-                    }
-                    
-                    if (typeof fbq !== 'undefined') {
-                        fbq('track', 'Contact');
-                    }
-                } else {
-                    throw new Error('Erro no envio');
+                const nome = document.getElementById('nome').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const mensagem = document.getElementById('mensagem').value.trim();
+
+                if (!nome || !email || !mensagem) {
+                    alert('Por favor, preencha nome, email e mensagem.');
+                    return;
                 }
-            } catch (error) {
-                console.error('Erro:', error);
-                errorMsg.classList.add('show');
-            } finally {
-                submitBtn.disabled = false;
-                submitBtn.classList.remove('btn-loading');
-                submitBtn.innerHTML = '📨 Enviar mensagem';
-                
-                setTimeout(() => {
-                    successMsg.classList.remove('show');
-                    errorMsg.classList.remove('show');
-                }, 5000);
-            }
+
+                if (!email.includes('@') || !email.includes('.')) {
+                    alert('Por favor, digite um e-mail válido.');
+                    return;
+                }
+
+                submitBtn.disabled = true;
+                submitBtn.classList.add('btn-loading');
+                submitBtn.innerHTML = '⏳ Enviando...';
+
+                successMsg.classList.remove('show');
+                errorMsg.classList.remove('show');
+
+                const formSubmitUrl = 'https://formsubmit.co/ajax/shefatech.dev@gmail.com';
+
+                const formData = {
+                    name: nome,
+                    email: email,
+                    subject: document.getElementById('assunto').value || 'Contato via site',
+                    message: mensagem,
+                    _subject: `Mente & Dados - Contato de ${nome}`,
+                    _captcha: 'false'
+                };
+
+                try {
+                    const response = await fetch(formSubmitUrl, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        },
+                        body: JSON.stringify(formData)
+                    });
+
+                    if (response.ok) {
+                        successMsg.classList.add('show');
+                        form.reset();
+
+                        if (typeof gtag !== 'undefined') {
+                            gtag('event', 'generate_lead', {
+                                event_category: 'contact',
+                                event_label: 'form_submit'
+                            });
+                        }
+
+                        if (typeof fbq !== 'undefined') {
+                            fbq('track', 'Contact');
+                        }
+                    } else {
+                        throw new Error('Erro no envio');
+                    }
+                } catch (error) {
+                    console.error('Erro:', error);
+                    errorMsg.classList.add('show');
+                } finally {
+                    submitBtn.disabled = false;
+                    submitBtn.classList.remove('btn-loading');
+                    submitBtn.innerHTML = '📨 Enviar mensagem';
+
+                    setTimeout(() => {
+                        successMsg.classList.remove('show');
+                        errorMsg.classList.remove('show');
+                    }, 5000);
+                }
+            });
+        }
+    </script>
+
+    <!-- Menu hamburguer -->
+    <script>
+        /* ── Smooth scroll ── */
+        document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                var target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
         });
-    }
-</script>
+
+        /* ── Sticky header shadow ── */
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('.header');
+            header.style.boxShadow = window.scrollY > 100 ? '0 2px 10px rgba(0,0,0,0.1)' : 'none';
+        });
+
+        /* ── Menu hambúrguer (mobile only) ── */
+        document.addEventListener('DOMContentLoaded', function () {
+            var toggle = document.querySelector('.menu-toggle');
+            var menu = document.querySelector('.nav-menu');
+            if (!toggle || !menu) return;
+
+            /* Abrir / fechar ao clicar no botão */
+            toggle.addEventListener('click', function (e) {
+                e.stopPropagation();
+                var isOpen = menu.classList.toggle('active');
+                toggle.classList.toggle('active', isOpen);
+                toggle.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            /* Fechar ao clicar em um link do menu */
+            document.querySelectorAll('.nav-links a').forEach(function (link) {
+                link.addEventListener('click', function () {
+                    menu.classList.remove('active');
+                    toggle.classList.remove('active');
+                    toggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+
+            /* Fechar ao clicar fora do header */
+            document.addEventListener('click', function (e) {
+                var header = document.querySelector('.header');
+                if (header && !header.contains(e.target)) {
+                    menu.classList.remove('active');
+                    toggle.classList.remove('active');
+                    toggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+    </script>
 
 </body>
+
 </html>
