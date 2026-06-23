@@ -304,23 +304,30 @@
 <body>
 
 <!-- Header -->
-<header class="header">
-    <div class="container">
-        <div class="header-content">
-            <a href="/" class="logo">
-                <img src="/assets/imagens/logo/logotipo_icone.png" alt="Mente & Dados" height="40"> <span>Mente & Dados</span>
-            </a>
-            <nav aria-label="Menu principal">
-                <ul class="nav-links">
-                    <li><a href="/aprender/" aria-current="page">Biblioteca</a></li>
-                    <li><a href="/trilhas-futuras.html">Trilhas</a></li>
-                    <li><a href="/sobre/">Sobre</a></li>
-                    <li><a href="/contato/">Contato</a></li>
-                </ul>
-            </nav>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">
+                    <img src="/assets/imagens/logo/logotipo_icone.png" alt="Mente & Dados" height="40">
+                    <span>Mente & Dados</span>
+                </a>
+                <!-- Botão hambúrguer: só aparece no mobile via CSS -->
+                <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                <nav class="nav-menu" aria-label="Menu principal">
+                    <ul class="nav-links">
+                        <li><a href="/aprender/">Biblioteca</a></li>
+                        <li><a href="/trilhas-futuras.html">Trilhas</a></li>
+                        <li><a href="/sobre/">Sobre</a></li>
+                        <li><a href="/contato/">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
 
 <main>
     <!-- Hero Section - Em Breve -->
@@ -553,6 +560,57 @@
 <script src="/assets/js/main.js"></script>
 <script src="/assets/js/hotmart-config.js"></script>
 <script src="/assets/js/schema-markup.js"></script>
+<!-- Menu hamburguer -->
+    <script>
+        /* ── Smooth scroll ── */
+        document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                var target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        /* ── Sticky header shadow ── */
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('.header');
+            header.style.boxShadow = window.scrollY > 100 ? '0 2px 10px rgba(0,0,0,0.1)' : 'none';
+        });
+
+        /* ── Menu hambúrguer (mobile only) ── */
+        document.addEventListener('DOMContentLoaded', function () {
+            var toggle = document.querySelector('.menu-toggle');
+            var menu = document.querySelector('.nav-menu');
+            if (!toggle || !menu) return;
+
+            /* Abrir / fechar ao clicar no botão */
+            toggle.addEventListener('click', function (e) {
+                e.stopPropagation();
+                var isOpen = menu.classList.toggle('active');
+                toggle.classList.toggle('active', isOpen);
+                toggle.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            /* Fechar ao clicar em um link do menu */
+            document.querySelectorAll('.nav-links a').forEach(function (link) {
+                link.addEventListener('click', function () {
+                    menu.classList.remove('active');
+                    toggle.classList.remove('active');
+                    toggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+
+            /* Fechar ao clicar fora do header */
+            document.addEventListener('click', function (e) {
+                var header = document.querySelector('.header');
+                if (header && !header.contains(e.target)) {
+                    menu.classList.remove('active');
+                    toggle.classList.remove('active');
+                    toggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>

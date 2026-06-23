@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <!-- Título e Descrição (SEO) -->
     <title>Caderno de Exercícios - 235 páginas | Mente & Dados</title>
-    <meta name="description" content="Pratique com 235 páginas de exercícios reais de engenharia de dados. 10 cenários com soluções comentadas. R$ 67.">
+    <meta name="description"
+        content="Pratique com 235 páginas de exercícios reais de engenharia de dados. 10 cenários com soluções comentadas. R$ 67.">
     <meta name="keywords" content="exercícios engenharia de dados, prática dados, caderno dados, aprendizado prático">
     <meta name="author" content="Franciele Amaral - Mente & Dados">
     <meta name="robots" content="index, follow">
@@ -15,7 +17,8 @@
     <meta property="og:type" content="product">
     <meta property="og:url" content="https://menteedados.github.io/trilha-00/caderno/">
     <meta property="og:title" content="Caderno de Exercícios - Engenharia de Dados | 235 páginas">
-    <meta property="og:description" content="10 cenários reais com soluções comentadas. E-commerce, hotel, marketplace, concessionária. R$ 67.">
+    <meta property="og:description"
+        content="10 cenários reais com soluções comentadas. E-commerce, hotel, marketplace, concessionária. R$ 67.">
     <meta property="og:image" content="https://menteedados.github.io/assets/imagens/og/og-caderno.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -27,13 +30,15 @@
     <meta name="twitter:title" content="Caderno de Exercícios - Engenharia de Dados">
     <meta name="twitter:description" content="235 páginas de prática + 10 cenários reais. R$ 67.">
     <meta name="twitter:image" content="https://menteedados.github.io/assets/imagens/og/og-caderno.png">
-    
+
     <!-- CSS Principal -->
     <link rel="stylesheet" href="/assets/css/main.css">
-    
+
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Serif+4:wght@300;400;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-        <!-- ===== FAVICON - Mente & Dados ===== -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Serif+4:wght@300;400;600&family=DM+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- ===== FAVICON - Mente & Dados ===== -->
     <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
@@ -42,333 +47,424 @@
     <!-- ===== FIM FAVICON ===== -->
 
 </head>
+
 <body>
 
-<!-- Header -->
-<header class="header">
-    <div class="container">
-        <div class="header-content">
-            <a href="/" class="logo">
-                <img src="/assets/imagens/logo/logotipo_icone.png" alt="Mente & Dados" height="40"> <span>Mente & Dados</span>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">
+                    <img src="/assets/imagens/logo/logotipo_icone.png" alt="Mente & Dados" height="40">
+                    <span>Mente & Dados</span>
+                </a>
+                <!-- Botão hambúrguer: só aparece no mobile via CSS -->
+                <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                <nav class="nav-menu" aria-label="Menu principal">
+                    <ul class="nav-links">
+                        <li><a href="/aprender/">Biblioteca</a></li>
+                        <li><a href="/trilhas-futuras.html">Trilhas</a></li>
+                        <li><a href="/sobre/">Sobre</a></li>
+                        <li><a href="/contato/">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Botão Voltar -->
+        <div class="container" style="margin-top: 2rem;">
+            <a href="/trilha-00/" class="btn-back">
+                ← Ver todas as opções da Trilha 00
             </a>
-            <nav aria-label="Menu principal">
-                <ul class="nav-links">
-                    <li><a href="/aprender/" aria-current="page">Biblioteca</a></li>
-                    <li><a href="/trilhas-futuras.html">Trilhas</a></li>
-                    <li><a href="/sobre/">Sobre</a></li>
-                    <li><a href="/contato/">Contato</a></li>
-                </ul>
-            </nav>
         </div>
-    </div>
-</header>
 
-<main>
-    <!-- Botão Voltar -->
-    <div class="container" style="margin-top: 2rem;">
-        <a href="/trilha-00/" class="btn-back">
-            ← Ver todas as opções da Trilha 00
-        </a>
-    </div>
-
-    <!-- Hero Section -->
-    <section class="product-hero">
-        <div class="container">
-            <p style="font-size: 0.85rem; opacity: 0.7; margin-bottom: 0.5rem;">
-            Trilha 00 · Camada prática
-            </p>
-            <h1 style="font-size: clamp(1.8rem, 5vw, 2.5rem);">
-                Você entende.<br>
-                Mas trava quando precisa decidir<br>
-                <em style="color: var(--gold-light);">o que fazer antes do código.</em>
-            </h1>
-            <p style="margin-top: 1rem; max-width: 600px; margin-left: auto; margin-right: auto; font-size: 1.1rem;">
-                O Caderno de Exercícios é o espaço onde você para de entender… e começa a decidir.
-            </p>
-            <div class="product-price">R$ 67</div>
-            <a href="#" class="btn-hotmart" onclick="goToCheckout('caderno', event)">Quero começar a decidir →</a>
-            <p style="margin-top: 0.5rem; font-size: 0.85rem; opacity: 0.8;">🔒 Pagamento seguro via Hotmart · Acesso imediato</p>
-        </div>
-    </section>
-
-    <!-- Seção: O que você realmente está treinando -->
-    <section class="section-clarity">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">O que você realmente está <span class="text-gold">treinando aqui</span></h2>
-                <div class="section-divider"></div>
-            </div>
-            
-            <div style="max-width: 700px; margin: 0 auto;">
-                <p style="font-size: 1.1rem; margin-bottom: 1rem; text-align: center;">
-                    Este não é um caderno para testar memória. É um caderno para <strong>treinar raciocínio</strong>.
+        <!-- Hero Section -->
+        <section class="product-hero">
+            <div class="container">
+                <p style="font-size: 0.85rem; opacity: 0.7; margin-bottom: 0.5rem;">
+                    Trilha 00 · Camada prática
                 </p>
-                               
-                <p style="margin-bottom: 1rem;">
-                    Você vai lidar com situações como:
+                <h1 style="font-size: clamp(1.8rem, 5vw, 2.5rem);">
+                    Você entende.<br>
+                    Mas trava quando precisa decidir<br>
+                    <em style="color: var(--gold-light);">o que fazer antes do código.</em>
+                </h1>
+                <p
+                    style="margin-top: 1rem; max-width: 600px; margin-left: auto; margin-right: auto; font-size: 1.1rem;">
+                    O Caderno de Exercícios é o espaço onde você para de entender… e começa a decidir.
                 </p>
-                
-                <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
-                    <li>“preciso de um relatório, mas não sei exatamente o quê”</li>
-                    <li>dados incompletos e decisões incertas</li>
-                    <li>escolhas de modelagem sem caminho claro</li>
-                </ul>
-                
-                <div class="section-divider" style="margin: 2rem auto;"></div>
-                
-                <p style="color: var(--muted); font-style: italic; text-align: center;">
-                    "O caderno não te dá respostas prontas. Ele te ensina a perguntar melhor."
-                </p>
+                <div class="product-price">R$ 67</div>
+                <a href="#" class="btn-hotmart" onclick="goToCheckout('caderno', event)">Quero começar a decidir →</a>
+                <p style="margin-top: 0.5rem; font-size: 0.85rem; opacity: 0.8;">🔒 Pagamento seguro via Hotmart ·
+                    Acesso imediato</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Seção: O que começa a mudar -->
-    <section class="section-transformation">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">O que <span class="text-gold">começa a mudar</span></h2>
-                <div class="section-divider"></div>
-            </div>
-            
-            <div style="max-width: 700px; margin: 0 auto;">
-                <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
-                    <li style="margin-bottom: 0.75rem;"> Você para de abrir o VS Code sem saber o que fazer</li>
-                    <li style="margin-bottom: 0.75rem;"> Você começa a organizar o problema antes de pensar em solução</li>
-                    <li style="margin-bottom: 0.75rem;"> Pedidos vagos deixam de ser confusos</li>
-                    <li style="margin-bottom: 0.75rem;"> Você sabe justificar suas decisões — não só executar</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção: O que tem dentro -->
-    <section style="padding: 3rem 0; background: var(--warm);">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">O que tem <span class="text-gold">dentro do caderno</span></h2>
-                <div class="section-divider"></div>
-            </div>
-            
-            <div style="max-width: 700px; margin: 0 auto;">
-                <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
-                    <li> 235 páginas de prática guiada</li>
-                    <li> 10 cenários baseados em situações reais de trabalho</li>
-                    <li> Soluções comentadas (não só resposta, mas raciocínio)</li>
-                    <li> Contextos: e-commerce, hotel, marketplace e mais</li>
-                    <li> Pedidos vagos que você precisa estruturar sozinho</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- CHAMADA 1: E-BOOK (base mental) -->
-    <!-- ============================================ -->
-    <section style="padding: 3rem 0;">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Quer <span class="text-gold">ter mais clareza</span> antes de decidir?</h2>
-                <div class="section-divider"></div>
-                <p class="section-subtitle">
-                    O caderno é o espaço da decisão. Mas toda decisão fica mais clara quando você tem uma base.
-                </p>
-            </div>
-
-            <div class="cross-sell-card">
-                <div class="card-icon"><img src="/assets/imagens/icons/ebook.png" alt="ebook" height="40"></div>
-                <h3 style="color: var(--navy); margin-bottom: 0.5rem;">E-book: Modelagem Mental</h3>
-                <p style="color: var(--muted); max-width: 500px; margin: 0 auto 1rem auto;">
-                    O método em 6 etapas para organizar o raciocínio antes de qualquer ferramenta.
-                </p>
-                <div style="margin-bottom: 0.5rem;">
-                    <span style="text-decoration: line-through; color: var(--muted);">R$ 147</span>
-                    <span style="font-size: 2rem; font-weight: 700; color: var(--gold-dark);">R$ 87</span>
+        <!-- Seção: O que você realmente está treinando -->
+        <section class="section-clarity">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">O que você realmente está <span class="text-gold">treinando aqui</span>
+                    </h2>
+                    <div class="section-divider"></div>
                 </div>
-                <a href="/trilha-00/ebook/" class="btn btn-secondary">Quero estruturar meu raciocínio →</a>
-            </div>
-        </div>
-    </section>
 
-    <!-- ══════════════════════════════════ -->
-<!-- BÔNUS — MATERIAIS EXCLUSIVOS      -->
-<!-- ══════════════════════════════════ -->
-<section class="bonus">
-  <div class="container">
-    <div class="section-tag">Materiais exclusivos</div>
-    <div class="gold-line"></div>
-    <h2>Você recebe <em>3 ferramentas de raciocínio</em><br>que engenheiros de dados usam toda semana</h2>
+                <div style="max-width: 700px; margin: 0 auto;">
+                    <p style="font-size: 1.1rem; margin-bottom: 1rem; text-align: center;">
+                        Este não é um caderno para testar memória. É um caderno para <strong>treinar
+                            raciocínio</strong>.
+                    </p>
 
-    <div class="bonus-grid">
-      
-      <!-- Bônus 1: Quadro de Decisão -->
-      <div class="bonus-card">
-        <div class="bonus-icon"><img src="/assets/imagens/icons/data-model.png" alt="quadrodecisão" height="40"></div>
-        <div class="bonus-badge">Ferramenta #1</div>
-        <h4>Quadro de Decisão de Modelagem</h4>
-        <p>O fluxo de pensamento que vai do objetivo até a tabela Fato. São quatro perguntas que você se faz antes de escrever qualquer código. Um mapa mental que me salvou de ficar travado incontáveis vezes — e vai salvar você também.</p>
-      </div>
+                    <p style="margin-bottom: 1rem;">
+                        Você vai lidar com situações como:
+                    </p>
 
-      <!-- Bônus 2: Fato vs Dimensão -->
-      <div class="bonus-card">
-        <div class="bonus-icon"><img src="/assets/imagens/icons/cube.png" alt="fatodimensão" height="40"></div>
-        <div class="bonus-badge">Ferramenta #2</div>
-        <h4>Fato vs Dimensão</h4>
-        <p>A diferença que separa júnior de pleno. Explico com uma metáfora simples da padaria — você nunca mais vai confundir os dois conceitos. Tem exercício prático de verdade, com uma rede de supermercados, para você aplicar na hora e fixar o que aprendeu.</p>
-      </div>
+                    <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
+                        <li>“preciso de um relatório, mas não sei exatamente o quê”</li>
+                        <li>dados incompletos e decisões incertas</li>
+                        <li>escolhas de modelagem sem caminho claro</li>
+                    </ul>
 
-      <!-- Bônus 3: Caso DADOZILLA Cafés -->
-      <div class="bonus-card">
-        <div class="bonus-icon"><img src="/assets/imagens/icons/mascote_simples.png" alt="mascote_simples"></div>
-        <div class="bonus-badge">Ferramenta #3</div>
-        <h4>Caso DADOZILLA Cafés</h4>
-        <p>Um exemplo completo do zero. Você é o engenheiro de dados contratado por uma rede de 12 lojas com 3 canais de venda diferentes. Você vai identificar a tabela Fato, listar as dimensões e desenhar o pipeline. No final, tem uma solução comentada para você comparar. É o mais próximo de um problema real sem estar no trabalho.</p>
-      </div>
+                    <div class="section-divider" style="margin: 2rem auto;"></div>
 
-    </div>
-
-    <p style="text-align: center; margin-top: 2rem; font-size: 0.85rem; color: var(--muted);">
-      ⚡ Nada de "bônus encheção de linguiça". São materiais que eu usei e refinei na prática.
-    </p>
-  </div>
-</section>
-    <!-- Frase de transição -->
-    <section>
-        <div class="container">
-            <p style="text-align: center; max-width: 600px; margin: 2rem auto; color: var(--muted);">
-                Sem prática, o raciocínio não se sustenta.<br>
-                Você entende… mas trava quando precisa aplicar.
-            </p>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- CHAMADA 2: BUNDLE COMPLETO (estrutura final) -->
-    <!-- ============================================ -->
-    <section style="padding: 0 0 2rem 0;">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Quer a <span class="text-gold">estrutura completa</span>?</h2>
-                <div class="section-divider"></div>
-                <p class="section-subtitle">
-                    O Bundle Completo reúne entendimento, estrutura e prática em um único lugar.
-                </p>
-            </div>
-
-            <div class="cross-sell-card cross-sell-card--featured">
-                <div class="card-icon"><img src="/assets/imagens/icons/giftbox.png" alt="ebook" height="40"></div>
-                <h3 style="color: var(--navy); margin-bottom: 0.5rem;">Trilha 00 Completa</h3>
-                <p style="color: var(--muted); max-width: 500px; margin: 0 auto 1rem auto;">
-                    Inclui o E-book + Caderno de Exercícios + todas as ferramentas
-                </p>
-                <div style="margin-bottom: 0.5rem;">
-                    <span style="text-decoration: line-through; color: var(--muted);">R$ 247</span>
-                    <span style="font-size: 2rem; font-weight: 700; color: var(--gold-dark);">R$ 127</span>
-                    <span style="display: block; font-size: 0.85rem; color: var(--green);">Economia de R$ 120</span>
-                </div>
-                <a href="/trilha-00/completo/" class="btn btn-primary">Quero a estrutura completa →</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Garantia -->
-    <section style="padding: 2rem 0 3rem 0;">
-        <div class="container">
-            <div style="max-width: 600px; margin: 0 auto;">
-                <div class="guarantee-banner">
-                    <div style="margin-bottom: 0.5rem;"><img src="/assets/imagens/icons/shield.png" alt="garantia" height="40"></div>
-                    <h3 style="color: var(--navy); margin-bottom: 0.5rem;">Garantia de 7 dias</h3>
-                    <p style="color: var(--muted);">
-                        Você tem 7 dias para explorar o material com calma.
-                        Se não fizer sentido para você, devolvemos 100% do valor.
+                    <p style="color: var(--muted); font-style: italic; text-align: center;">
+                        "O caderno não te dá respostas prontas. Ele te ensina a perguntar melhor."
                     </p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- FAQ -->
-    <section class="faq-trilha">
+        <!-- Seção: O que começa a mudar -->
+        <section class="section-transformation">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">O que <span class="text-gold">começa a mudar</span></h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div style="max-width: 700px; margin: 0 auto;">
+                    <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
+                        <li style="margin-bottom: 0.75rem;"> Você para de abrir o VS Code sem saber o que fazer</li>
+                        <li style="margin-bottom: 0.75rem;"> Você começa a organizar o problema antes de pensar em
+                            solução</li>
+                        <li style="margin-bottom: 0.75rem;"> Pedidos vagos deixam de ser confusos</li>
+                        <li style="margin-bottom: 0.75rem;"> Você sabe justificar suas decisões — não só executar</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: O que tem dentro -->
+        <section style="padding: 3rem 0; background: var(--warm);">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">O que tem <span class="text-gold">dentro do caderno</span></h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div style="max-width: 700px; margin: 0 auto;">
+                    <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
+                        <li> 235 páginas de prática guiada</li>
+                        <li> 10 cenários baseados em situações reais de trabalho</li>
+                        <li> Soluções comentadas (não só resposta, mas raciocínio)</li>
+                        <li> Contextos: e-commerce, hotel, marketplace e mais</li>
+                        <li> Pedidos vagos que você precisa estruturar sozinho</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- CHAMADA 1: E-BOOK (base mental) -->
+        <!-- ============================================ -->
+        <section style="padding: 3rem 0;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Quer <span class="text-gold">ter mais clareza</span> antes de decidir?
+                    </h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">
+                        O caderno é o espaço da decisão. Mas toda decisão fica mais clara quando você tem uma base.
+                    </p>
+                </div>
+
+                <div class="cross-sell-card">
+                    <div class="card-icon"><img src="/assets/imagens/icons/ebook.png" alt="ebook" height="40"></div>
+                    <h3 style="color: var(--navy); margin-bottom: 0.5rem;">E-book: Modelagem Mental</h3>
+                    <p style="color: var(--muted); max-width: 500px; margin: 0 auto 1rem auto;">
+                        O método em 6 etapas para organizar o raciocínio antes de qualquer ferramenta.
+                    </p>
+                    <div style="margin-bottom: 0.5rem;">
+                        <span style="text-decoration: line-through; color: var(--muted);">R$ 147</span>
+                        <span style="font-size: 2rem; font-weight: 700; color: var(--gold-dark);">R$ 87</span>
+                    </div>
+                    <a href="/trilha-00/ebook/" class="btn btn-secondary">Quero estruturar meu raciocínio →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════ -->
+        <!-- BÔNUS — MATERIAIS EXCLUSIVOS      -->
+        <!-- ══════════════════════════════════ -->
+        <section class="bonus">
+            <div class="container">
+                <div class="section-tag">Materiais exclusivos</div>
+                <div class="gold-line"></div>
+                <h2>Você recebe <em>3 ferramentas de raciocínio</em><br>que engenheiros de dados usam toda semana</h2>
+
+                <div class="bonus-grid">
+
+                    <!-- Bônus 1: Quadro de Decisão -->
+                    <div class="bonus-card">
+                        <div class="bonus-icon"><img src="/assets/imagens/icons/data-model.png" alt="quadrodecisão"
+                                height="40"></div>
+                        <div class="bonus-badge">Ferramenta #1</div>
+                        <h4>Quadro de Decisão de Modelagem</h4>
+                        <p>O fluxo de pensamento que vai do objetivo até a tabela Fato. São quatro perguntas que você se
+                            faz antes de escrever qualquer código. Um mapa mental que me salvou de ficar travado
+                            incontáveis vezes — e vai salvar você também.</p>
+                    </div>
+
+                    <!-- Bônus 2: Fato vs Dimensão -->
+                    <div class="bonus-card">
+                        <div class="bonus-icon"><img src="/assets/imagens/icons/cube.png" alt="fatodimensão"
+                                height="40"></div>
+                        <div class="bonus-badge">Ferramenta #2</div>
+                        <h4>Fato vs Dimensão</h4>
+                        <p>A diferença que separa júnior de pleno. Explico com uma metáfora simples da padaria — você
+                            nunca mais vai confundir os dois conceitos. Tem exercício prático de verdade, com uma rede
+                            de supermercados, para você aplicar na hora e fixar o que aprendeu.</p>
+                    </div>
+
+                    <!-- Bônus 3: Caso DADOZILLA Cafés -->
+                    <div class="bonus-card">
+                        <div class="bonus-icon"><img src="/assets/imagens/icons/mascote_simples.png"
+                                alt="mascote_simples"></div>
+                        <div class="bonus-badge">Ferramenta #3</div>
+                        <h4>Caso DADOZILLA Cafés</h4>
+                        <p>Um exemplo completo do zero. Você é o engenheiro de dados contratado por uma rede de 12 lojas
+                            com 3 canais de venda diferentes. Você vai identificar a tabela Fato, listar as dimensões e
+                            desenhar o pipeline. No final, tem uma solução comentada para você comparar. É o mais
+                            próximo de um problema real sem estar no trabalho.</p>
+                    </div>
+
+                </div>
+
+                <p style="text-align: center; margin-top: 2rem; font-size: 0.85rem; color: var(--muted);">
+                    ⚡ Nada de "bônus encheção de linguiça". São materiais que eu usei e refinei na prática.
+                </p>
+            </div>
+        </section>
+        <!-- Frase de transição -->
+        <section>
+            <div class="container">
+                <p style="text-align: center; max-width: 600px; margin: 2rem auto; color: var(--muted);">
+                    Sem prática, o raciocínio não se sustenta.<br>
+                    Você entende… mas trava quando precisa aplicar.
+                </p>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- CHAMADA 2: BUNDLE COMPLETO (estrutura final) -->
+        <!-- ============================================ -->
+        <section style="padding: 0 0 2rem 0;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Quer a <span class="text-gold">estrutura completa</span>?</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">
+                        O Bundle Completo reúne entendimento, estrutura e prática em um único lugar.
+                    </p>
+                </div>
+
+                <div class="cross-sell-card cross-sell-card--featured">
+                    <div class="card-icon"><img src="/assets/imagens/icons/giftbox.png" alt="ebook" height="40"></div>
+                    <h3 style="color: var(--navy); margin-bottom: 0.5rem;">Trilha 00 Completa</h3>
+                    <p style="color: var(--muted); max-width: 500px; margin: 0 auto 1rem auto;">
+                        Inclui o E-book + Caderno de Exercícios + todas as ferramentas
+                    </p>
+                    <div style="margin-bottom: 0.5rem;">
+                        <span style="text-decoration: line-through; color: var(--muted);">R$ 247</span>
+                        <span style="font-size: 2rem; font-weight: 700; color: var(--gold-dark);">R$ 127</span>
+                        <span style="display: block; font-size: 0.85rem; color: var(--green);">Economia de R$ 120</span>
+                    </div>
+                    <a href="/trilha-00/completo/" class="btn btn-primary">Quero a estrutura completa →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Garantia -->
+        <section style="padding: 2rem 0 3rem 0;">
+            <div class="container">
+                <div style="max-width: 600px; margin: 0 auto;">
+                    <div class="guarantee-banner">
+                        <div style="margin-bottom: 0.5rem;"><img src="/assets/imagens/icons/shield.png" alt="garantia"
+                                height="40"></div>
+                        <h3 style="color: var(--navy); margin-bottom: 0.5rem;">Garantia de 7 dias</h3>
+                        <p style="color: var(--muted);">
+                            Você tem 7 dias para explorar o material com calma.
+                            Se não fizer sentido para você, devolvemos 100% do valor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq-trilha">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Antes de decidir</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="faq-list" style="max-width: 800px; margin: 0 auto;">
+                    <div class="faq-item">
+                        <div class="faq-question">Esse caderno é pra quem está começando?</div>
+                        <div class="faq-answer">Sim — principalmente para quem já estudou um pouco, mas trava quando
+                            precisa aplicar. Se você entende conceitos, mas não sabe por onde começar na prática, esse
+                            material é para você.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Preciso do e-book antes?</div>
+                        <div class="faq-answer">Não. O caderno foi pensado para te forçar a pensar mesmo sem ter tudo
+                            claro. Mas se você quer entender o método com mais profundidade, o e-book complementa.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">E se eu não souber resolver os exercícios?</div>
+                        <div class="faq-answer">Esse é o ponto. Você vai tentar, estruturar, errar — e depois comparar
+                            com a solução comentada. O aprendizado acontece exatamente nesse processo.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Isso ensina ferramenta (SQL, Python)?</div>
+                        <div class="faq-answer">Não. Ele treina o que vem antes disso: como pensar o problema. Sem isso,
+                            qualquer ferramenta vira tentativa.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Vou conseguir aplicar isso no trabalho?</div>
+                        <div class="faq-answer">Sim. Os cenários foram pensados exatamente para simular situações reais
+                            — pedidos vagos, dados incompletos e decisões sem caminho claro.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Antes de decidir</h2>
-                <div class="section-divider"></div>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4><img src="/assets/imagens/logo/logotipo_icone.png" alt="Mente & Dados" height="40"> Mente &
+                        Dados</h4>
+                    <p>Transformando iniciantes em engenheiros de dados através de conteúdo prático e trilhas
+                        estruturadas.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Trilhas</h4>
+                    <a href="/trilha-00/">Trilha 00 - Fundamentos</a>
+                    <a href="/trilha-01/">Trilha 01 - Python</a>
+                    <a href="/trilha-02/">Trilha 02 - SQL</a>
+                    <a href="/trilhas-futuras.html">Todas as trilhas</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Institucional</h4>
+                    <a href="/sobre/">Sobre</a>
+                    <a href="/contato/">Contato</a>
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <a href="https://youtube.com/@MenteeDados" target="_blank" rel="noopener noreferrer"><img
+                            src="/assets/imagens/icons/youtube.png" alt="YouTube"> YouTube</a>
+                    <a href="https://www.instagram.com/menteedados.oficial/" target="_blank"
+                        rel="noopener noreferrer"><img src="/assets/imagens/icons/instagram.png" alt="instagram">
+                        Instagram</a>
+                    <a href="https://medium.com/@menteedados" target="_blank" rel="noopener noreferrer"><img
+                            src="/assets/imagens/icons/medium.png" alt="Medium"> Medium</a>
+                </div>
             </div>
 
-            <div class="faq-list" style="max-width: 800px; margin: 0 auto;">
-                <div class="faq-item">
-                    <div class="faq-question">Esse caderno é pra quem está começando?</div>
-                    <div class="faq-answer">Sim — principalmente para quem já estudou um pouco, mas trava quando precisa aplicar. Se você entende conceitos, mas não sabe por onde começar na prática, esse material é para você.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Preciso do e-book antes?</div>
-                    <div class="faq-answer">Não. O caderno foi pensado para te forçar a pensar mesmo sem ter tudo claro. Mas se você quer entender o método com mais profundidade, o e-book complementa.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">E se eu não souber resolver os exercícios?</div>
-                    <div class="faq-answer">Esse é o ponto. Você vai tentar, estruturar, errar — e depois comparar com a solução comentada. O aprendizado acontece exatamente nesse processo.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Isso ensina ferramenta (SQL, Python)?</div>
-                    <div class="faq-answer">Não. Ele treina o que vem antes disso: como pensar o problema. Sem isso, qualquer ferramenta vira tentativa.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Vou conseguir aplicar isso no trabalho?</div>
-                    <div class="faq-answer">Sim. Os cenários foram pensados exatamente para simular situações reais — pedidos vagos, dados incompletos e decisões sem caminho claro.</div>
-                </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mente & Dados - Franciele Amaral. Todos os direitos reservados.</p>
+                <p style="font-size: 0.875rem; margin-top: 0.5rem;">
+                    <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;"
+                        style="color: #c9a84c;">Voltar ao topo ↑</a>
+                </p>
             </div>
         </div>
-    </section>
-</main>
+    </footer>
 
-<!-- Footer -->
-<footer class="footer">
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4><img src="/assets/imagens/logo/logotipo_icone.png" alt="Mente & Dados" height="40"> Mente & Dados</h4>
-                <p>Transformando iniciantes em engenheiros de dados através de conteúdo prático e trilhas estruturadas.</p>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Trilhas</h4>
-                <a href="/trilha-00/">Trilha 00 - Fundamentos</a>
-                <a href="/trilha-01/">Trilha 01 - Python</a>
-                <a href="/trilha-02/">Trilha 02 - SQL</a>
-                <a href="/trilhas-futuras.html">Todas as trilhas</a>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Institucional</h4>
-                <a href="/sobre/">Sobre</a>
-                <a href="/contato/">Contato</a>
-                <a href="#">Política de Privacidade</a>
-                <a href="#">Termos de Uso</a>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Redes Sociais</h4>
-                <a href="https://youtube.com/@MenteeDados" target="_blank" rel="noopener noreferrer"><img src="/assets/imagens/icons/youtube.png" alt="YouTube"> YouTube</a>
-                <a href="https://www.instagram.com/menteedados.oficial/" target="_blank" rel="noopener noreferrer"><img src="/assets/imagens/icons/instagram.png" alt="instagram"> Instagram</a>
-                <a href="https://medium.com/@menteedados" target="_blank" rel="noopener noreferrer"><img src="/assets/imagens/icons/medium.png" alt="Medium"> Medium</a>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2026 Mente & Dados - Franciele Amaral. Todos os direitos reservados.</p>
-            <p style="font-size: 0.875rem; margin-top: 0.5rem;">
-                <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" style="color: #c9a84c;">Voltar ao topo ↑</a>
-            </p>
-        </div>
-    </div>
-</footer>
+    <!-- Scripts -->
+    <script src="/assets/js/hotmart-config.js"></script>
+    <script src="/assets/js/faq-accordion.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/schema-markup.js"></script>
+    <script src="/assets/js/analytics.js"></script>
 
-<!-- Scripts -->
-<script src="/assets/js/hotmart-config.js"></script>
-<script src="/assets/js/faq-accordion.js"></script>
-<script src="/assets/js/main.js"></script>
-<script src="/assets/js/schema-markup.js"></script>
-<script src="/assets/js/analytics.js"></script>
+<!-- Menu hamburguer -->
+    <script>
+        /* ── Smooth scroll ── */
+        document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                var target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        /* ── Sticky header shadow ── */
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('.header');
+            header.style.boxShadow = window.scrollY > 100 ? '0 2px 10px rgba(0,0,0,0.1)' : 'none';
+        });
+
+        /* ── Menu hambúrguer (mobile only) ── */
+        document.addEventListener('DOMContentLoaded', function () {
+            var toggle = document.querySelector('.menu-toggle');
+            var menu = document.querySelector('.nav-menu');
+            if (!toggle || !menu) return;
+
+            /* Abrir / fechar ao clicar no botão */
+            toggle.addEventListener('click', function (e) {
+                e.stopPropagation();
+                var isOpen = menu.classList.toggle('active');
+                toggle.classList.toggle('active', isOpen);
+                toggle.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            /* Fechar ao clicar em um link do menu */
+            document.querySelectorAll('.nav-links a').forEach(function (link) {
+                link.addEventListener('click', function () {
+                    menu.classList.remove('active');
+                    toggle.classList.remove('active');
+                    toggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+
+            /* Fechar ao clicar fora do header */
+            document.addEventListener('click', function (e) {
+                var header = document.querySelector('.header');
+                if (header && !header.contains(e.target)) {
+                    menu.classList.remove('active');
+                    toggle.classList.remove('active');
+                    toggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+    </script>
 
 </body>
+
 </html>

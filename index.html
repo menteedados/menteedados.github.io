@@ -1,516 +1,528 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="theme-color" content="#0f1e3d">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="Mente & Dados - Produtos digitais para engenharia de dados. Trilhas completas, e-books e cursos para iniciantes e profissionais.">
-    <meta name="keywords" content="engenharia de dados, curso engenharia de dados, aprender dados, trilha engenharia de dados">
+    <meta name="description"
+        content="Mente & Dados — uma alternativa ao modelo raso de aprendizado. Profundidade, estrutura e clareza antes da ferramenta.">
+    <meta name="keywords" content="aprender dados, engenharia de dados, método de aprendizado, estrutura de pensamento">
     <meta name="author" content="Franciele Amaral - Mente & Dados">
-    
-    <title>Mente & Dados - Engenharia de dados para iniciantes</title>
-    
-    <!-- Open Graph / Facebook -->
+
+    <title>Mente & Dados — aprender a pensar em dados</title>
+
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://menteedados.github.io/">
-    <meta property="og:title" content="Mente & Dados - Engenharia de dados para iniciantes">
-    <meta property="og:description" content="Trilhas práticas para dominar engenharia de dados. Do zero ao mercado de trabalho.">
+    <meta property="og:title" content="Mente & Dados — aprender a pensar em dados">
+    <meta property="og:description"
+        content="Uma alternativa ao modelo raso de aprendizado. Profundidade, estrutura e clareza antes da ferramenta.">
     <meta property="og:image" content="https://menteedados.github.io/assets/images/og-image.jpg">
-    
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://menteedados.github.io/">
-    <meta property="twitter:title" content="Mente & Dados - Engenharia de dados para iniciantes">
-    <meta property="twitter:description" content="Trilhas práticas para dominar engenharia de dados. Do zero ao mercado de trabalho.">
+    <meta property="twitter:title" content="Mente & Dados — aprender a pensar em dados">
+    <meta property="twitter:description" content="Uma alternativa ao modelo raso de aprendizado.">
     <meta property="twitter:image" content="https://menteedados.github.io/assets/images/og-image.jpg">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
-    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
-    
-    <!-- CSS (serão implementados nas próximas tasks) -->
-    <link rel="stylesheet" href="assets/css/main.css">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,500;8..60,600;8..60,700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <!-- ===== SENTRY - Carregar antes de tudo ===== -->
-    <script src="assets/js/sentry-config.js"></script>
-    <!-- ===== FIM SENTRY ===== -->
 
-        <!-- ===== FAVICON - Mente & Dados ===== -->
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
     <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
     <link rel="manifest" href="/assets/icons/site.webmanifest">
-    <!-- ===== FIM FAVICON ===== -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,500;8..60,600;8..60,700&family=DM+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Sentry -->
+    <script src="assets/js/sentry-config.js"></script>
+
+
 </head>
+
 <body>
 
-<!-- ============================================ -->
-<!-- HEADER com logo + navegação -->
-<!-- ============================================ -->
-<header class="header">
-    <div class="container">
-        <div class="header-content">
-            <a href="/" class="logo">
-                <img src="/assets/imagens/logo/logotipo_icone.png" alt="Mente & Dados" height="40"> <span>Mente & Dados</span>
-            </a>
-            
-            <nav aria-label="Menu principal">
-                <ul class="nav-links">
-                    <li><a href="/aprender/" aria-current="page">Biblioteca</a></li>
-                    <li><a href="/trilhas-futuras.html">Trilhas</a></li>
-                    <li><a href="/sobre/">Sobre</a></li>
-                    <li><a href="/contato/">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</header>
-
-<main>
-
-<!-- ============================================ -->
-<!-- HERO SECTION -->
-<!-- ============================================ -->
-<section class="hero" aria-label="Apresentação">
-    <div class="container">
-        <div class="hero-content">
-            <h1 class="hero-title">
-                Transforme sua carreira com<br>
-                <span class="hero-highlight">Engenharia de Dados</span>
-            </h1>
-            <p class="hero-subtitle">
-                Do zero ao mercado de trabalho com trilhas práticas, e-books e cursos criados por quem vive dados no dia a dia.
-            </p>
-            <div class="hero-cta">
-                <a href="/trilha-00/" class="btn btn-primary" aria-label="Começar pela Trilha 00">
-                    Começar pela Trilha 00 →
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">
+                    <img src="/assets/imagens/logo/logotipo_icone.png" alt="Mente & Dados" height="40">
+                    <span>Mente & Dados</span>
                 </a>
-                <p class="hero-trust">
-                    <span> 14 trilhas planejadas</span>
-                </p>
+                <!-- Botão hambúrguer: só aparece no mobile via CSS -->
+                <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                <nav class="nav-menu" aria-label="Menu principal">
+                    <ul class="nav-links">
+                        <li><a href="/aprender/">Biblioteca</a></li>
+                        <li><a href="/trilhas-futuras.html">Trilhas</a></li>
+                        <li><a href="/sobre/">Sobre</a></li>
+                        <li><a href="/contato/">Contato</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
-    </div>
-</section>
+    </header>
 
-<!-- ============================================ -->
-<!-- GRID DE TRILHAS -->
-<!-- ============================================ -->
-<section id="trilhas" class="trilhas" aria-label="Nossas Trilhas">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">Trilhas de Aprendizado</h2>
-            <div class="section-divider"></div>
-            <p class="section-subtitle">
-                Metodologia passo a passo para você dominar engenharia de dados
-            </p>
-        </div>
-        
-        <div class="trilhas-grid">
-            <!-- Trilha 00 - COMPLETA -->
-            <article class="trilha-card trilha-card--featured">
-                <div class="trilha-badge">🔥 LANÇADA</div>
-                <div class="trilha-icon"> <img src="/assets/imagens/icons/rocket.png" alt="Lançamento" height="40"></div>
-                <h3 class="trilha-title">Trilha 00</h3>
-                <h4 class="trilha-subtitle">Fundamentos de Engenharia de Dados</h4>
-                <p class="trilha-description">
-                Você não trava no código — trava antes dele.
-                A Trilha 00 te ensina a estruturar o problema antes de abrir qualquer ferramenta.
-                </p>
-                <ul class="trilha-features">
-                    <li>✓ Estruturar problemas antes do código</li>
-                    <li>✓ Enxergar dados com clareza</li>
-                    <li>✓ Decidir antes de implementar</li>
-                    <li>✓ Pensar como engenheiro de dados</li>
-                </ul>
-                <p style="font-size: 0.85rem; opacity: 0.7;">
-                Inclui e-book, caderno de exercícios e ferramentas de raciocínio.
-                </p>
-                <div class="trilha-price">
-                    <span class="price-old">R$ 247</span>
-                    <span class="price-current">R$ 127</span>
-                    <span class="price-info">Preço de lançamento</span>
-                </div>
-                <a href="/trilha-00/" class="btn btn-secondary">Ver detalhes →</a>
-            </article>
-            
-            <!-- Trilha 01 - Em breve -->
-            <article class="trilha-card trilha-card--coming">
-                <div class="trilha-badge"> <img src="/assets/imagens/icons/routine.png" alt="embreve" height="40"> EM BREVE</div>
-                <div class="trilha-icon"> <img src="/assets/imagens/icons/python.png" alt="python" height="40"></div>
-                <h3 class="trilha-title">Trilha 01</h3>
-                <h4 class="trilha-subtitle">Python para Dados</h4>
-                <p class="trilha-description">
-                Domine Python do zero com foco em análise e manipulação de dados.
-                </p>
-                <div class="trilha-coming-soon">
-                    <p>Lançamento previsto: <strong>Agosto 2026</strong></p>
-                    <button class="btn-waitlist" >
-                        <a href="/trilha-01/" >
-                            📋 Quero ser avisado
-                        </a>
-                    </button>
-                </div>
-            </article>
-            
-            <!-- Trilha 02 - Em breve -->
-            <article class="trilha-card trilha-card--coming">
-                <div class="trilha-badge"><img src="/assets/imagens/icons/routine.png" alt="embreve" height="40"> EM BREVE</div>
-                <div class="trilha-icon"><img src="/assets/imagens/icons/sql-server.png" alt="SQL" height="40"></div>
-                <h3 class="trilha-title">Trilha 02</h3>
-                <h4 class="trilha-subtitle">SQL Avançado</h4>
-                <p class="trilha-description">
-                Consultas complexas, otimização e modelagem de bancos relacionais.
-                </p>
-                <div class="trilha-coming-soon">
-                    <p>Lançamento previsto: <strong>Outubro 2026</strong></p>
-                    <button class="btn-waitlist" >
-                        <a href="/trilha-02/" >
-                            📋 Quero ser avisado
-                        </a>
-                    </button>
-                </div>
-            </article>
-            
-            <!-- Trilha 03 - Em breve -->
-            <article class="trilha-card trilha-card--coming">
-                <div class="trilha-badge"> <img src="/assets/imagens/icons/routine.png" alt="embreve" height="40"> EM BREVE</div>
-                <div class="trilha-icon"><img src="/assets/imagens/icons/data_pipeline.png" alt="data_pipeline" height="40"></div>
-                <h3 class="trilha-title">Trilha 03</h3>
-                <h4 class="trilha-subtitle">Pipeline de Dados</h4>
-                <p class="trilha-description">
-                Construção de pipelines escaláveis com ferramentas modernas.
-                </p>
-                <div class="trilha-coming-soon">
-                    <p>Lançamento previsto: <strong>Dezembro 2026</strong></p>
-                    <button class="btn-waitlist" >
-                        <a href="/trilha-03/" >
-                            📋 Quero ser avisado
-                        </a>
-                    </button>
-                </div>
-            </article>
-        </div>
-        
-        <div class="trilhas-footer">
-            <a href="/trilhas-futuras.html" class="btn btn-outline">
-                Ver todas as 14 trilhas →
-            </a>
-        </div>
-    </div>
-</section>
-
-<!-- ============================================ -->
-<!-- SEÇÃO DEPOIMENTOS -->
-<!-- ============================================ -->
-<section class="depoimentos" aria-label="O que nossos alunos dizem">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">O que estão falando</h2>
-            <div class="section-divider"></div>
-            <p class="section-subtitle">
-                Histórias reais de quem já está transformando sua carreira
-            </p>
-        </div>
-        
-        <div class="depoimentos-grid">
-            <div class="depoimento-card">
-                <div class="depoimento-stars">★★★★★</div>
-                <p class="depoimento-text">
-                    "A Trilha 00 mudou completamente minha visão sobre dados. Antes eu me sentia perdida, agora tenho um caminho claro para seguir. Recomendo demais!"
-                </p>
-                <div class="depoimento-author">
-                    <strong>Camila Santos</strong>
-                    <span>Analista de BI</span>
-                </div>
-            </div>
-            
-            <div class="depoimento-card">
-                <div class="depoimento-stars">★★★★★</div>
-                <p class="depoimento-text">
-                    "Material prático e direto ao ponto. A Franciele sabe explicar conceitos complexos de forma simples. Consegui minha primeira vaga como engenheira de dados!"
-                </p>
-                <div class="depoimento-author">
-                    <strong>Rafael Oliveira</strong>
-                    <span>Engenheiro de Dados Júnior</span>
-                </div>
-            </div>
-            
-            <div class="depoimento-card">
-                <div class="depoimento-stars">★★★★★</div>
-                <p class="depoimento-text">
-                    "Melhor investimento que fiz na minha carreira. O suporte da comunidade é incrível e os exercícios realmente preparam para o mercado."
-                </p>
-                <div class="depoimento-author">
-                    <strong>Patrícia Lima</strong>
-                    <span>Cientista de Dados</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ============================================ -->
-<!-- SEÇÃO DIFERENCIAIS -->
-<!-- ============================================ -->
-<section class="diferenciais" aria-label="Nossos diferenciais">
-    <div class="container">
-        <div class="diferenciais-grid">
-            <div class="diferencial-item">
-                <div class="diferencial-icon"><img src="/assets/imagens/icons/iteration.png" alt="Metodologia" height="40"></div>
-                <h3>Metodologia prática</h3>
-                <p>Aprenda fazendo com projetos reais desde o primeiro dia</p>
-            </div>
-            <div class="diferencial-item">
-                <div class="diferencial-icon"><img src="/assets/imagens/icons/social-media.png" alt="comunidade" height="40"></div>
-                <h3>Comunidade ativa</h3>
-                <p>Tire dúvidas e faça networking com outros alunos</p>
-            </div>
-            <div class="diferencial-item">
-                <div class="diferencial-icon"><img src="/assets/imagens/icons/update.png" alt="atualização" height="40"></div>
-                <h3>Atualização contínua</h3>
-                <p>Conteúdo sempre atualizado com as demandas do mercado</p>
-            </div>
-            <div class="diferencial-item">
-                <div class="diferencial-icon"><img src="/assets/imagens/icons/shield.png" alt="garantia" height="40"></div>
-                <h3>Garantia 7 dias</h3>
-                <p>Teste o conteúdo e peça reembolso se não gostar</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ============================================ -->
-<!-- SEÇÃO FAQ -->
-<!-- ============================================ -->
-<section class="faq-section" aria-label="Perguntas frequentes">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">Perguntas Frequentes</h2>
-            <div class="section-divider"></div>
-            <p class="section-subtitle">
-                Tire suas dúvidas sobre as trilhas e método de ensino
-            </p>
-        </div>
-        
-        <div class="faq-grid" style="max-width: 800px; margin: 0 auto;">
-            <div class="faq-item">
-                <div class="faq-question">
-                    Como funciona o acesso aos materiais?
-                </div>
-                <div class="faq-answer">
-                    <p>Após a compra, você recebe um email com o link de acesso imediato à área do aluno. Todo o conteúdo fica disponível 24/7 por 12 meses, incluindo todos os e-books, exercícios e futuras atualizações.</p>
-                </div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">
-                    Posso parcelar a compra?
-                </div>
-                <div class="faq-answer">
-                    <p>Sim! Aceitamos parcelamento em até 12x no cartão de crédito através da Hotmart. Também aceitamos PIX com 10% de desconto à vista.</p>
-                </div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">
-                    Tem garantia? E se eu não gostar?
-                </div>
-                <div class="faq-answer">
-                    <p>Sim! Você tem 7 dias de garantia incondicional. Se por qualquer motivo não gostar do conteúdo, devolvemos 100% do seu dinheiro, sem perguntas.</p>
-                </div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">
-                    As trilhas têm certificado?
-                </div>
-                <div class="faq-answer">
-                    <p>Sim! Ao final de cada trilha, você recebe um certificado de conclusão com carga horária, válido como horas complementares e para enriquecer seu currículo.</p>
-                </div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">
-                    Como funciona o suporte?
-                </div>
-                <div class="faq-answer">
-                    <p>Você tem acesso a uma comunidade exclusiva no Telegram para tirar dúvidas com outros alunos e com a Franciele. Também oferecemos suporte por email em até 24h úteis.</p>
-                </div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">
-                    Preciso de conhecimento prévio?
-                </div>
-                <div class="faq-answer">
-                    <p>A Trilha 00 foi desenhada para iniciantes absolutos. Você não precisa de conhecimento prévio em programação ou dados. Começamos do zero!</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    <main>
 
 
+        <!-- HERO -->
+        <section class="hero">
+            <canvas class="hero-bg-canvas" id="heroCanvas"></canvas>
+            <div class="hero-inner">
+                <div>
+                    <p class="hero-eyebrow">Uma observação</p>
+                    <h1 class="hero-title">
+                        Muitas pessoas estudam<br>
+                        constantemente, <span class="hl">mas não<br>sentem evolução real.</span>
+                    </h1>
+                    <p class="hero-sub">O problema raramente é esforço ou inteligência.<br><span class="hl">É estrutura
+                            de pensamento.</span></p>
+                    <p class="hero-note">É isso que a Mente & Dados investiga.</p>
+                    <div class="hero-cta">
+                        <a href="#" class="btn-gold">Explorar Biblioteca</a>
+                        <a href="#" class="btn-outline">Entender a ideia</a>
+                    </div>
+                </div>
+                <div class="hero-visual" id="heroVisual">
+                    <div class="hv-card" data-bar="85">
+                        <div class="hv-label">Observação</div>
+                        <div class="hv-title">Problema raramente é a ferramenta</div>
+                        <div class="hv-bar-wrap">
+                            <div class="hv-bar"></div>
+                        </div>
+                    </div>
+                    <div class="hv-card" data-bar="70">
+                        <div class="hv-label">Pergunta</div>
+                        <div class="hv-title">Toda solução começa na pergunta certa</div>
+                        <div class="hv-bar-wrap">
+                            <div class="hv-bar"></div>
+                        </div>
+                    </div>
+                    <div class="hv-card" data-bar="92">
+                        <div class="hv-label">Estrutura</div>
+                        <div class="hv-title">Organizar o caos antes de agir</div>
+                        <div class="hv-bar-wrap">
+                            <div class="hv-bar"></div>
+                        </div>
+                    </div>
+                    <div class="hv-card" data-bar="92">
+                        <div>
+                            <div class="hv-label">Biblioteca</div>
+                            <div class="hv-metric" id="counterEl"></div>
+                            <div class="hv-small">Conteúdo em desenvolvimento constante</div>
+                        </div>
+                        <div id="sparkWrap"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<script>
-    // FAQ Accordion manual para a landing page
-    document.addEventListener('DOMContentLoaded', function() {
-        const faqQuestions = document.querySelectorAll('.faq-question');
-        
-        faqQuestions.forEach(question => {
-            question.addEventListener('click', () => {
-                const isActive = question.classList.contains('active');
-                
-                // Fechar todos
-                faqQuestions.forEach(q => {
-                    q.classList.remove('active');
-                    const answer = q.nextElementSibling;
-                    if (answer) answer.style.maxHeight = null;
+        <!-- STATS BAR -->
+        <div class="stats-bar">
+            <div class="stats-inner">
+                <div class="stat">
+                    <div class="stat-num">6</div>
+                    <div class="stat-label">etapas de pensamento</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">3</div>
+                    <div class="stat-label">trilhas disponíveis</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">100%</div>
+                    <div class="stat-label">estrutura antes do código</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">0</div>
+                    <div class="stat-label">ferramentas antes do método</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- 2. RACIOCÍNIO — A tese em ação (sem "eu") -->
+        <!-- ============================================ -->
+
+        <section class="section tese-bg">
+            <div class="section-inner">
+                <div class="section-head">
+                    <div>
+                        <span class="section-tag">A Tese</span>
+                        <h2 class="section-title">O raciocínio em quatro movimentos</h2>
+                        <p class="section-sub">Uma investigação sobre como pessoas aprendem a estruturar problemas antes
+                            de escrever uma linha de código.</p>
+                    </div>
+                </div>
+                <div class="tese-grid">
+                    <div class="tese-card reveal">
+                        <span class="tese-num">01 — Observação</span>
+                        <h3 class="tese-h">O problema raramente está na ferramenta</h3>
+                        <p class="tese-p">Um iniciante em dados não trava porque não sabe SQL ou Python o suficiente.
+                            Ele trava porque não aprendeu a <strong>olhar para o problema antes do código</strong>.</p>
+                    </div>
+                    <div class="tese-card reveal reveal-d1">
+                        <span class="tese-num">02 — Pergunta</span>
+                        <h3 class="tese-h">Toda solução começa na pergunta</h3>
+                        <p class="tese-p">Antes de qualquer implementação, vem a pergunta: <strong>"o que exatamente
+                                precisa ser resolvido?"</strong> Sem essa clareza, código vira tentativa.</p>
+                    </div>
+                    <div class="tese-card reveal reveal-d2">
+                        <span class="tese-num">03 — Estrutura</span>
+                        <h3 class="tese-h">Organizar o caos antes de agir</h3>
+                        <p class="tese-p">A diferença entre quem acumula conteúdo e quem constrói entendimento está na
+                            <strong>capacidade de estruturar o pensamento</strong> antes de executar.
+                        </p>
+                    </div>
+                    <div class="tese-card reveal reveal-d3">
+                        <span class="tese-num">04 — Resultado</span>
+                        <h3 class="tese-h">Clareza, não mais informação</h3>
+                        <p class="tese-p">Quando você aprende a pensar, o conteúdo que já existe começa a fazer sentido.
+                            <strong>Você não precisa de mais informação. Precisa de estrutura.</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- 3. BIBLIOTECA — Onde a tese se torna pública -->
+        <!-- ============================================ -->
+        <section class="section bib-bg">
+            <div class="section-inner">
+                <div class="section-head">
+                    <div>
+                        <span class="section-tag section-tag--trilhas">
+                            <img src="/assets/imagens/icons/stack-of-books.png" alt="trilhas" height="40">
+                            Biblioteca
+                        </span>
+                        <h2 class="section-title">Onde a tese se torna pública</h2>
+                        <p class="section-sub">Vídeos, artigos e reflexões sobre estrutura de pensamento em dados.
+                            Acompanhe uma investigação sobre como pessoas aprendem dados, estruturam problemas e
+                            desenvolvem clareza antes da execução.</p>
+
+                    </div>
+                    <a href="/aprender/" class="link-arrow reveal">Explorar</a>
+                </div>
+                <div class="bib-grid">
+                    <a href="#" class="bib-card reveal">
+                        <span class="bib-badge avail">Disponível</span>
+                        <h3 class="bib-h">Fundamentos do Pensamento em Dados</h3>
+                        <p class="bib-p">O método que organiza o caos antes do código. Aprenda a pensar em camadas,
+                            diagnosticar problemas e construir clareza.</p>
+                        <div class="progress-line">
+                            <div class="progress-fill" style="width:100%"></div>
+                        </div>
+                        <span class="bib-link">Acessar →</span>
+                    </a>
+                    <a href="#" class="bib-card coming reveal reveal-d1">
+                        <span class="bib-badge soon">Em desenvolvimento</span>
+                        <h3 class="bib-h">SQL para Dados</h3>
+                        <p class="bib-p">Consultas, joins e modelagem prática — o desenho dos dados antes da execução.
+                        </p>
+                        <div class="progress-line">
+                            <div class="progress-fill" style="width:35%"></div>
+                        </div>
+                        <span class="bib-link" style="color:var(--muted)">Em breve →</span>
+                    </a>
+                    <a href="#" class="bib-card coming reveal reveal-d2">
+                        <span class="bib-badge soon">Em desenvolvimento</span>
+                        <h3 class="bib-h">Python para Engenharia de Dados</h3>
+                        <p class="bib-p">Python Mínimo Viável para pipeline. Foco em dados, não em programação genérica.
+                        </p>
+                        <div class="progress-line">
+                            <div class="progress-fill" style="width:15%"></div>
+                        </div>
+                        <span class="bib-link" style="color:var(--muted)">Em breve</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- 4. TRILHAS — A consequência da tese -->
+        <!-- ============================================ -->
+        <section class="section tri-bg">
+            <div class="section-inner">
+                <div class="section-head">
+                    <div>
+                        <span class="section-tag section-tag--trilhas">
+                            <img src="/assets/imagens/icons/route.png" alt="trilhas" height="40">
+                            Trilha
+                        </span>
+                        <h2 class="section-title">A consequência da tese</h2>
+                        <p class="section-sub">A Biblioteca é a investigação pública. As Trilhas são o percurso
+                            estruturado<br>
+                            para quem quer transformar essa investigação em prática.</p>
+                    </div>
+                    <a href="/trilhas-futuras.html" class="link-arrow reveal">Ver todas</a>
+                </div>
+                <div class="tri-grid">
+                    <div class="tri-card destaque reveal">
+                        <span class="tri-badge avail">Disponível agora</span>
+                        <div class="tri-icon"><img src="/assets/imagens/icons/rocket.png" alt="Lançamento" height="40">
+                        </div>
+                        <h3 class="tri-h">Trilha 00 — Fundamentos do Pensamento em Dados</h3>
+                        <p class="tri-p">Um percurso para transformar uma forma de pensar em uma forma de agir.</p>
+                        <ul class="tri-list">
+                            <li>✓ Estrutura de pensamento em 6 etapas</li>
+                            <li>✓ Diagnóstico de problemas antes do código</li>
+                            <li>✓ Material escrito + caderno de exercícios</li>
+                        </ul>
+                        <a href="/trilha-00/" class="btn-sm">Conhecer a jornada →</a>
+                    </div>
+                    <div class="tri-card coming reveal reveal-d1">
+                        <span class="tri-badge soon">Em breve</span>
+                        <div class="tri-icon"><img src="/assets/imagens/icons/python.png" alt="python" height="40">
+                        </div>
+                        <h3 class="tri-h">Trilha 01 — Python para Dados</h3>
+                        <p class="tri-p">Python Mínimo Viável para pipeline. Foco em dados, não em programação genérica.
+                        </p>
+                        <p class="tri-eta">Previsão: Agosto 2026</p>
+                    </div>
+                    <div class="tri-card coming reveal reveal-d2">
+                        <span class="tri-badge soon">Em breve</span>
+                        <div class="tri-icon"><img src="/assets/imagens/icons/sql-server.png" alt="SQL" height="40">
+                        </div>
+                        <h3 class="tri-h">Trilha 02 — SQL Avançado</h3>
+                        <p class="tri-p">Consultas complexas, otimização e modelagem de bancos relacionais.</p>
+                        <p class="tri-eta">Previsão: Outubro 2026</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- 5. CTA FINAL — A pergunta que fica -->
+        <!-- ============================================ -->
+        <section class="cta-section">
+            <h2>Será que seu problema nunca foi falta de conteúdo?</h2>
+            <p>Se essa pergunta fez sentido, a Biblioteca é o próximo passo. As Trilhas são o aprofundamento.</p>
+            <div class="cta-btns">
+                <a href="#" class="btn-white">Explorar a Biblioteca</a>
+                <a href="#" class="btn-ghost">Conhecer as Trilhas</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer - Simplificado -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4><img src="/assets/imagens/logo/logotipo_icone.png" alt="Mente & Dados" height="40"> Mente &
+                        Dados</h4>
+                    <p>Transformando iniciantes em engenheiros de dados através de conteúdo prático e trilhas
+                        estruturadas.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Trilha</h4>
+                    <a href="/trilha-00/">Trilha 00 - Fundamentos</a>
+                    <a href="/trilha-01/">Trilha 01 - Em breve</a>
+                    <a href="/trilha-02/">Trilha 02 - Em breve</a>
+                    <a href="/trilhas-futuras.html">Todas as trilhas</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Institucional</h4>
+                    <a href="/sobre/">Sobre</a>
+                    <a href="/contato/">Contato</a>
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <a href="https://youtube.com/@MenteeDados" target="_blank" rel="noopener noreferrer"><img
+                            src="/assets/imagens/icons/youtube.png" alt="YouTube"> YouTube</a>
+                    <a href="https://www.instagram.com/menteedados.oficial/" target="_blank"
+                        rel="noopener noreferrer"><img src="/assets/imagens/icons/instagram.png" alt="instagram">
+                        Instagram</a>
+                    <a href="https://medium.com/@menteedados" target="_blank" rel="noopener noreferrer"><img
+                            src="/assets/imagens/icons/medium.png" alt="Medium"> Medium</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mente & Dados - Franciele Amaral. Todos os direitos reservados.</p>
+                <p style="font-size: 0.875rem; margin-top: 0.5rem;">
+                    <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;"
+                        style="color: #c9a84c;">Voltar ao topo ↑</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Menu hamburguer -->
+    <script>
+        /* ── Smooth scroll ── */
+        document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                var target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        /* ── Sticky header shadow ── */
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('.header');
+            header.style.boxShadow = window.scrollY > 100 ? '0 2px 10px rgba(0,0,0,0.1)' : 'none';
+        });
+
+        /* ── Menu hambúrguer (mobile only) ── */
+        document.addEventListener('DOMContentLoaded', function () {
+            var toggle = document.querySelector('.menu-toggle');
+            var menu = document.querySelector('.nav-menu');
+            if (!toggle || !menu) return;
+
+            /* Abrir / fechar ao clicar no botão */
+            toggle.addEventListener('click', function (e) {
+                e.stopPropagation();
+                var isOpen = menu.classList.toggle('active');
+                toggle.classList.toggle('active', isOpen);
+                toggle.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            /* Fechar ao clicar em um link do menu */
+            document.querySelectorAll('.nav-links a').forEach(function (link) {
+                link.addEventListener('click', function () {
+                    menu.classList.remove('active');
+                    toggle.classList.remove('active');
+                    toggle.setAttribute('aria-expanded', 'false');
                 });
-                
-                // Abrir o clicado se não estava ativo
-                if (!isActive) {
-                    question.classList.add('active');
-                    const answer = question.nextElementSibling;
-                    if (answer) answer.style.maxHeight = answer.scrollHeight + 'px';
+            });
+
+            /* Fechar ao clicar fora do header */
+            document.addEventListener('click', function (e) {
+                var header = document.querySelector('.header');
+                if (header && !header.contains(e.target)) {
+                    menu.classList.remove('active');
+                    toggle.classList.remove('active');
+                    toggle.setAttribute('aria-expanded', 'false');
                 }
             });
         });
-    });
-</script>
-
-<!-- Sticky CTA -->
-<div id="sticky-cta" class="sticky-cta">
-    <button class="btn btn-primary" onclick="window.location.href='/trilha-00/'">
-        <img src="/assets/imagens/icons/rocket.png" alt="Lançamento" height="40"> Comprar Trilha 00 - R$ 127
-    </button>
-</div>
+    </script>
 
 
+    <!-- Scripts -->
 
-<script>
-    // Sticky CTA Script
-    (function() {
-        const stickyCta = document.getElementById('sticky-cta');
-        if (!stickyCta) return;
-        
-        let lastScrollY = window.scrollY;
-        let ticking = false;
-        
-        function checkScroll() {
-            const scrollY = window.scrollY;
-            const windowHeight = window.innerHeight;
-            const documentHeight = document.documentElement.scrollHeight;
-            const footer = document.querySelector('.footer');
-            
-            let shouldShow = scrollY > 600;
-            
-            // Esconder se estiver no footer
-            if (footer) {
-                const footerTop = footer.getBoundingClientRect().top;
-                if (footerTop < windowHeight) {
-                    shouldShow = false;
+    <script>
+        (function () {
+            // ── Hero Canvas: network of data nodes ──
+            const canvas = document.getElementById('heroCanvas');
+            const ctx = canvas.getContext('2d');
+            let nodes = [], W, H;
+
+            function resize() {
+                W = canvas.offsetWidth; H = canvas.offsetHeight;
+                canvas.width = W; canvas.height = H;
+            }
+            resize();
+            window.addEventListener('resize', () => { resize(); });
+
+            function initNodes() {
+                nodes = [];
+                const count = Math.floor(W / 80);
+                for (let i = 0; i < count; i++) {
+                    nodes.push({
+                        x: Math.random() * W, y: Math.random() * H,
+                        vx: (Math.random() - 0.5) * 0.3, vy: (Math.random() - 0.5) * 0.3,
+                        r: Math.random() * 1.5 + 0.5
+                    });
                 }
             }
-            
-            if (shouldShow && !stickyCta.classList.contains('visible')) {
-                stickyCta.classList.add('visible');
-            } else if (!shouldShow && stickyCta.classList.contains('visible')) {
-                stickyCta.classList.remove('visible');
+            initNodes();
+
+            let frame = 0;
+            function draw() {
+                ctx.clearRect(0, 0, W, H);
+                frame++;
+
+                nodes.forEach(n => {
+                    n.x += n.vx; n.y += n.vy;
+                    if (n.x < 0 || n.x > W) n.vx *= -1;
+                    if (n.y < 0 || n.y > H) n.vy *= -1;
+                });
+
+                for (let i = 0; i < nodes.length; i++) {
+                    for (let j = i + 1; j < nodes.length; j++) {
+                        const dx = nodes[i].x - nodes[j].x;
+                        const dy = nodes[i].y - nodes[j].y;
+                        const dist = Math.sqrt(dx * dx + dy * dy);
+                        const maxDist = 120;
+                        if (dist < maxDist) {
+                            const alpha = (1 - dist / maxDist) * 0.2;
+                            ctx.beginPath();
+                            ctx.strokeStyle = `rgba(201,168,76,${alpha})`;
+                            ctx.lineWidth = 0.5;
+                            ctx.moveTo(nodes[i].x, nodes[i].y);
+                            ctx.lineTo(nodes[j].x, nodes[j].y);
+                            ctx.stroke();
+                        }
+                    }
+                }
+
+                nodes.forEach(n => {
+                    ctx.beginPath();
+                    ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
+                    ctx.fillStyle = `rgba(201,168,76,0.4)`;
+                    ctx.fill();
+                });
+
+                requestAnimationFrame(draw);
             }
-            
-            ticking = false;
-        }
-        
-        window.addEventListener('scroll', function() {
-            if (!ticking) {
-                requestAnimationFrame(checkScroll);
-                ticking = true;
-            }
-        });
-        
-        checkScroll();
-    })();
-</script>
+            draw();
 
-</main>
+            // ── Hero cards stagger in ──
+            const cards = document.querySelectorAll('#heroVisual .hv-card');
+            cards.forEach((card, i) => {
+                setTimeout(() => {
+                    card.classList.add('visible');
+                    const bar = card.querySelector('.hv-bar');
+                    if (bar) {
+                        const pct = card.dataset.bar;
+                        setTimeout(() => { bar.style.width = pct + '%'; }, 200);
+                    }
+                }, 400 + i * 180);
+            });
 
-<!-- ============================================ -->
-<!-- FOOTER  -->
-<!-- ============================================ -->
-<footer class="footer">
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4><img src="/assets/imagens/logo/logotipo_icone.png" alt="Mente & Dados" height="40"> Mente & Dados</h4>
-                <p>Transformando iniciantes em engenheiros de dados através de conteúdo prático e trilhas estruturadas.</p>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Trilhas</h4>
-                <a href="/trilha-00/">Trilha 00 - Fundamentos</a>
-                <a href="/trilha-01/">Trilha 01 - Python</a>
-                <a href="/trilha-02/">Trilha 02 - SQL</a>
-                <a href="/trilhas-futuras.html">Todas as trilhas</a>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Institucional</h4>
-                <a href="/sobre/">Sobre</a>
-                <a href="/contato/">Contato</a>
-                <a href="#">Política de Privacidade</a>
-                <a href="#">Termos de Uso</a>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Redes Sociais</h4>
-                <a href="https://youtube.com/@MenteeDados" target="_blank" rel="noopener noreferrer"><img src="/assets/imagens/icons/youtube.png" alt="YouTube"> YouTube</a>
-                <a href="https://www.instagram.com/menteedados.oficial/" target="_blank" rel="noopener noreferrer"><img src="/assets/imagens/icons/instagram.png" alt="instagram"> Instagram</a>
-                <a href="https://medium.com/@menteedados" target="_blank" rel="noopener noreferrer"><img src="/assets/imagens/icons/medium.png" alt="Medium"> Medium</a>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2026 Mente & Dados - Franciele Amaral. Todos os direitos reservados.</p>
-            <p style="font-size: 0.875rem; margin-top: 0.5rem;">
-                <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" style="color: #c9a84c;">Voltar ao topo ↑</a>
-            </p>
-        </div>
-    </div>
-</footer>
 
-<!-- Scripts -->
-<script src="assets/js/main.js"></script>
 
-<!-- Script adicional para smooth scroll e navegação -->
-<script>
-    // Smooth scroll para links internos
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-        });
-    });
-    
-    // Sticky header effect
-    window.addEventListener('scroll', function() {
-        const header = document.querySelector('.header');
-        if (window.scrollY > 100) {
-            header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
-        } else {
-            header.style.boxShadow = 'none';
-        }
-    });
-</script>
+            // ── Sparkline ──
 
+
+            // ── Scroll reveal ──
+            const revealEls = document.querySelectorAll('.reveal');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); } });
+            }, { threshold: 0.1 });
+            revealEls.forEach(el => observer.observe(el));
+
+            // ── Sticky header shadow on scroll ──
+            window.addEventListener('scroll', () => {
+                const hdr = document.querySelector('.hdr');
+                hdr.style.borderBottomColor = window.scrollY > 60 ? 'rgba(201,168,76,0.3)' : 'rgba(201,168,76,0.15)';
+            });
+        })();
+    </script>
 </body>
+
 </html>
