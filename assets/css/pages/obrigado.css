@@ -1,0 +1,254 @@
+/* ===== PÁGINA OBRIGADO - ESTILOS ESPECÍFICOS ===== */
+.thankyou-hero {
+    background: var(--navy);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.thankyou-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(ellipse 80% 60% at 20% 40%, rgba(201, 168, 76, 0.08) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.thankyou-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+.thankyou-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 900;
+    margin-bottom: 0.75rem;
+    color: white;
+}
+
+.thankyou-title em {
+    color: var(--gold-light);
+    font-style: italic;
+}
+
+.thankyou-subtitle {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 540px;
+    margin: 0 auto;
+    line-height: 1.65;
+}
+
+/* ── Conteúdo principal ── */
+.ty-body {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 4rem;
+}
+
+.ty-card {
+    background: white;
+    border-radius: 16px;
+    padding: 1.75rem 2rem;
+    margin-bottom: 1.25rem;
+    box-shadow: 0 2px 12px rgba(15, 30, 61, 0.07);
+    border: 1px solid var(--border);
+}
+
+.ty-card-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.6rem;
+    color: var(--gold-dark);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+.ty-card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+    color: var(--navy);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.ty-card p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.65;
+    margin: 0;
+}
+
+/* Card com borda ouro */
+.ty-card--gold {
+    border-left: 3px solid var(--gold);
+}
+
+/* Card garantia com fundo suave */
+.ty-card--soft {
+    background: var(--gold-pale);
+    border-color: rgba(201, 168, 76, 0.3);
+}
+
+/* ── Passos ── */
+.ty-steps {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+}
+
+.ty-steps li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.ty-steps li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.ty-step-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 28px;
+    height: 28px;
+    background: var(--gold);
+    color: var(--navy);
+    border-radius: 50%;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.ty-step-text strong {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--navy);
+    margin-bottom: 0.2rem;
+}
+
+.ty-step-text span {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    line-height: 1.55;
+}
+
+/* ── Suporte ── */
+.ty-support {
+    background: var(--cream);
+    border-radius: 16px;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    margin-bottom: 1.25rem;
+    border: 1px solid var(--border);
+}
+
+.ty-support p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.65;
+    margin: 0.25rem 0 0;
+}
+
+.ty-support-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.6rem;
+    color: var(--gold-dark);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.ty-support a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--gold-dark);
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-decoration: none;
+    border: 1px solid var(--border);
+    padding: 0.5rem 1.25rem;
+    border-radius: 40px;
+    transition: all 0.2s;
+}
+
+.ty-support a:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+}
+
+/* ── Botão voltar ── */
+.ty-back {
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+.ty-back a {
+    display: inline-block;
+    background: var(--navy);
+    color: white;
+    padding: 0.7rem 2rem;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.ty-back a:hover {
+    background: var(--navy-mid);
+    transform: translateY(-2px);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .thankyou-hero {
+        padding: 3rem 1.5rem;
+    }
+
+    .ty-body {
+        padding: 2rem 1.25rem 3rem;
+    }
+
+    .ty-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .thankyou-hero {
+        padding: 2.5rem 1.25rem;
+    }
+
+    .ty-card {
+        padding: 1.25rem;
+    }
+
+    .ty-support {
+        padding: 1.25rem;
+    }}
